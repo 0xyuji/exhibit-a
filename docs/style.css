@@ -482,3 +482,13 @@ figure.chart figcaption::before {
   .terms > div:not(:last-child)::after { left: 3px; top: 23px; }
 }
 h1 { max-width: 19ch; text-wrap: balance; }
+
+/* the mark: the name written the way a paper cites a source */
+.bracket { font: 500 21px/1 var(--mono); letter-spacing: -0.02em; color: var(--paper); font-style: normal; }
+.bracket em { font-style: normal; color: var(--brass); }
+.lockup span.bracket { font: 500 21px/1 var(--mono); letter-spacing: -0.02em; font-style: normal; color: var(--paper); transition: letter-spacing 300ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.lockup:hover span.bracket { letter-spacing: 0.01em; }
+.foot .brand.bracket { font: 500 19px/1 var(--mono); letter-spacing: -0.02em; }
+/* the headline, typed */
+h1 { max-width: 20ch; font: 400 clamp(32px, 4vw, 54px)/1.13 "Special Elite", "Courier Prime", "Courier New", monospace; letter-spacing: -0.012em; }
+@media (max-width: 860px) { .lockup span.bracket { font-size: 19px; } }

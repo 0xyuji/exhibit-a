@@ -776,10 +776,6 @@ if (data.peers) {
 }
 
 // ---------- the bar's mark, and the tape under it ----------
-// The mark: a small tile of cipher glyphs that never quite settles.
-new Sheet(document.querySelector(".markGlyph"), (sheet) => {
-  for (let r = 0; r < sheet.rows; r++) for (let c = 0; c < sheet.cols; c++) sheet.put(c, r, { style: "cipher" });
-}, { w: 6, h: 8.4, font: 8.5 });
 
 // The tape: label, value, a knot of glyphs, and on to the next, drifting slowly to the left.
 const tape = (() => {

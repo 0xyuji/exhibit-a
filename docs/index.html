@@ -7,14 +7,14 @@
 <meta name="description" content="A long-term thesis on NEAR, tested against every partner swap of the last 30 days. Every chart can be rebuilt with one command.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Special+Elite&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <canvas id="field" aria-hidden="true"></canvas>
 
 <header class="masthead" id="top">
-  <a class="lockup" href="#top"><canvas class="markGlyph" aria-hidden="true"></canvas><span>Exhibit A</span></a>
+  <a class="lockup" href="#top" aria-label="Exhibit A"><span class="bracket" aria-hidden="true">exhibit<em>[A]</em></span></a>
   <nav>
     <a class="in" href="#flow">Fees</a>
     <a class="in" href="#dark">Privacy</a>
@@ -364,7 +364,7 @@ covered  = revenue / issuance
 </main>
 
 <footer>
-  <p class="foot"><span class="brand"><span class="brandMark" aria-hidden="true">@#</span>Exhibit A</span><a href="thesis.html">Thesis</a><a href="https://github.com/0xyuji/exhibit-a">Code</a></p>
+  <p class="foot"><span class="brand bracket" aria-label="Exhibit A">exhibit<em>[A]</em></span><a href="thesis.html">Thesis</a><a href="https://github.com/0xyuji/exhibit-a">Code</a></p>
   <p>Built <span data-f="built"></span> by <code>python3 build.py</code>. Sources: NEAR Intents Explorer API, DefiLlama, NEAR RPC, NEAR's Dune dataset. Swap records are counted and dropped, never stored.</p>
   <p>Not investment advice. Made for the NEAR hackathon thesis track by the author of <a href="https://rahasya.chat">Rahasya</a>, a separate entry.</p>
 </footer>

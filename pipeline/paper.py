@@ -153,12 +153,12 @@ PAGE = """<!doctype html>
 <meta name="description" content="A working paper on NEAR Intents: every number, table and figure is written by one command from public data.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Special+Elite&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="paper.css">
 </head>
 <body>
 <header class="masthead">
-  <a class="lockup" href="./"><canvas class="markGlyph" width="60" height="60" aria-hidden="true"></canvas><span>Exhibit A</span></a>
+  <a class="lockup" href="./" aria-label="Exhibit A"><span class="bracket" aria-hidden="true">exhibit<em>[A]</em></span></a>
   <nav>
     <a href="./">Dashboard</a>
     <a href="https://github.com/0xyuji/exhibit-a">Code</a>
@@ -174,6 +174,7 @@ PAGE = """<!doctype html>
   <main>
     <header class="front">
       <p class="band" aria-hidden="true">{band}</p>
+      <p class="mark" aria-hidden="true">exhibit<em>[A]</em></p>
       <h1>{title}</h1>
       {front}
       {rule}
@@ -183,26 +184,9 @@ PAGE = """<!doctype html>
   </main>
 </div>
 <script>
-// The mark: a small tile of cipher glyphs that never quite settles.
+// Which section the reader is in, and figures that rise into place.
 (() => {{
-  const ramp = "/\\\\|!*=%#&$@";
-  const canvas = document.querySelector(".markGlyph");
-  const ctx = canvas.getContext("2d");
   const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const cells = [];
-  for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) cells.push([c, r, ramp[Math.floor(Math.random() * ramp.length)]]);
-  const draw = () => {{
-    ctx.clearRect(0, 0, 60, 60);
-    ctx.font = '17px "JetBrains Mono", ui-monospace, Menlo, monospace';
-    ctx.textBaseline = "top";
-    ctx.fillStyle = "rgba(200,164,106,0.9)";
-    for (const [c, r, g] of cells) ctx.fillText(g, 6 + c * 12, 5 + r * 17);
-  }};
-  draw();
-  document.fonts?.ready.then(draw);
-  if (!still) setInterval(() => {{ cells[Math.floor(Math.random() * cells.length)][2] = ramp[Math.floor(Math.random() * ramp.length)]; draw(); }}, 220);
-
-  // Which section the reader is in.
   const links = new Map([...document.querySelectorAll(".contents ol a")].map((a) => [a.getAttribute("href").slice(1), a]));
   const seen = new IntersectionObserver((entries) => {{
     for (const entry of entries) {{
