@@ -199,7 +199,7 @@ def write(d, path):
         (r"M = \frac{S \cdot P}{R \cdot 365 / T}",
          f"{var('M')} = {frac(cap_term, year_term)}"),
     ]
-    eq = lambda n: f"$${equations[n - 1][0]} \\tag{{{n}}}$$"
+    eq = lambda n: f"$${equations[n - 1][0]} \\qquad ({n})$$"
     shares = [f["volume_share"] for f in d["front_ends"]]
     fee_shares = [f["fee_share"] for f in d["front_ends"]]
     n_eff = 1 / sum(x * x for x in shares) if shares else 0

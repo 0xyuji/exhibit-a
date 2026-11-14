@@ -82,7 +82,7 @@ def convert(text, equations=None):
             out.append(f'<h3 id="{slug(head)}">{mark}{inline(number.group(2) if number else head)}</h3>')
             i += 1
         elif line.startswith("$$"):
-            latex, number = re.match(r"^\$\$(.*?)(?:\s*\\tag\{(\d+)\})?\$\$$", line.strip()).groups()
+            latex, number = re.match(r"^\$\$(.*?)(?:\s*\\qquad\s*\((\d+)\))?\$\$$", line.strip()).groups()
             out.append(f'<div class="eq" id="eq-{number}"><span class="m">{equations.get(latex.strip(), html.escape(latex))}</span><span class="no">({number})</span></div>')
             i += 1
         elif line.startswith("|"):
