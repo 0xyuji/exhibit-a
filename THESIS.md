@@ -98,7 +98,7 @@ which is 1 when one front-end has everything and *n* when *n* of them split it e
 We don't ask you to trust our counting. The build compares its own numbers with outside ones and prints the result every time it runs.
 
 - **The official fee figure is what partners charge.** On the sampled days of 2025 the fees counted from single swaps come to 100.0% of the official fee figure for the same days.
-- **The revenue wallets grew by about what the official revenue says.** The three wallets hold 401,952 NEAR more than 30 days earlier, about $1,238,624 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.
+- **The revenue wallets grew by about what the official revenue says.** The three wallets hold 401,952 NEAR more than 30 days earlier, about $1,238,630 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.
 - **Two ways of reading the revenue wallets agree.** Over 30 days our archive-node balances show 405,284 NEAR arriving; SQL over the chain's transfer tables (a third party's saved Dune query) shows 405,283. The largest gap on any one day is under 1 NEAR.
 - **The official volume counts both sides of every swap.** It is a sum of volume per token, so a swap of Bitcoin for dollars is in it twice. Counting our partner swaps the same way (every swap that touches a token), we get 82% of the official BTC volume, 78% of the official SOL volume, 96% of the official XRP volume over 29 days. A one-sided official figure could not be matched this closely. So we compare partner swaps to the official total on the both-sides basis throughout.
 
@@ -205,7 +205,7 @@ Two honest footnotes. We halved NEAR's number and left the others as reported, b
 
 ## 4. So where's the money?
 
-Some of it is sitting inside. The intents contract held about $191.2M when we built this (160 of 160 listed tokens could be read).
+Some of it is sitting inside. The intents contract held about $191.3M when we built this (160 of 160 listed tokens could be read).
 
 Some of it lands in wallets anyone can read (Section 3.6).
 
