@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836 288" width="836" height="288" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
+<rect width="836" height="288" rx="14" fill="#0b0c0e"/>
+<rect x="0.5" y="0.5" width="835" height="287" rx="14" fill="none" stroke="#2a2a2c"/>
+<defs><marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0.6 L7.2 4 L0 7.4 Z" fill="#c8a46a"/></marker></defs>
+<text x="24.0" y="26.0" fill="#c8a46a" font-size="9.5" font-weight="500" text-anchor="start">SOURCES</text>
+<text x="812.0" y="26.0" fill="#c8a46a" font-size="9.5" font-weight="500" text-anchor="end">WRITTEN BY THE BUILD</text>
+<rect x="330.0" y="44.0" width="176.0" height="220.0" rx="11" fill="#14130f" stroke="#c8a46a"/>
+<text x="418.0" y="74.0" fill="#ece7de" font-size="12" font-weight="500" text-anchor="middle">python3 build.py</text>
+<text x="418.0" y="106.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="middle">count each swap once</text>
+<text x="418.0" y="127.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="middle">fold into daily totals</text>
+<text x="418.0" y="116.0" fill="#c8a46a" font-size="8" font-weight="400" text-anchor="middle">|</text>
+<text x="418.0" y="148.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="middle">check against outside</text>
+<text x="418.0" y="137.0" fill="#c8a46a" font-size="8" font-weight="400" text-anchor="middle">|</text>
+<text x="418.0" y="169.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="middle">run the token model</text>
+<text x="418.0" y="158.0" fill="#c8a46a" font-size="8" font-weight="400" text-anchor="middle">|</text>
+<text x="418.0" y="190.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="middle">write everything</text>
+<text x="418.0" y="179.0" fill="#c8a46a" font-size="8" font-weight="400" text-anchor="middle">|</text>
+<text x="418.0" y="248.0" fill="#c8a46a" font-size="9" font-weight="400" text-anchor="middle">standard library only</text>
+<rect x="24.0" y="44.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="36.0" y="64.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">NEAR Intents Explorer API</text>
+<text x="36.0" y="81.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">every partner swap in the window</text>
+<line x1="275.0" y1="67.0" x2="325.0" y2="80.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="24.0" y="102.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="36.0" y="122.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">DefiLlama, NEAR's Dune queries</text>
+<text x="36.0" y="139.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">the official volume, fees, revenue</text>
+<line x1="275.0" y1="125.0" x2="325.0" y2="129.3" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="24.0" y="160.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="36.0" y="180.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">NEAR RPC and archive node</text>
+<text x="36.0" y="197.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">wallets, supply, contract state</text>
+<line x1="275.0" y1="183.0" x2="325.0" y2="178.7" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="24.0" y="218.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="36.0" y="238.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">NEAR docs and dashboard</text>
+<text x="36.0" y="255.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">fee schedule, dates, revenue split</text>
+<line x1="275.0" y1="241.0" x2="325.0" y2="228.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="564.0" y="44.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#ece7de" stroke-opacity="0.55"/>
+<text x="576.0" y="64.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">docs/data.json</text>
+<text x="576.0" y="81.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">the dashboard reads it</text>
+<line x1="509.0" y1="80.0" x2="559.0" y2="67.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="564.0" y="102.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#ece7de" stroke-opacity="0.55"/>
+<text x="576.0" y="122.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">THESIS.md and the PDF</text>
+<text x="576.0" y="139.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">this paper, numbers and all</text>
+<line x1="509.0" y1="129.3" x2="559.0" y2="125.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="564.0" y="160.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#ece7de" stroke-opacity="0.55"/>
+<text x="576.0" y="180.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">docs/figures/</text>
+<text x="576.0" y="197.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">every figure here</text>
+<line x1="509.0" y1="178.7" x2="559.0" y2="183.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="564.0" y="218.0" width="248.0" height="46.0" rx="9" fill="#121316" stroke="#ece7de" stroke-opacity="0.55"/>
+<text x="576.0" y="238.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">4 checks, 9 tripwires</text>
+<text x="576.0" y="255.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">printed on every build</text>
+<line x1="509.0" y1="228.0" x2="559.0" y2="241.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+</svg>

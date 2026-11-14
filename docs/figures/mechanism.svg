@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836 300" width="836" height="300" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
+<rect width="836" height="300" rx="14" fill="#0b0c0e"/>
+<rect x="0.5" y="0.5" width="835" height="299" rx="14" fill="none" stroke="#2a2a2c"/>
+<defs><marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0.6 L7.2 4 L0 7.4 Z" fill="#c8a46a"/></marker></defs>
+<text x="24.0" y="26.0" fill="#c8a46a" font-size="9.5" font-weight="500" text-anchor="start">ONE SWAP, LEFT TO RIGHT</text>
+<rect x="24.0" y="46.0" width="140.0" height="76.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="36.0" y="66.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">The user</text>
+<text x="36.0" y="83.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">holds BTC, wants USDT</text>
+<text x="36.0" y="96.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">taps swap in a wallet</text>
+<rect x="186.0" y="46.0" width="140.0" height="76.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="198.0" y="66.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">A front-end</text>
+<text x="198.0" y="83.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">wallet or aggregator</text>
+<text x="198.0" y="96.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">sets the fee: 47 bps</text>
+<rect x="348.0" y="46.0" width="140.0" height="76.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="360.0" y="66.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">1Click API</text>
+<text x="360.0" y="83.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">quotes, then gives a</text>
+<text x="360.0" y="96.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">one-time address</text>
+<rect x="510.0" y="46.0" width="140.0" height="76.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="522.0" y="66.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">A solver</text>
+<text x="522.0" y="83.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">fills the order from</text>
+<text x="522.0" y="96.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">its own inventory</text>
+<rect x="672.0" y="46.0" width="140.0" height="76.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="684.0" y="66.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">The payout</text>
+<text x="684.0" y="83.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">USDT arrives on the</text>
+<text x="684.0" y="96.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">chain the user chose</text>
+<line x1="167.0" y1="84.0" x2="182.0" y2="84.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<line x1="329.0" y1="84.0" x2="344.0" y2="84.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<line x1="491.0" y1="84.0" x2="506.0" y2="84.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<line x1="653.0" y1="84.0" x2="668.0" y2="84.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<rect x="186.0" y="166.0" width="626.0" height="112.0" rx="11" fill="#0f1012" stroke="#ece7de" stroke-opacity="0.22"/>
+<text x="200.0" y="188.0" fill="#ece7de" font-size="10" font-weight="500" text-anchor="start">NEAR INTENTS, THE VENUE</text>
+<text x="798.0" y="188.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="end">no order book: solvers quote, the contract settles</text>
+<rect x="200.0" y="202.0" width="292.0" height="62.0" rx="9" fill="#121316" stroke="#ece7de" stroke-opacity="0.55"/>
+<text x="212.0" y="222.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">Public settlement</text>
+<text x="212.0" y="239.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">on NEAR, in the intents.near contract</text>
+<text x="212.0" y="252.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">1% of volume on the last day read</text>
+<rect x="506.0" y="202.0" width="292.0" height="62.0" rx="9" fill="#121316" stroke="#c8a46a" stroke-opacity="0.55"/>
+<text x="518.0" y="222.0" fill="#ece7de" font-size="11" font-weight="500" text-anchor="start">Confidential settlement</text>
+<text x="518.0" y="239.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">shielded balances on a private chain,</text>
+<text x="518.0" y="252.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">bridged back to NEAR: 99% of volume</text>
+<text x="690.0" y="222.0" fill="#c8a46a" fill-opacity="0.8" font-size="9" textLength="96.0" lengthAdjust="spacingAndGlyphs">%&amp;!&amp;$\|@&amp;$!!&amp;\&amp;\</text>
+<line x1="418.0" y1="125.0" x2="418.0" y2="162.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<line x1="580.0" y1="163.0" x2="580.0" y2="126.0" stroke="#c8a46a" stroke-opacity="0.8" marker-end="url(#tip)"/>
+<text x="426.0" y="148.0" fill="#9a968e" font-size="9" font-weight="400" text-anchor="start">deposit</text>
+<text x="588.0" y="148.0" fill="#9a968e" font-size="9" font-weight="400" text-anchor="start">release</text>
+<text x="24.0" y="196.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">The fee is charged</text>
+<text x="24.0" y="209.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">by the front-end.</text>
+<text x="24.0" y="228.0" fill="#9a968e" font-size="9.5" font-weight="400" text-anchor="start">A NEAR wallet is</text>
+<text x="24.0" y="241.0" fill="#00ec97" font-size="9.5" font-weight="400" text-anchor="start">named on 8% of it.</text>
+</svg>

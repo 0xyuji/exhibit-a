@@ -17,7 +17,8 @@ def slug(text):
 
 def inline(text, cite=True):
     """Bold, italic, code, links and numbered citations, on escaped text."""
-    text = html.escape(text, quote=False)
+    text = html.escape(text, quote=False).replace("\\*", "&#42;")
+    text = re.sub(r"&lt;(/?su[bp])&gt;", r"<\1>", text)
     text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"(?<![*\w])\*([^*\n]+)\*(?![*\w])", r"<i>\1</i>", text)
@@ -31,15 +32,16 @@ def table(lines):
     rows = [[cell.strip() for cell in line.strip().strip("|").split("|")] for line in lines]
     head, body = rows[0], rows[2:]
     numeric = lambda cell: bool(re.match(r"^[$+-]?\d[\d,.]*\s?(%|x|bps|[KMB]|NEAR|MB)?$", cell))
-    out = ['<div class="tableWrap"><table><thead><tr>', "".join(f"<th>{inline(cell)}</th>" for cell in head), "</tr></thead><tbody>"]
+    out = [f'<div class="tableWrap{" long" if len(body) > 14 else ""}"><table><thead><tr>', "".join(f"<th>{inline(cell)}</th>" for cell in head), "</tr></thead><tbody>"]
     for row in body:
         out.append("<tr>" + "".join(("<td class='n'>" if numeric(cell) else "<td>") + inline(cell) + "</td>" for cell in row) + "</tr>")
     out.append("</tbody></table></div>")
     return "".join(out)
 
 
-def convert(text):
+def convert(text, equations=None):
     """Returns (title, html of the title block, html of the body, [(id, label)] for the contents)."""
+    equations = equations or {}
     lines = text.split("\n")
     out, front, contents = [], [], []
     title = ""
@@ -78,6 +80,10 @@ def convert(text):
             number = re.match(r"^(\d+\.\d+)\s+(.*)$", head)
             mark = f'<span class="num">{number.group(1)}</span>' if number else ""
             out.append(f'<h3 id="{slug(head)}">{mark}{inline(number.group(2) if number else head)}</h3>')
+            i += 1
+        elif line.startswith("$$"):
+            latex, number = re.match(r"^\$\$(.*?)(?:\s*\\tag\{(\d+)\})?\$\$$", line.strip()).groups()
+            out.append(f'<div class="eq" id="eq-{number}"><span class="m">{equations.get(latex.strip(), html.escape(latex))}</span><span class="no">({number})</span></div>')
             i += 1
         elif line.startswith("|"):
             block = []
@@ -118,12 +124,12 @@ def convert(text):
                 out.append(f"<{tag}>" + "".join(f"<li>{inline(item)}</li>" for item in items) + f"</{tag}>")
         else:
             block = []
-            while i < len(lines) and lines[i].strip() and not re.match(r"^(#|\||    |- |\d+\. |!\[)", lines[i]):
+            while i < len(lines) and lines[i].strip() and not re.match(r"^(#|\||    |- |\d+\. |!\[|\$\$)", lines[i]):
                 block.append(lines[i].strip())
                 i += 1
             para = " ".join(block)
             if in_front:
-                kind = "byline" if para.startswith("**") else "note"
+                kind = ("author", "site", "version", "note")[min(sum(1 for item in front if not item.startswith('<p class="deck"')), 3)]
                 front.append(f'<p class="{kind}">{inline(para)}</p>')
             elif para.startswith("**Table"):
                 out.append(f'<p class="caption">{inline(para)}</p>')
@@ -151,12 +157,12 @@ PAGE = """<!doctype html>
 <link rel="stylesheet" href="paper.css">
 </head>
 <body>
-<div class="progress" aria-hidden="true"><i></i></div>
 <header class="masthead">
   <a class="lockup" href="./"><canvas class="markGlyph" width="60" height="60" aria-hidden="true"></canvas><span>Exhibit A</span></a>
   <nav>
     <a href="./">Dashboard</a>
-    <a class="out" href="https://github.com/0xyuji/exhibit-a">Code</a>
+    <a href="https://github.com/0xyuji/exhibit-a">Code</a>
+    <a class="out" href="exhibit-a-thesis.pdf">PDF</a>
   </nav>
 </header>
 <div class="sheet">
@@ -167,7 +173,7 @@ PAGE = """<!doctype html>
   </nav>
   <main>
     <header class="front">
-      <p class="kicker">Working paper · NEAR hackathon, thesis track</p>
+      <p class="band" aria-hidden="true">{band}</p>
       <h1>{title}</h1>
       {front}
       {rule}
@@ -196,14 +202,7 @@ PAGE = """<!doctype html>
   document.fonts?.ready.then(draw);
   if (!still) setInterval(() => {{ cells[Math.floor(Math.random() * cells.length)][2] = ramp[Math.floor(Math.random() * ramp.length)]; draw(); }}, 220);
 
-  // How far down the paper the reader is, and which section they are in.
-  const bar = document.querySelector(".progress i");
-  const onScroll = () => {{
-    const room = document.documentElement.scrollHeight - innerHeight;
-    bar.style.transform = `scaleX(${{room > 0 ? Math.min(1, scrollY / room) : 0}})`;
-  }};
-  addEventListener("scroll", onScroll, {{ passive: true }});
-  onScroll();
+  // Which section the reader is in.
   const links = new Map([...document.querySelectorAll(".contents ol a")].map((a) => [a.getAttribute("href").slice(1), a]));
   const seen = new IntersectionObserver((entries) => {{
     for (const entry of entries) {{
@@ -228,10 +227,11 @@ PAGE = """<!doctype html>
 """
 
 
-def write(text, d, path):
-    title, front, body, contents = convert(text)
-    body = body.replace('href="https://0xyuji.github.io/exhibit-a/"', 'href="./"')
-    front = front.replace('href="https://0xyuji.github.io/exhibit-a/"', 'href="./"')
+def write(text, d, path, equations=None):
+    title, front, body, contents = convert(text, equations)
+    local = lambda markup: markup.replace('href="https://0xyuji.github.io/exhibit-a/exhibit-a-thesis.pdf"', 'href="exhibit-a-thesis.pdf"').replace('href="https://0xyuji.github.io/exhibit-a/"', 'href="./"')
+    body, front = local(body), local(front)
+    band = html.escape("".join(RAMP[7 + ((c * 2654435761 + 97) >> 7) % 11] for c in range(150)))
     listing = "".join(f'<li><a href="#{ident}"><span>{number}</span>{html.escape(label)}</a></li>' for ident, number, label in contents)
     with open(path, "w") as handle:
-        handle.write(PAGE.format(title=html.escape(title), front=front, body=body, contents=listing, rule=rule()))
+        handle.write(PAGE.format(title=html.escape(title), front=front, body=body, contents=listing, rule=rule(), band=band))

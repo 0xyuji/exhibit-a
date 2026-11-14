@@ -148,12 +148,12 @@ def write(d, path):
     tok = d.get("tokens")
     tok_line = tok_para = tok_gap = ""
     if tok:
-        rows = {r["symbol"]: r for r in tok["rows"]}
-        named = [rows[s] for s in ("XRP", "BTC", "SOL", "ZEC") if s in rows]
+        by_symbol = {r["symbol"]: r for r in tok["rows"]}
+        named = [by_symbol[s] for s in ("XRP", "BTC", "SOL", "ZEC") if s in by_symbol]
         tok_para = ("\n\nHow do we know? Token by token, over " + str(tok["days"]) + " days, partner swaps that touch a token come to "
                     + ", ".join(f"{pct(r['share'])} of the official {r['symbol']} volume" for r in named)
                     + ". You can't get that close to a one-sided number.")
-        stables = [rows[s] for s in ("USDT", "USDC") if s in rows]
+        stables = [by_symbol[s] for s in ("USDT", "USDC") if s in by_symbol]
         tok_gap = (f" {pct(tok['stable_gap_share'])} of the gap is USDT and USDC that never touches the partner API"
                    + (" (partner swaps are only " + " and ".join(f"{pct(r['share'])} of official {r['symbol']}" for r in stables) + ")" if stables else "")
                    + f". Stablecoins changing chains.\n\nAnd it does pay, just at stablecoin prices. Take partner fees out of the official fee figure and "
@@ -168,13 +168,42 @@ def write(d, path):
 
     # ---- the paper's apparatus: numbered figures, tables and references ----
     figs = figures.write_all(d, os.path.join(os.path.dirname(path), "docs", "figures"))
-    order = [key for key in ("fronts", "payers", "growth", "dark", "inflow", "peers", "capture", "model") if key in figs]
+    order = [key for key in ("mechanism", "pipeline", "units", "fronts", "payers", "growth", "dark", "inflow", "peers", "feeflow", "capture", "model") if key in figs]
     F = {key: n + 1 for n, key in enumerate(order)}
 
     def fig(key, caption):
         if key not in figs:
             return ""
         return f"\n![Figure {F[key]}](docs/figures/{figs[key]})\n\n**Figure {F[key]}.** {caption}\n"
+
+    var = lambda name, sub="": f"<i>{name}</i>" + (f"<sub>{sub}</sub>" if sub else "")
+    frac = lambda top, bottom: f'<span class="frac"><span>{top}</span><span>{bottom}</span></span>'
+    outside_term = f"{var('I')} &minus; ({var('R', '0')} &minus; {var('c', '0')}{var('F')})"
+    cap_term = f"{var('S')} &middot; {var('P')}"
+    year_term = f"{var('R')} &middot; 365 / {var('T')}"
+    equations = [
+        (r"\text{rate} = 10^{4}\cdot\frac{F}{V}",
+         f"rate = 10<sup>4</sup> &middot; {frac(var('F'), var('V'))}"),
+        (r"\text{capture} = \frac{R}{G}",
+         f"capture = {frac(var('R'), var('G'))}"),
+        (r"N_{\text{eff}} = \frac{1}{\sum_i s_i^{2}}",
+         f"{var('N', 'eff')} = {frac('1', '&Sigma;<sub><i>i</i></sub> <i>s</i><sub><i>i</i></sub><sup>2</sup>')}"),
+        (r"R(c, b, g) = g\left[(R_0 - c_0 F) + cF + \frac{b}{10^{4}}V_o\right]",
+         f"{var('R')}(<i>c</i>, <i>b</i>, <i>g</i>) = <i>g</i> [ ({var('R', '0')} &minus; {var('c', '0')}{var('F')}) + {var('c')}{var('F')} + {frac(var('b'), '10<sup>4</sup>')} {var('V', 'o')} ]"),
+        (r"I(\kappa) = N \cdot P \cdot \frac{\kappa}{\kappa_0}",
+         f"{var('I')}(<i>&kappa;</i>) = {var('N')} &middot; {var('P')} &middot; {frac('<i>&kappa;</i>', '<i>&kappa;</i><sub>0</sub>')}"),
+        (r"C = \frac{R}{I}",
+         f"{var('C')} = {frac(var('R'), var('I'))}"),
+        (r"c^{*} = \frac{I - (R_0 - c_0 F)}{F}",
+         f"<i>c</i>* = {frac(outside_term, var('F'))}"),
+        (r"M = \frac{S \cdot P}{R \cdot 365 / T}",
+         f"{var('M')} = {frac(cap_term, year_term)}"),
+    ]
+    eq = lambda n: f"$${equations[n - 1][0]} \\tag{{{n}}}$$"
+    shares = [f["volume_share"] for f in d["front_ends"]]
+    fee_shares = [f["fee_share"] for f in d["front_ends"]]
+    n_eff = 1 / sum(x * x for x in shares) if shares else 0
+    n_eff_fees = 1 / sum(x * x for x in fee_shares) if fee_shares else 0
 
     refs = [
         ("explorer", "NEAR Intents Explorer API. Every settled partner swap in the window, read with the author's key (`pipeline/swaps.py`)."),
@@ -234,9 +263,13 @@ def write(d, path):
 
 ### NEAR pivoted into a real business. Now it has to get paid for it.
 
-**0xyuji** · Exhibit A working paper · data window {long_date(win['from'])} to {long_date(win['to'])} · built {d['built']}
+**0xyuji**
 
-*Every number, table and figure below is written by `python3 build.py` from the sources in Section 2. We didn't type any of them. The charts are live on the [dashboard](https://0xyuji.github.io/exhibit-a/).*
+[0xyuji.github.io/exhibit-a](https://0xyuji.github.io/exhibit-a/)
+
+Version 1 · {long_date(d['built'][:10])} · data from {long_date(win['from'])} to {long_date(win['to'])}
+
+*Every number, table and figure below is written by `python3 build.py` from the sources in Section 2. We didn't type any of them. Also as a [PDF](https://0xyuji.github.io/exhibit-a/exhibit-a-thesis.pdf) and as live charts on the [dashboard](https://0xyuji.github.io/exhibit-a/).*
 
 ## Abstract
 
@@ -252,6 +285,7 @@ That's the thesis in one scene. NEAR started in AI, became a chain, went back to
 
 **Our claim: this is the business NEAR's long-term value rests on, and it's worth owning for years on one condition. NEAR has to start keeping more of what the business earns.** Partners charge users {p['bps']:.0f} bps on average. A NEAR wallet is named on {pct(p['near_cut'])} of that. The distribution is there. The pricing power is there. The capture isn't. Yet.
 
+{fig('mechanism', "One swap, end to end. The user sees a wallet. The front-end sets the fee. Solvers quote, and NEAR Intents settles, now almost always out of public view.")}
 A claim like that is easy to like and hard to check. So we cut it into pieces that can each fail.
 
 - **H1. The venue has customers who pay.** Sections 3.1 to 3.3.
@@ -274,6 +308,7 @@ Section 5 asks what any of this is worth to the token. Section 6 is the bear cas
 | NEAR RPC and archive | Revenue-wallet balances, total supply, the issuance setting, contract holdings, contract state | {R['rpc']} |
 | NEAR documentation and dashboard | The published fee schedule, dates of changes, how NEAR's take splits | {R['docs']}, {R['dash']} |
 
+{fig('pipeline', "The whole paper is the output of one command. Sources on the left, what the build writes on the right.")}
 ### 2.2 Counting rules
 
 - **A partner swap** is one record from the Explorer API. Records are de-duplicated by deposit address and memo and counted once. Dollar values are the API's own; we don't re-price them.
@@ -284,13 +319,30 @@ Section 5 asks what any of this is worth to the token. Section 6 is the bear cas
 - **Chain reads.** Balances, supply and contract state are read at the last block of each day from an archive node. No prices are involved in those series.
 - **What is kept.** The API's terms don't allow single records to be stored, so the repository holds daily totals only. A full re-run needs your own free API key; `python3 build.py --offline` rebuilds everything else from the saved totals.
 
-### 2.3 Checks
+{fig('units', "Why the official volume is twice the swap value. Every comparison in this paper is made in one unit or the other, never across them.")}
+### 2.3 Definitions
+
+Three ratios do most of the work below. With *F* the fees charged on a volume *V*, the rate in basis points is
+
+{eq(1)}
+
+With *R* NEAR's revenue and *G* the gross fees on the official series, the capture is
+
+{eq(2)}
+
+And with *s* the share of each front-end, the effective number of front-ends is
+
+{eq(3)}
+
+which is 1 when one front-end has everything and *n* when *n* of them split it evenly.
+
+### 2.4 Checks
 
 We don't ask you to trust our counting. The build compares its own numbers with outside ones and prints the result every time.
 
 {checks}
 
-### 2.4 Reproducing this paper
+### 2.5 Reproducing this paper
 
     python3 build.py                 # count, read the chain, run the model, write this paper
     python3 build.py --offline       # the same from saved daily totals, no key needed
@@ -305,7 +357,7 @@ The pipeline uses only Python's standard library. SQL for the Dune side is in `q
 
 {p['swaps']:,} partner swaps in {win['days']} days, worth {usd(p['volume'])}. Up to {g['to_fronts']} different wallets and apps sending flow on a single day. The biggest, {top_name}, carries {pct(top['volume_share'])} of it, and its fee accounts are named for Ledger, Trust, Tangem and Trezor {R['ledger']}. You may have heard of them.{was_line} Zcash's own wallet routes its swaps here too {R['zodl']}.
 
-None of these users "use NEAR" in any way they'd recognise. That's the point. It's also the first warning: the customer belongs to the front-end (Figure {F['fronts']}).
+None of these users "use NEAR" in any way they'd recognise. That's the point. It's also the first warning: the customer belongs to the front-end (Figure {F['fronts']}). By volume the flow behaves as if it came from {n_eff:.1f} equal front-ends (Equation 3). By fees, {n_eff_fees:.1f}.
 {fig('fronts', f"Partner fees by front-end, {win['days']} days. One integrator produces {pct(fee_top['fee_share'])} of them.")}
 ### 3.2 Who's paying?
 
@@ -351,7 +403,8 @@ Some of it is sitting inside. The intents contract held about {usd(chain['held']
 
 Some of it lands in wallets anyone can read. {wallet_line}
 
-Put the two halves side by side.
+Put the two halves side by side (Figure {F['feeflow']}).
+{fig('feeflow', f"Every fee dollar of the window. The thin green ribbon is the {pct(p['near_cut'])} of partner fees with a NEAR wallet's name on it.")}
 
 **Table 2.** The two halves of the venue, same {win['days']} days.
 
@@ -373,11 +426,23 @@ The bull case fits in one line: **the upside is a setting, not a new market.** T
 
 There's a second lever, and this one is already pulled. On 2 November 2026 NEAR's governance voted to lower the issuance cap from 2.5% to 1.6%, phased in over two years {R['vote']}. At 1.6% today's revenue covers {pct(capped['covered'], 1)} instead of {pct(m['today']['covered'], 1)}; with the published half as well, {pct(half_capped['covered'], 1)}.
 
-    revenue  = (revenue_now - cut_now * partner_fees) * growth
-             + cut * partner_fees * growth
-             + rest_bps / 10000 * (official_volume / 2 - partner_volume) * growth
-    issuance = net new NEAR in the window * price * (cap / 2.5%)
-    covered  = revenue / issuance
+The model is four lines. Revenue in a window, as a function of NEAR's cut *c* of partner fees, an extra fee of *b* basis points on swap value outside the partner API, and volume growth *g*:
+
+{eq(4)}
+
+Here *R*<sub>0</sub> and *c*<sub>0</sub> are today's revenue and cut, *F* is partner fees and *V*<sub>o</sub> is swap value outside the partner API. Issuance, in dollars, at an issuance cap of *κ* against today's *κ*<sub>0</sub> = 2.5%, with *N* the net new NEAR in the window and *P* the price:
+
+{eq(5)}
+
+The share of issuance that revenue covers, and the cut that would cover all of it at today's volume:
+
+{eq(6)}
+
+{eq(7)}
+
+Today *c*\\* is {pct(even['cut'])}. And the multiple, with *S* the supply and *T* the days in the window:
+
+{eq(8)}
 
 **Table 3.** Scenarios. Inputs are measured by the build; the levers are assumptions.
 
@@ -445,4 +510,4 @@ Not investment advice. Written for the NEAR hackathon, thesis track. This text i
 """
     with open(path, "w") as handle:
         handle.write(text)
-    paper.write(text, d, os.path.join(os.path.dirname(path), "docs", "thesis.html"))
+    paper.write(text, d, os.path.join(os.path.dirname(path), "docs", "thesis.html"), {latex: markup for latex, markup in equations})

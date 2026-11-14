@@ -21,10 +21,18 @@ jobs:
         env:
           EXPLORER_API_KEY: ${{ secrets.EXPLORER_API_KEY }}
           DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Print the paper to PDF
+        run: |
+          python3 -m http.server -d docs 8787 &
+          sleep 2
+          node tools/make_pdf.mjs http://localhost:8787/thesis.html docs/exhibit-a-thesis.pdf
       - name: Commit the new numbers
         run: |
           git config user.name "exhibit-a-rebuild"
           git config user.email "actions@users.noreply.github.com"
-          git add data docs/data.json docs/thesis.html docs/figures THESIS.md
+          git add data docs/data.json docs/thesis.html docs/exhibit-a-thesis.pdf docs/figures THESIS.md
           git diff --cached --quiet || git commit -m "Daily rebuild"
           git push
