@@ -1,14 +1,13 @@
-"""Draws the paper's figures as SVG files, in the same glyphs as the page's charts.
+"""Draws the paper's figures as SVG files, in the page's ink, brass and green.
 
-A figure is a grid of small monospace glyphs: each cell holds one character and one tone.
-The files are plain SVG text, so they show in THESIS.md on GitHub and in docs/thesis.html
+The files are plain SVG, so they show in THESIS.md on GitHub and in docs/thesis.html
 without any script. Standard library only.
 """
 import os
 from xml.sax.saxutils import escape
 
 RAMP = ".,:;'-+/\\|!*=%#&$@"
-CW, CH = 6.0, 10.0  # one glyph cell, in SVG units
+CW, CH = 6.0, 10.0  # the unit the charts are sized in, and one cell of the cipher texture
 FONT = "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 TONE = {
     "clear": "#ece7de",
@@ -22,52 +21,6 @@ INK, DIM, LINE = "#0b0c0e", "#9a968e", "#2a2a2c"
 
 def _hash(c, r):
     return ((c + 11) * 73856093 ^ (r + 7) * 19349663) & 0xFFFFFFFF
-
-
-def _glyph(tone, word, c, r):
-    """Readable tones repeat a word; cipher is dense symbols; ghost and faint are light ones."""
-    if tone == "cipher":
-        return RAMP[7 + _hash(c, r) % 11]
-    if tone == "ghost":
-        return RAMP[2 + _hash(c, r) % 8]
-    if tone == "faint":
-        return RAMP[_hash(c, r) % 3]
-    return word[(c + r * 2) % len(word)]
-
-
-class Grid:
-    """Cells addressed by column and row, row 0 at the bottom."""
-
-    def __init__(self, cols, rows):
-        self.cols, self.rows = cols, rows
-        self.cells = {}
-
-    def put(self, c, r, tone, word="#"):
-        if 0 <= c < self.cols and 0 <= r < self.rows:
-            ch = _glyph(tone, word, c, r)
-            if ch != " ":
-                self.cells[(c, r)] = (ch, tone)
-
-    def svg(self, x0, y0):
-        """One <text> per run of same-toned glyphs, stretched to the grid so any monospace font lines up."""
-        out = []
-        for r in range(self.rows):
-            y = y0 + (self.rows - r) * CH - 2.2
-            c = 0
-            while c < self.cols:
-                cell = self.cells.get((c, r))
-                if not cell:
-                    c += 1
-                    continue
-                tone, start, chars = cell[1], c, []
-                while c < self.cols and self.cells.get((c, r), (None, None))[1] == tone:
-                    chars.append(self.cells[(c, r)][0])
-                    c += 1
-                out.append(
-                    f'<text x="{x0 + start * CW:.1f}" y="{y:.1f}" fill="{TONE[tone]}" textLength="{len(chars) * CW:.1f}" '
-                    f'lengthAdjust="spacingAndGlyphs">{escape("".join(chars))}</text>'
-                )
-        return "\n".join(out)
 
 
 def _frame(width, height, body):
@@ -84,57 +37,64 @@ def _label(x, y, text, fill=DIM, anchor="start", size=10):
     return f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}" font-size="{size}" text-anchor="{anchor}">{escape(text)}</text>'
 
 
+def _bar(x, top, w, bottom, fill, cap):
+    """One segment of a column. The top one of a stack gets rounded upper corners."""
+    h = bottom - top
+    r = min(2.5, w / 2, h) if cap else 0
+    if r < 0.5:
+        return f'<rect x="{x:.2f}" y="{top:.2f}" width="{w:.2f}" height="{h:.2f}" fill="{fill}"/>'
+    return (f'<path d="M{x:.2f} {bottom:.2f} V{top + r:.2f} Q{x:.2f} {top:.2f} {x + r:.2f} {top:.2f} H{x + w - r:.2f} '
+            f'Q{x + w:.2f} {top:.2f} {x + w:.2f} {top + r:.2f} V{bottom:.2f} Z" fill="{fill}"/>')
+
+
 def columns(items, legend, left, right, top_label, marks=(), cols=132, rows=24):
-    """Stacked columns through time. items[i] is a list of (value, tone, word), bottom first."""
-    pad = 22
-    grid = Grid(cols, rows)
-    peak = max(sum(v for v, _, _ in item) for item in items) or 1
-    n = len(items)
-    spaced = cols >= n * 3
-    notes = []
-    for c in range(cols):
-        a = min(n - 1, c * n // cols)
-        nxt = (c + 1) * n // cols
-        if spaced and nxt != a:
-            continue  # a one-cell gap between bars
-        b = a + 1 if spaced else max(a + 1, min(n, nxt))
-        total = 0.0
-        for part in range(len(items[a])):
-            value = sum(items[i][part][0] for i in range(a, b)) / (b - a)
-            lo = round(total / peak * rows)
-            total += value
-            hi = round(total / peak * rows)
-            for r in range(lo, hi):
-                grid.put(c, r, items[a][part][1], items[a][part][2])
+    """Stacked columns through time, one solid bar per item. items[i] is a list of (value, tone), bottom first."""
+    pad, head = 22, 34
+    wide, tall = cols * CW, rows * CH
+    peak = max(sum(v for v, _ in item) for item in items) or 1
+    slot = wide / len(items)
+    thick = min(slot * 0.7, 24.0) if slot >= 5 else max(slot - 1, slot / 2)  # thin bars, each centred in its slot
+    gap = 2.0 if slot >= 5 else 1.0  # the break between the parts of one bar
+    floor = head + tall
+    bars, notes = [], []
+    for i, item in enumerate(items):
+        x = pad + i * slot + (slot - thick) / 2
+        parts = [(value / peak * tall, tone) for value, tone in item]
+        parts = [(h, tone) for h, tone in parts if h >= 0.4]
+        y = floor
+        for n, (h, tone) in enumerate(parts):
+            lift = gap if n and h > gap + 1 else 0  # the lower part shows through as a thin break
+            bars.append(_bar(x, y - h, thick, y - lift, TONE[tone], n == len(parts) - 1))
+            y -= h
         for index, text in marks:
-            if index == a and (c == 0 or min(n - 1, (c - 1) * n // cols) != a):
-                for r in range(round(total / peak * rows) + 1, rows):
-                    grid.put(c, r, "ghost", ":")
-                notes.append((c, text))
-    width = cols * CW + pad * 2
-    head = 34
-    height = head + rows * CH + 34
+            if index == i:
+                cx = x + thick / 2
+                if y - 5 > head + 2:
+                    bars.append(f'<line x1="{cx:.1f}" x2="{cx:.1f}" y1="{head + 2}" y2="{y - 5:.1f}" stroke="{TONE["ghost"]}" stroke-dasharray="2 3"/>')
+                notes.append((cx, text))
+    width = wide + pad * 2
+    height = head + tall + 34
     body = []
     x = pad
     for tone, text in legend:
-        body.append(_label(x, 22, "##", TONE[tone]))
+        body.append(f'<rect x="{x:.1f}" y="13.5" width="9" height="9" rx="2" fill="{TONE[tone]}"/>')
         body.append(_label(x + 16, 22, text))
         x += 28 + len(text) * 6.2
     body.append(_label(width - pad, 22, top_label, anchor="end"))
-    body.append(grid.svg(pad, head))
-    base = head + rows * CH + 1.5
+    body.extend(bars)
+    base = floor + 1.5
     body.append(f'<line x1="{pad}" x2="{width - pad}" y1="{base}" y2="{base}" stroke="#4a4844"/>')
     body.append(_label(pad, base + 17, left))
     body.append(_label(width - pad, base + 17, right, anchor="end"))
-    for c, text in notes:  # the note sits on whichever side of its mark has room
-        if c > cols / 2:
-            body.append(_label(pad + c * CW - 6, head + 9, text, "#c8a46a", "end"))
+    for cx, text in notes:  # the note sits on whichever side of its mark has room
+        if cx > width / 2:
+            body.append(_label(cx - 8, head + 9, text, "#c8a46a", "end"))
         else:
-            body.append(_label(pad + c * CW + 11, head + 9, text, "#c8a46a"))
+            body.append(_label(cx + 8, head + 9, text, "#c8a46a"))
     return _frame(width, height, "\n".join(body))
 
 
-# ---- drawn figures: boxes, arrows, ribbons and plain bars, in the page's ink and brass ----
+# ---- diagrams: boxes, arrows, ribbons and horizontal bars ----
 W = 836.0  # every figure is this wide, so they line up in the paper
 PAPER, BRASS, NEAR = "#ece7de", "#c8a46a", "#00ec97"
 ARROW = ('<defs><marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">'
@@ -419,7 +379,7 @@ def write_all(d, folder):
     dark = [r for r in d["dark"]["days"] if r["day"] >= "2026-08-01" and r.get("public") is not None and r.get("confidential") is not None]
     switch = next((i for i, r in enumerate(dark) if r["day"] == "2026-10-27"), None)
     save("dark", columns(
-        [[(r["public"], "clear", "public "), (r["confidential"], "cipher", "#")] for r in dark],
+        [[(r["public"], "clear"), (r["confidential"], "cipher")] for r in dark],
         [("clear", "public"), ("cipher", "confidential")],
         short(dark[0]["day"]), short(dark[-1]["day"]),
         f"top of chart {usd(max(r['public'] + r['confidential'] for r in dark))} a day",
@@ -437,20 +397,20 @@ def write_all(d, folder):
     mo = d.get("monthly") or []
     if mo:
         save("capture", columns(
-            [[(r["capture"], "near", "near")] for r in mo], [("near", "NEAR's revenue as a share of gross fees")],
+            [[(r["capture"], "near")] for r in mo], [("near", "NEAR's revenue as a share of gross fees")],
             mo[0]["month"], mo[-1]["month"], f"top of chart {pct(max(r['capture'] for r in mo))}", cols=96, rows=20,
         ))
 
     past = [h for h in d["history"] if h.get("fees") is not None]
     save("growth", columns(
-        [[(h["fees"], "clear", "fees ")] for h in past], [("clear", "partner fees on a sampled day")],
+        [[(h["fees"], "clear")] for h in past], [("clear", "partner fees on a sampled day")],
         short(past[0]["day"]), f"this window ({short(d['window']['to'])})", f"top of chart {usd(max(h['fees'] for h in past))} a day",
     ))
 
     flow = [r for r in (d.get("chain_history") or {}).get("days", []) if r.get("inflow") is not None]
     if flow:
         save("inflow", columns(
-            [[(max(0.0, r["inflow"]), "near", "near")] for r in flow], [("near", "NEAR arriving in the three revenue wallets")],
+            [[(max(0.0, r["inflow"]), "near")] for r in flow], [("near", "NEAR arriving in the three revenue wallets")],
             short(flow[0]["day"]), short(flow[-1]["day"]), f"top of chart {max(r['inflow'] for r in flow):,.0f} NEAR a day",
         ))
 

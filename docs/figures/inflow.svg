@@ -1,146 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836 308" width="836" height="308" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
 <rect width="836" height="308" rx="14" fill="#0b0c0e"/>
 <rect x="0.5" y="0.5" width="835" height="307" rx="14" fill="none" stroke="#2a2a2c"/>
-<text x="22.0" y="22.0" fill="#00ec97" font-size="10" text-anchor="start">##</text>
+<rect x="22.0" y="13.5" width="9" height="9" rx="2" fill="#00ec97"/>
 <text x="38.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="start">NEAR arriving in the three revenue wallets</text>
 <text x="814.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="end">top of chart 33,949 NEAR a day</text>
-<text x="22.0" y="271.8" fill="#00ec97" textLength="792.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnear</text>
-<text x="22.0" y="261.8" fill="#00ec97" textLength="792.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearne</text>
-<text x="22.0" y="251.8" fill="#00ec97" textLength="792.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnear</text>
-<text x="22.0" y="241.8" fill="#00ec97" textLength="792.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearne</text>
-<text x="22.0" y="231.8" fill="#00ec97" textLength="210.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnearnearnearnea</text>
-<text x="250.0" y="231.8" fill="#00ec97" textLength="564.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnearnear</text>
-<text x="22.0" y="221.8" fill="#00ec97" textLength="210.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearnearnearnearn</text>
-<text x="250.0" y="221.8" fill="#00ec97" textLength="180.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnearnearne</text>
-<text x="442.0" y="221.8" fill="#00ec97" textLength="192.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnearnearnear</text>
-<text x="652.0" y="221.8" fill="#00ec97" textLength="162.0" lengthAdjust="spacingAndGlyphs">rnearnearnearnearnearnearne</text>
-<text x="22.0" y="211.8" fill="#00ec97" textLength="144.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnear</text>
-<text x="178.0" y="211.8" fill="#00ec97" textLength="54.0" lengthAdjust="spacingAndGlyphs">arnearnea</text>
-<text x="250.0" y="211.8" fill="#00ec97" textLength="162.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearnearn</text>
-<text x="442.0" y="211.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">arnearnearne</text>
-<text x="526.0" y="211.8" fill="#00ec97" textLength="108.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearne</text>
-<text x="664.0" y="211.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">rnearnearnea</text>
-<text x="748.0" y="211.8" fill="#00ec97" textLength="66.0" lengthAdjust="spacingAndGlyphs">earnearnear</text>
-<text x="22.0" y="201.8" fill="#00ec97" textLength="144.0" lengthAdjust="spacingAndGlyphs">arnearnearnearnearnearne</text>
-<text x="178.0" y="201.8" fill="#00ec97" textLength="54.0" lengthAdjust="spacingAndGlyphs">nearnearn</text>
-<text x="250.0" y="201.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="274.0" y="201.8" fill="#00ec97" textLength="138.0" lengthAdjust="spacingAndGlyphs">nearnearnearnearnearnea</text>
-<text x="454.0" y="201.8" fill="#00ec97" textLength="60.0" lengthAdjust="spacingAndGlyphs">arnearnear</text>
-<text x="538.0" y="201.8" fill="#00ec97" textLength="84.0" lengthAdjust="spacingAndGlyphs">nearnearnearne</text>
-<text x="664.0" y="201.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">earnearnearn</text>
-<text x="748.0" y="201.8" fill="#00ec97" textLength="66.0" lengthAdjust="spacingAndGlyphs">rnearnearne</text>
-<text x="22.0" y="191.8" fill="#00ec97" textLength="60.0" lengthAdjust="spacingAndGlyphs">nearnearne</text>
-<text x="94.0" y="191.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">nearnearnear</text>
-<text x="178.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="250.0" y="191.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="274.0" y="191.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="191.8" fill="#00ec97" textLength="66.0" lengthAdjust="spacingAndGlyphs">rnearnearne</text>
-<text x="388.0" y="191.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="472.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">rnearne</text>
-<text x="538.0" y="191.8" fill="#00ec97" textLength="84.0" lengthAdjust="spacingAndGlyphs">arnearnearnear</text>
-<text x="676.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">earnear</text>
-<text x="748.0" y="191.8" fill="#00ec97" textLength="66.0" lengthAdjust="spacingAndGlyphs">earnearnear</text>
-<text x="22.0" y="181.8" fill="#00ec97" textLength="60.0" lengthAdjust="spacingAndGlyphs">arnearnear</text>
-<text x="94.0" y="181.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">arnearnearne</text>
-<text x="178.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="250.0" y="181.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="304.0" y="181.8" fill="#00ec97" textLength="54.0" lengthAdjust="spacingAndGlyphs">earnearne</text>
-<text x="388.0" y="181.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="472.0" y="181.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="538.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="592.0" y="181.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">earne</text>
-<text x="694.0" y="181.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">arne</text>
-<text x="748.0" y="181.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">rnear</text>
-<text x="790.0" y="181.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">arne</text>
-<text x="22.0" y="171.8" fill="#00ec97" textLength="60.0" lengthAdjust="spacingAndGlyphs">nearnearne</text>
-<text x="94.0" y="171.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">nearnearnear</text>
-<text x="178.0" y="171.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">arnea</text>
-<text x="250.0" y="171.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="171.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="388.0" y="171.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="472.0" y="171.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="550.0" y="171.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">nearn</text>
-<text x="592.0" y="171.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">rnear</text>
-<text x="694.0" y="171.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">near</text>
-<text x="748.0" y="171.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">earne</text>
-<text x="790.0" y="171.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="40.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">earnear</text>
-<text x="94.0" y="161.8" fill="#00ec97" textLength="72.0" lengthAdjust="spacingAndGlyphs">arnearnearne</text>
-<text x="190.0" y="161.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">arn</text>
-<text x="250.0" y="161.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="304.0" y="161.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="388.0" y="161.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="550.0" y="161.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">arnea</text>
-<text x="592.0" y="161.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">earne</text>
-<text x="694.0" y="161.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">arne</text>
-<text x="790.0" y="161.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="40.0" y="151.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="94.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="148.0" y="151.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">ear</text>
-<text x="190.0" y="151.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">nea</text>
-<text x="250.0" y="151.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="151.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="400.0" y="151.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="592.0" y="151.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">rne</text>
-<text x="706.0" y="151.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="790.0" y="151.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="40.0" y="141.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="94.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="190.0" y="141.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">arn</text>
-<text x="250.0" y="141.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="304.0" y="141.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="400.0" y="141.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="592.0" y="141.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">ear</text>
-<text x="706.0" y="141.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="790.0" y="141.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="40.0" y="131.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="94.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="250.0" y="131.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="131.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="400.0" y="131.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="592.0" y="131.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">rne</text>
-<text x="706.0" y="131.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="790.0" y="131.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="40.0" y="121.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="94.0" y="121.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="250.0" y="121.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="304.0" y="121.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="400.0" y="121.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="592.0" y="121.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">ear</text>
-<text x="706.0" y="121.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="790.0" y="121.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="40.0" y="111.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="94.0" y="111.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="250.0" y="111.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="111.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="400.0" y="111.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="592.0" y="111.8" fill="#00ec97" textLength="18.0" lengthAdjust="spacingAndGlyphs">rne</text>
-<text x="706.0" y="111.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="790.0" y="111.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="40.0" y="101.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="94.0" y="101.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="250.0" y="101.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="304.0" y="101.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="400.0" y="101.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="790.0" y="101.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="40.0" y="91.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="94.0" y="91.8" fill="#00ec97" textLength="30.0" lengthAdjust="spacingAndGlyphs">nearn</text>
-<text x="250.0" y="91.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="304.0" y="91.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="400.0" y="91.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="790.0" y="91.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="40.0" y="81.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="94.0" y="81.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="250.0" y="81.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ne</text>
-<text x="400.0" y="81.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="790.0" y="81.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="40.0" y="71.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="250.0" y="71.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ar</text>
-<text x="400.0" y="71.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
-<text x="40.0" y="61.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">earn</text>
-<text x="400.0" y="61.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">ea</text>
-<text x="40.0" y="51.8" fill="#00ec97" textLength="24.0" lengthAdjust="spacingAndGlyphs">rnea</text>
-<text x="52.0" y="41.8" fill="#00ec97" textLength="12.0" lengthAdjust="spacingAndGlyphs">rn</text>
+<path d="M24.08 274.00 V166.38 Q24.08 163.88 26.58 163.88 H31.31 Q33.81 163.88 33.81 166.38 V274.00 Z" fill="#00ec97"/>
+<path d="M37.98 274.00 V46.49 Q37.98 43.99 40.48 43.99 H45.21 Q47.71 43.99 47.71 46.49 V274.00 Z" fill="#00ec97"/>
+<path d="M51.87 274.00 V36.50 Q51.87 34.00 54.37 34.00 H59.10 Q61.60 34.00 61.60 36.50 V274.00 Z" fill="#00ec97"/>
+<path d="M65.77 274.00 V158.56 Q65.77 156.06 68.27 156.06 H72.99 Q75.49 156.06 75.49 158.56 V274.00 Z" fill="#00ec97"/>
+<path d="M79.66 274.00 V195.20 Q79.66 192.70 82.16 192.70 H86.89 Q89.39 192.70 89.39 195.20 V274.00 Z" fill="#00ec97"/>
+<path d="M93.56 274.00 V76.07 Q93.56 73.57 96.06 73.57 H100.78 Q103.28 73.57 103.28 76.07 V274.00 Z" fill="#00ec97"/>
+<path d="M107.45 274.00 V90.92 Q107.45 88.42 109.95 88.42 H114.68 Q117.18 88.42 117.18 90.92 V274.00 Z" fill="#00ec97"/>
+<path d="M121.35 274.00 V100.66 Q121.35 98.16 123.85 98.16 H128.57 Q131.07 98.16 131.07 100.66 V274.00 Z" fill="#00ec97"/>
+<path d="M135.24 274.00 V153.64 Q135.24 151.14 137.74 151.14 H142.47 Q144.97 151.14 144.97 153.64 V274.00 Z" fill="#00ec97"/>
+<path d="M149.14 274.00 V142.81 Q149.14 140.31 151.64 140.31 H156.36 Q158.86 140.31 158.86 142.81 V274.00 Z" fill="#00ec97"/>
+<path d="M163.03 274.00 V218.57 Q163.03 216.07 165.53 216.07 H170.26 Q172.76 216.07 172.76 218.57 V274.00 Z" fill="#00ec97"/>
+<path d="M176.93 274.00 V169.38 Q176.93 166.88 179.43 166.88 H184.15 Q186.65 166.88 186.65 169.38 V274.00 Z" fill="#00ec97"/>
+<path d="M190.82 274.00 V138.87 Q190.82 136.37 193.32 136.37 H198.05 Q200.55 136.37 200.55 138.87 V274.00 Z" fill="#00ec97"/>
+<path d="M204.72 274.00 V171.51 Q204.72 169.01 207.22 169.01 H211.94 Q214.44 169.01 214.44 171.51 V274.00 Z" fill="#00ec97"/>
+<path d="M218.61 274.00 V194.63 Q218.61 192.13 221.11 192.13 H225.84 Q228.34 192.13 228.34 194.63 V274.00 Z" fill="#00ec97"/>
+<path d="M232.51 274.00 V238.67 Q232.51 236.17 235.01 236.17 H239.73 Q242.23 236.17 242.23 238.67 V274.00 Z" fill="#00ec97"/>
+<path d="M246.40 274.00 V66.21 Q246.40 63.71 248.90 63.71 H253.63 Q256.13 63.71 256.13 66.21 V274.00 Z" fill="#00ec97"/>
+<path d="M260.29 274.00 V205.38 Q260.29 202.88 262.79 202.88 H267.52 Q270.02 202.88 270.02 205.38 V274.00 Z" fill="#00ec97"/>
+<path d="M274.19 274.00 V190.51 Q274.19 188.01 276.69 188.01 H281.42 Q283.92 188.01 283.92 190.51 V274.00 Z" fill="#00ec97"/>
+<path d="M288.08 274.00 V192.45 Q288.08 189.95 290.58 189.95 H295.31 Q297.81 189.95 297.81 192.45 V274.00 Z" fill="#00ec97"/>
+<path d="M301.98 274.00 V88.38 Q301.98 85.88 304.48 85.88 H309.21 Q311.71 85.88 311.71 88.38 V274.00 Z" fill="#00ec97"/>
+<path d="M315.87 274.00 V112.23 Q315.87 109.73 318.37 109.73 H323.10 Q325.60 109.73 325.60 112.23 V274.00 Z" fill="#00ec97"/>
+<path d="M329.77 274.00 V171.61 Q329.77 169.11 332.27 169.11 H336.99 Q339.49 169.11 339.49 171.61 V274.00 Z" fill="#00ec97"/>
+<path d="M343.66 274.00 V178.74 Q343.66 176.24 346.16 176.24 H350.89 Q353.39 176.24 353.39 178.74 V274.00 Z" fill="#00ec97"/>
+<path d="M357.56 274.00 V189.27 Q357.56 186.77 360.06 186.77 H364.78 Q367.28 186.77 367.28 189.27 V274.00 Z" fill="#00ec97"/>
+<path d="M371.45 274.00 V197.17 Q371.45 194.67 373.95 194.67 H378.68 Q381.18 194.67 381.18 197.17 V274.00 Z" fill="#00ec97"/>
+<path d="M385.35 274.00 V156.67 Q385.35 154.17 387.85 154.17 H392.57 Q395.07 154.17 395.07 156.67 V274.00 Z" fill="#00ec97"/>
+<path d="M399.24 274.00 V57.61 Q399.24 55.11 401.74 55.11 H406.47 Q408.97 55.11 408.97 57.61 V274.00 Z" fill="#00ec97"/>
+<path d="M413.14 274.00 V211.95 Q413.14 209.45 415.64 209.45 H420.36 Q422.86 209.45 422.86 211.95 V274.00 Z" fill="#00ec97"/>
+<path d="M427.03 274.00 V229.41 Q427.03 226.91 429.53 226.91 H434.26 Q436.76 226.91 436.76 229.41 V274.00 Z" fill="#00ec97"/>
+<path d="M440.93 274.00 V211.21 Q440.93 208.71 443.43 208.71 H448.15 Q450.65 208.71 450.65 211.21 V274.00 Z" fill="#00ec97"/>
+<path d="M454.82 274.00 V199.91 Q454.82 197.41 457.32 197.41 H462.05 Q464.55 197.41 464.55 199.91 V274.00 Z" fill="#00ec97"/>
+<path d="M468.72 274.00 V164.25 Q468.72 161.75 471.22 161.75 H475.94 Q478.44 161.75 478.44 164.25 V274.00 Z" fill="#00ec97"/>
+<path d="M482.61 274.00 V190.79 Q482.61 188.29 485.11 188.29 H489.84 Q492.34 188.29 492.34 190.79 V274.00 Z" fill="#00ec97"/>
+<path d="M496.51 274.00 V191.26 Q496.51 188.76 499.01 188.76 H503.73 Q506.23 188.76 506.23 191.26 V274.00 Z" fill="#00ec97"/>
+<path d="M510.40 274.00 V218.20 Q510.40 215.70 512.90 215.70 H517.63 Q520.13 215.70 520.13 218.20 V274.00 Z" fill="#00ec97"/>
+<path d="M524.29 274.00 V202.19 Q524.29 199.69 526.79 199.69 H531.52 Q534.02 199.69 534.02 202.19 V274.00 Z" fill="#00ec97"/>
+<path d="M538.19 274.00 V181.38 Q538.19 178.88 540.69 178.88 H545.42 Q547.92 178.88 547.92 181.38 V274.00 Z" fill="#00ec97"/>
+<path d="M552.08 274.00 V152.04 Q552.08 149.54 554.58 149.54 H559.31 Q561.81 149.54 561.81 152.04 V274.00 Z" fill="#00ec97"/>
+<path d="M565.98 274.00 V160.44 Q565.98 157.94 568.48 157.94 H573.21 Q575.71 157.94 575.71 160.44 V274.00 Z" fill="#00ec97"/>
+<path d="M579.87 274.00 V190.77 Q579.87 188.27 582.37 188.27 H587.10 Q589.60 188.27 589.60 190.77 V274.00 Z" fill="#00ec97"/>
+<path d="M593.77 274.00 V110.75 Q593.77 108.25 596.27 108.25 H600.99 Q603.49 108.25 603.49 110.75 V274.00 Z" fill="#00ec97"/>
+<path d="M607.66 274.00 V151.86 Q607.66 149.36 610.16 149.36 H614.89 Q617.39 149.36 617.39 151.86 V274.00 Z" fill="#00ec97"/>
+<path d="M621.56 274.00 V202.29 Q621.56 199.79 624.06 199.79 H628.78 Q631.28 199.79 631.28 202.29 V274.00 Z" fill="#00ec97"/>
+<path d="M635.45 274.00 V228.88 Q635.45 226.38 637.95 226.38 H642.68 Q645.18 226.38 645.18 228.88 V274.00 Z" fill="#00ec97"/>
+<path d="M649.35 274.00 V215.23 Q649.35 212.73 651.85 212.73 H656.57 Q659.07 212.73 659.07 215.23 V274.00 Z" fill="#00ec97"/>
+<path d="M663.24 274.00 V197.23 Q663.24 194.73 665.74 194.73 H670.47 Q672.97 194.73 672.97 197.23 V274.00 Z" fill="#00ec97"/>
+<path d="M677.14 274.00 V189.86 Q677.14 187.36 679.64 187.36 H684.36 Q686.86 187.36 686.86 189.86 V274.00 Z" fill="#00ec97"/>
+<path d="M691.03 274.00 V159.91 Q691.03 157.41 693.53 157.41 H698.26 Q700.76 157.41 700.76 159.91 V274.00 Z" fill="#00ec97"/>
+<path d="M704.93 274.00 V109.40 Q704.93 106.90 707.43 106.90 H712.15 Q714.65 106.90 714.65 109.40 V274.00 Z" fill="#00ec97"/>
+<path d="M718.82 274.00 V194.52 Q718.82 192.02 721.32 192.02 H726.05 Q728.55 192.02 728.55 194.52 V274.00 Z" fill="#00ec97"/>
+<path d="M732.72 274.00 V215.06 Q732.72 212.56 735.22 212.56 H739.94 Q742.44 212.56 742.44 215.06 V274.00 Z" fill="#00ec97"/>
+<path d="M746.61 274.00 V162.36 Q746.61 159.86 749.11 159.86 H753.84 Q756.34 159.86 756.34 162.36 V274.00 Z" fill="#00ec97"/>
+<path d="M760.51 274.00 V162.43 Q760.51 159.93 763.01 159.93 H767.73 Q770.23 159.93 770.23 162.43 V274.00 Z" fill="#00ec97"/>
+<path d="M774.40 274.00 V182.21 Q774.40 179.71 776.90 179.71 H781.63 Q784.13 179.71 784.13 182.21 V274.00 Z" fill="#00ec97"/>
+<path d="M788.29 274.00 V78.48 Q788.29 75.98 790.79 75.98 H795.52 Q798.02 75.98 798.02 78.48 V274.00 Z" fill="#00ec97"/>
+<path d="M802.19 274.00 V179.21 Q802.19 176.71 804.69 176.71 H809.42 Q811.92 176.71 811.92 179.21 V274.00 Z" fill="#00ec97"/>
 <line x1="22" x2="814.0" y1="275.5" y2="275.5" stroke="#4a4844"/>
 <text x="22.0" y="292.5" fill="#9a968e" font-size="10" text-anchor="start">16 Sep 2026</text>
 <text x="814.0" y="292.5" fill="#9a968e" font-size="10" text-anchor="end">13 Nov 2026</text>

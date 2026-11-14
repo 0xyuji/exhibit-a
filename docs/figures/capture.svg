@@ -1,125 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 268" width="620" height="268" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
 <rect width="620" height="268" rx="14" fill="#0b0c0e"/>
 <rect x="0.5" y="0.5" width="619" height="267" rx="14" fill="none" stroke="#2a2a2c"/>
-<text x="22.0" y="22.0" fill="#00ec97" font-size="10" text-anchor="start">##</text>
+<rect x="22.0" y="13.5" width="9" height="9" rx="2" fill="#00ec97"/>
 <text x="38.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="start">NEAR's revenue as a share of gross fees</text>
 <text x="598.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="end">top of chart 34%</text>
-<text x="22.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="70.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="118.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="166.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="214.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="262.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="406.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="231.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="22.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="70.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="118.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="166.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="214.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="262.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="310.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="406.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="454.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="221.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="22.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="70.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="118.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="166.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="214.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="262.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="406.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="211.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="22.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="118.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="166.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="214.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="262.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="310.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="406.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="454.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="201.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="22.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="118.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="166.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="214.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="262.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="406.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="191.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="22.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="166.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="214.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="310.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="406.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="454.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="181.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="166.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="214.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="406.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="171.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="166.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="214.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="310.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="406.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="454.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="161.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="166.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="214.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="406.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="151.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="454.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="141.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="310.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="358.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="454.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="131.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="310.0" y="121.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="358.0" y="121.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="121.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="121.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="111.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="111.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="502.0" y="101.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="101.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="502.0" y="91.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="91.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="81.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="71.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="61.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
-<text x="550.0" y="51.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">nearnea</text>
-<text x="550.0" y="41.8" fill="#00ec97" textLength="42.0" lengthAdjust="spacingAndGlyphs">arnearn</text>
+<path d="M34.00 234.00 V178.73 Q34.00 176.23 36.50 176.23 H55.50 Q58.00 176.23 58.00 178.73 V234.00 Z" fill="#00ec97"/>
+<path d="M82.00 234.00 V211.46 Q82.00 208.96 84.50 208.96 H103.50 Q106.00 208.96 106.00 211.46 V234.00 Z" fill="#00ec97"/>
+<path d="M130.00 234.00 V188.97 Q130.00 186.47 132.50 186.47 H151.50 Q154.00 186.47 154.00 188.97 V234.00 Z" fill="#00ec97"/>
+<path d="M178.00 234.00 V142.91 Q178.00 140.41 180.50 140.41 H199.50 Q202.00 140.41 202.00 142.91 V234.00 Z" fill="#00ec97"/>
+<path d="M226.00 234.00 V144.92 Q226.00 142.42 228.50 142.42 H247.50 Q250.00 142.42 250.00 144.92 V234.00 Z" fill="#00ec97"/>
+<path d="M274.00 234.00 V189.43 Q274.00 186.93 276.50 186.93 H295.50 Q298.00 186.93 298.00 189.43 V234.00 Z" fill="#00ec97"/>
+<path d="M322.00 234.00 V116.07 Q322.00 113.57 324.50 113.57 H343.50 Q346.00 113.57 346.00 116.07 V234.00 Z" fill="#00ec97"/>
+<path d="M370.00 234.00 V120.34 Q370.00 117.84 372.50 117.84 H391.50 Q394.00 117.84 394.00 120.34 V234.00 Z" fill="#00ec97"/>
+<path d="M418.00 234.00 V146.46 Q418.00 143.96 420.50 143.96 H439.50 Q442.00 143.96 442.00 146.46 V234.00 Z" fill="#00ec97"/>
+<path d="M466.00 234.00 V126.51 Q466.00 124.01 468.50 124.01 H487.50 Q490.00 124.01 490.00 126.51 V234.00 Z" fill="#00ec97"/>
+<path d="M514.00 234.00 V89.98 Q514.00 87.48 516.50 87.48 H535.50 Q538.00 87.48 538.00 89.98 V234.00 Z" fill="#00ec97"/>
+<path d="M562.00 234.00 V36.50 Q562.00 34.00 564.50 34.00 H583.50 Q586.00 34.00 586.00 36.50 V234.00 Z" fill="#00ec97"/>
 <line x1="22" x2="598.0" y1="235.5" y2="235.5" stroke="#4a4844"/>
 <text x="22.0" y="252.5" fill="#9a968e" font-size="10" text-anchor="start">2025-11</text>
 <text x="598.0" y="252.5" fill="#9a968e" font-size="10" text-anchor="end">2026-10</text>

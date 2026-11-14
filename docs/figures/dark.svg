@@ -1,405 +1,221 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836 308" width="836" height="308" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">
 <rect width="836" height="308" rx="14" fill="#0b0c0e"/>
 <rect x="0.5" y="0.5" width="835" height="307" rx="14" fill="none" stroke="#2a2a2c"/>
-<text x="22.0" y="22.0" fill="#ece7de" font-size="10" text-anchor="start">##</text>
+<rect x="22.0" y="13.5" width="9" height="9" rx="2" fill="#ece7de"/>
 <text x="38.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="start">public</text>
-<text x="87.2" y="22.0" fill="#c8a46a" font-size="10" text-anchor="start">##</text>
+<rect x="87.2" y="13.5" width="9" height="9" rx="2" fill="#c8a46a"/>
 <text x="103.2" y="22.0" fill="#9a968e" font-size="10" text-anchor="start">confidential</text>
 <text x="814.0" y="22.0" fill="#9a968e" font-size="10" text-anchor="end">top of chart $303.4M a day</text>
-<text x="22.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="64.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="106.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="148.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="190.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="232.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="274.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="316.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="358.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="400.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="442.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="484.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="526.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="568.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="610.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="652.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="694.0" y="271.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="736.0" y="271.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="754.0" y="271.8" fill="#c8a46a" textLength="42.0" lengthAdjust="spacingAndGlyphs">*/|!*!#</text>
-<text x="796.0" y="271.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">l</text>
-<text x="802.0" y="271.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#&amp;</text>
-<text x="22.0" y="261.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="52.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="94.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="136.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="178.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="220.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="262.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="304.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="346.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="388.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="430.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="472.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="514.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="556.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="598.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="640.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="682.0" y="261.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="724.0" y="261.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="748.0" y="261.8" fill="#c8a46a" textLength="66.0" lengthAdjust="spacingAndGlyphs">%|#!\!|$/&amp;%</text>
-<text x="22.0" y="251.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="40.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="82.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="124.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="166.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="208.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="250.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="292.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="334.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="376.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="418.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="460.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="502.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="544.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="586.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="628.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="670.0" y="251.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="712.0" y="251.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="718.0" y="251.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="724.0" y="251.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">bli</text>
-<text x="742.0" y="251.8" fill="#c8a46a" textLength="72.0" lengthAdjust="spacingAndGlyphs">=%=/$%||**&amp;/</text>
-<text x="28.0" y="241.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="40.0" y="241.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="70.0" y="241.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="88.0" y="241.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="94.0" y="241.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="112.0" y="241.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="142.0" y="241.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="154.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="196.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="238.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="280.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="322.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="364.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="406.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="448.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="490.0" y="241.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="514.0" y="241.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="520.0" y="241.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="532.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="574.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="616.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="658.0" y="241.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="700.0" y="241.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">==</text>
-<text x="712.0" y="241.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">b</text>
-<text x="718.0" y="241.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">*$!</text>
-<text x="742.0" y="241.8" fill="#c8a46a" textLength="72.0" lengthAdjust="spacingAndGlyphs">\%\|%|%=$!@$</text>
-<text x="22.0" y="231.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">\@</text>
-<text x="40.0" y="231.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="58.0" y="231.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">publi</text>
-<text x="100.0" y="231.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">publi</text>
-<text x="148.0" y="231.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">ublic</text>
-<text x="184.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="226.0" y="231.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="238.0" y="231.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="244.0" y="231.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="268.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="310.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="352.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="394.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="436.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="478.0" y="231.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="502.0" y="231.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">\#%</text>
-<text x="520.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="562.0" y="231.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="604.0" y="231.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="610.0" y="231.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">ublic</text>
-<text x="646.0" y="231.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="664.0" y="231.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">=$#</text>
-<text x="688.0" y="231.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="700.0" y="231.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@$</text>
-<text x="712.0" y="231.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">i</text>
-<text x="718.0" y="231.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">$@%</text>
-<text x="736.0" y="231.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="742.0" y="231.8" fill="#c8a46a" textLength="72.0" lengthAdjust="spacingAndGlyphs">=@#=#@%|/=!|</text>
-<text x="58.0" y="221.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">bli</text>
-<text x="94.0" y="221.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">ublic</text>
-<text x="148.0" y="221.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="172.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="214.0" y="221.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="238.0" y="221.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">%#$</text>
-<text x="256.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="298.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="340.0" y="221.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="352.0" y="221.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="358.0" y="221.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="382.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="424.0" y="221.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">publi</text>
-<text x="454.0" y="221.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="466.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="502.0" y="221.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#$</text>
-<text x="520.0" y="221.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="550.0" y="221.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="592.0" y="221.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="598.0" y="221.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">|&amp;</text>
-<text x="610.0" y="221.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="628.0" y="221.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="634.0" y="221.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="652.0" y="221.8" fill="#c8a46a" textLength="30.0" lengthAdjust="spacingAndGlyphs">&amp;\*/&amp;</text>
-<text x="682.0" y="221.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ub</text>
-<text x="694.0" y="221.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">*$\</text>
-<text x="718.0" y="221.8" fill="#c8a46a" textLength="96.0" lengthAdjust="spacingAndGlyphs">*\/$\&amp;=##&amp;=\||*/</text>
-<text x="58.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="64.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="94.0" y="211.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">*/#$</text>
-<text x="124.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="148.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="154.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">@</text>
-<text x="160.0" y="211.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="202.0" y="211.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="238.0" y="211.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">%#$</text>
-<text x="256.0" y="211.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="286.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="292.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="298.0" y="211.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">bli</text>
-<text x="316.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="328.0" y="211.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="352.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="358.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="370.0" y="211.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">publi</text>
-<text x="400.0" y="211.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@#</text>
-<text x="412.0" y="211.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="454.0" y="211.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">@</text>
-<text x="460.0" y="211.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">ublic</text>
-<text x="490.0" y="211.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">=&amp;</text>
-<text x="520.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">i</text>
-<text x="526.0" y="211.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">!@|</text>
-<text x="544.0" y="211.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">ubli</text>
-<text x="568.0" y="211.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">$=</text>
-<text x="580.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="586.0" y="211.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">#&amp;*#</text>
-<text x="610.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="622.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="628.0" y="211.8" fill="#c8a46a" textLength="54.0" lengthAdjust="spacingAndGlyphs">!!@%\&amp;=/!</text>
-<text x="682.0" y="211.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">li</text>
-<text x="694.0" y="211.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">%\\</text>
-<text x="712.0" y="211.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="736.0" y="211.8" fill="#c8a46a" textLength="78.0" lengthAdjust="spacingAndGlyphs">!/!@/@%&amp;$&amp;=&amp;*</text>
-<text x="148.0" y="201.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="160.0" y="201.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="190.0" y="201.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="232.0" y="201.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="244.0" y="201.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">##</text>
-<text x="256.0" y="201.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="274.0" y="201.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="292.0" y="201.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="298.0" y="201.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">i</text>
-<text x="304.0" y="201.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">$/%</text>
-<text x="322.0" y="201.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">ubli</text>
-<text x="346.0" y="201.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="358.0" y="201.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#$</text>
-<text x="370.0" y="201.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="400.0" y="201.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">*/</text>
-<text x="412.0" y="201.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">blic</text>
-<text x="442.0" y="201.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="460.0" y="201.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="466.0" y="201.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="484.0" y="201.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="490.0" y="201.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">/=</text>
-<text x="520.0" y="201.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">/#\*</text>
-<text x="544.0" y="201.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">li</text>
-<text x="556.0" y="201.8" fill="#c8a46a" textLength="48.0" lengthAdjust="spacingAndGlyphs">&amp;%*=@%$%</text>
-<text x="610.0" y="201.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="628.0" y="201.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">$%/!#*</text>
-<text x="682.0" y="201.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">|%&amp;/|@</text>
-<text x="736.0" y="201.8" fill="#c8a46a" textLength="42.0" lengthAdjust="spacingAndGlyphs">@*&amp;&amp;/$/</text>
-<text x="784.0" y="201.8" fill="#c8a46a" textLength="30.0" lengthAdjust="spacingAndGlyphs">!$\\@</text>
-<text x="160.0" y="191.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="178.0" y="191.8" fill="#ece7de" textLength="36.0" lengthAdjust="spacingAndGlyphs">public</text>
-<text x="220.0" y="191.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="262.0" y="191.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="268.0" y="191.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">ubl</text>
-<text x="286.0" y="191.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="298.0" y="191.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">*/%</text>
-<text x="322.0" y="191.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="346.0" y="191.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="358.0" y="191.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">$%!$</text>
-<text x="388.0" y="191.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="400.0" y="191.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">$#</text>
-<text x="412.0" y="191.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="430.0" y="191.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="460.0" y="191.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="472.0" y="191.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="490.0" y="191.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">$!</text>
-<text x="520.0" y="191.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">*&amp;*$</text>
-<text x="544.0" y="191.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="556.0" y="191.8" fill="#c8a46a" textLength="42.0" lengthAdjust="spacingAndGlyphs">=&amp;!!*&amp;&amp;</text>
-<text x="610.0" y="191.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="616.0" y="191.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">li</text>
-<text x="634.0" y="191.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">%#$\</text>
-<text x="682.0" y="191.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">|&amp;&amp;\@/</text>
-<text x="736.0" y="191.8" fill="#c8a46a" textLength="42.0" lengthAdjust="spacingAndGlyphs">/=&amp;@|//</text>
-<text x="784.0" y="191.8" fill="#c8a46a" textLength="30.0" lengthAdjust="spacingAndGlyphs">/|$$@</text>
-<text x="166.0" y="181.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="190.0" y="181.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">\*</text>
-<text x="208.0" y="181.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">publ</text>
-<text x="232.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">@</text>
-<text x="256.0" y="181.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="262.0" y="181.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#&amp;</text>
-<text x="274.0" y="181.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="286.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="298.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="322.0" y="181.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="328.0" y="181.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">\=</text>
-<text x="340.0" y="181.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="358.0" y="181.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">#=\#</text>
-<text x="382.0" y="181.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">ubl</text>
-<text x="400.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="418.0" y="181.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="436.0" y="181.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">\@#</text>
-<text x="460.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="466.0" y="181.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">ubl</text>
-<text x="484.0" y="181.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">%|#</text>
-<text x="526.0" y="181.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">*=</text>
-<text x="544.0" y="181.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">pu</text>
-<text x="556.0" y="181.8" fill="#c8a46a" textLength="42.0" lengthAdjust="spacingAndGlyphs">\@*=/\%</text>
-<text x="610.0" y="181.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">$**</text>
-<text x="634.0" y="181.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">\#=|</text>
-<text x="682.0" y="181.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">|#</text>
-<text x="700.0" y="181.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">\#$</text>
-<text x="736.0" y="181.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">%**%#=</text>
-<text x="784.0" y="181.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">@*&amp;</text>
-<text x="808.0" y="181.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="160.0" y="171.8" fill="#ece7de" textLength="30.0" lengthAdjust="spacingAndGlyphs">ublic</text>
-<text x="202.0" y="171.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ub</text>
-<text x="214.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="220.0" y="171.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="256.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="268.0" y="171.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">%&amp;#\</text>
-<text x="298.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">$</text>
-<text x="322.0" y="171.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="328.0" y="171.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">*#$</text>
-<text x="376.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="382.0" y="171.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">lic</text>
-<text x="412.0" y="171.8" fill="#ece7de" textLength="24.0" lengthAdjust="spacingAndGlyphs">ubli</text>
-<text x="436.0" y="171.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">&amp;%#</text>
-<text x="466.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="472.0" y="171.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ic</text>
-<text x="484.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="544.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="550.0" y="171.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">l</text>
-<text x="556.0" y="171.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!%</text>
-<text x="574.0" y="171.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">=%|#</text>
-<text x="616.0" y="171.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!&amp;</text>
-<text x="640.0" y="171.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">=#</text>
-<text x="682.0" y="171.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#!</text>
-<text x="700.0" y="171.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">*/#</text>
-<text x="736.0" y="171.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">$|$</text>
-<text x="766.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="784.0" y="171.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">!|$</text>
-<text x="808.0" y="171.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="160.0" y="161.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">&amp;*@</text>
-<text x="184.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">$</text>
-<text x="202.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">l</text>
-<text x="208.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="220.0" y="161.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#!</text>
-<text x="256.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="274.0" y="161.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">|@=</text>
-<text x="322.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">b</text>
-<text x="328.0" y="161.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">@!*</text>
-<text x="382.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="394.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="412.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">l</text>
-<text x="418.0" y="161.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">!%$=&amp;\</text>
-<text x="466.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="478.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="484.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="544.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="550.0" y="161.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="556.0" y="161.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!/</text>
-<text x="586.0" y="161.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!#</text>
-<text x="640.0" y="161.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!#</text>
-<text x="712.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="736.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="784.0" y="161.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">|/%</text>
-<text x="808.0" y="161.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="160.0" y="151.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">=\</text>
-<text x="178.0" y="151.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="184.0" y="151.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="202.0" y="151.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">=!</text>
-<text x="274.0" y="151.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">&amp;#\</text>
-<text x="322.0" y="151.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">i</text>
-<text x="382.0" y="151.8" fill="#ece7de" textLength="18.0" lengthAdjust="spacingAndGlyphs">pub</text>
-<text x="412.0" y="151.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">c</text>
-<text x="418.0" y="151.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">#@**&amp;&amp;</text>
-<text x="466.0" y="151.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">%</text>
-<text x="472.0" y="151.8" fill="#ece7de" textLength="12.0" lengthAdjust="spacingAndGlyphs">ub</text>
-<text x="484.0" y="151.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="544.0" y="151.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#=</text>
-<text x="688.0" y="151.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="712.0" y="151.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">$</text>
-<text x="784.0" y="151.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@#</text>
-<text x="808.0" y="151.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="178.0" y="141.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="286.0" y="141.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="322.0" y="141.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="382.0" y="141.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">b</text>
-<text x="388.0" y="141.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">&amp;/</text>
-<text x="412.0" y="141.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">p</text>
-<text x="418.0" y="141.8" fill="#c8a46a" textLength="36.0" lengthAdjust="spacingAndGlyphs">=&amp;%*\/</text>
-<text x="472.0" y="141.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">$|!</text>
-<text x="544.0" y="141.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">/@</text>
-<text x="688.0" y="141.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="712.0" y="141.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">&amp;</text>
-<text x="808.0" y="141.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="178.0" y="131.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">$</text>
-<text x="286.0" y="131.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">@</text>
-<text x="322.0" y="131.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="382.0" y="131.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">i</text>
-<text x="388.0" y="131.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">$!</text>
-<text x="412.0" y="131.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">!#*!</text>
-<text x="472.0" y="131.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!&amp;</text>
-<text x="544.0" y="131.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">#\</text>
-<text x="688.0" y="131.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">;</text>
-<text x="712.0" y="131.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="178.0" y="121.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="286.0" y="121.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="322.0" y="121.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="388.0" y="121.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">%\</text>
-<text x="412.0" y="121.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">=\\&amp;</text>
-<text x="472.0" y="121.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@*</text>
-<text x="544.0" y="121.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@&amp;</text>
-<text x="688.0" y="121.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">:</text>
-<text x="286.0" y="111.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">!</text>
-<text x="382.0" y="111.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">u</text>
-<text x="388.0" y="111.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">/@</text>
-<text x="412.0" y="111.8" fill="#c8a46a" textLength="24.0" lengthAdjust="spacingAndGlyphs">*=!*</text>
-<text x="472.0" y="111.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">&amp;@</text>
-<text x="544.0" y="111.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">$&amp;</text>
-<text x="688.0" y="111.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">-</text>
-<text x="382.0" y="101.8" fill="#ece7de" textLength="6.0" lengthAdjust="spacingAndGlyphs">l</text>
-<text x="388.0" y="101.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">@@</text>
-<text x="412.0" y="101.8" fill="#c8a46a" textLength="18.0" lengthAdjust="spacingAndGlyphs">|*=</text>
-<text x="544.0" y="101.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!\</text>
-<text x="688.0" y="101.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">'</text>
-<text x="382.0" y="91.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">@</text>
-<text x="412.0" y="91.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="544.0" y="91.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!@</text>
-<text x="688.0" y="91.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="382.0" y="81.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">/</text>
-<text x="412.0" y="81.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="544.0" y="81.8" fill="#c8a46a" textLength="12.0" lengthAdjust="spacingAndGlyphs">!!</text>
-<text x="688.0" y="81.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">+</text>
-<text x="382.0" y="71.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="412.0" y="71.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="688.0" y="71.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">|</text>
-<text x="382.0" y="61.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">#</text>
-<text x="688.0" y="61.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">\</text>
-<text x="382.0" y="51.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">*</text>
-<text x="688.0" y="51.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">;</text>
-<text x="382.0" y="41.8" fill="#c8a46a" textLength="6.0" lengthAdjust="spacingAndGlyphs">=</text>
-<text x="688.0" y="41.8" fill="#6f6c66" textLength="6.0" lengthAdjust="spacingAndGlyphs">:</text>
+<rect x="23.14" y="229.79" width="5.33" height="44.21" fill="#ece7de"/>
+<path d="M23.14 227.79 V227.79 Q23.14 226.22 24.72 226.22 H26.90 Q28.47 226.22 28.47 227.79 V227.79 Z" fill="#c8a46a"/>
+<rect x="30.76" y="245.16" width="5.33" height="28.84" fill="#ece7de"/>
+<path d="M30.76 245.16 V245.16 Q30.76 243.68 32.24 243.68 H34.61 Q36.09 243.68 36.09 245.16 V245.16 Z" fill="#c8a46a"/>
+<rect x="38.37" y="216.78" width="5.33" height="57.22" fill="#ece7de"/>
+<path d="M38.37 216.78 V216.45 Q38.37 213.95 40.87 213.95 H41.20 Q43.70 213.95 43.70 216.45 V216.78 Z" fill="#c8a46a"/>
+<rect x="45.99" y="228.52" width="5.33" height="45.48" fill="#ece7de"/>
+<path d="M45.99 226.52 V226.10 Q45.99 223.60 48.49 223.60 H48.82 Q51.32 223.60 51.32 226.10 V226.52 Z" fill="#c8a46a"/>
+<rect x="53.60" y="216.28" width="5.33" height="57.72" fill="#ece7de"/>
+<path d="M53.60 214.28 V210.88 Q53.60 208.38 56.10 208.38 H56.43 Q58.93 208.38 58.93 210.88 V214.28 Z" fill="#c8a46a"/>
+<rect x="61.22" y="207.66" width="5.33" height="66.34" fill="#ece7de"/>
+<path d="M61.22 205.66 V204.91 Q61.22 202.41 63.72 202.41 H64.05 Q66.55 202.41 66.55 204.91 V205.66 Z" fill="#c8a46a"/>
+<rect x="68.83" y="216.52" width="5.33" height="57.48" fill="#ece7de"/>
+<path d="M68.83 214.52 V212.73 Q68.83 210.23 71.33 210.23 H71.67 Q74.17 210.23 74.17 212.73 V214.52 Z" fill="#c8a46a"/>
+<rect x="76.45" y="228.02" width="5.33" height="45.98" fill="#ece7de"/>
+<path d="M76.45 226.02 V224.26 Q76.45 221.76 78.95 221.76 H79.28 Q81.78 221.76 81.78 224.26 V226.02 Z" fill="#c8a46a"/>
+<rect x="84.07" y="242.00" width="5.33" height="32.00" fill="#ece7de"/>
+<path d="M84.07 240.00 V234.38 Q84.07 231.88 86.57 231.88 H86.90 Q89.40 231.88 89.40 234.38 V240.00 Z" fill="#c8a46a"/>
+<rect x="91.68" y="214.07" width="5.33" height="59.93" fill="#ece7de"/>
+<path d="M91.68 212.07 V209.39 Q91.68 206.89 94.18 206.89 H94.51 Q97.01 206.89 97.01 209.39 V212.07 Z" fill="#c8a46a"/>
+<rect x="99.30" y="212.11" width="5.33" height="61.89" fill="#ece7de"/>
+<path d="M99.30 210.11 V210.11 Q99.30 208.78 100.63 208.78 H103.30 Q104.63 208.78 104.63 210.11 V210.11 Z" fill="#c8a46a"/>
+<rect x="106.91" y="215.70" width="5.33" height="58.30" fill="#ece7de"/>
+<path d="M106.91 213.70 V209.65 Q106.91 207.15 109.41 207.15 H109.74 Q112.24 207.15 112.24 209.65 V213.70 Z" fill="#c8a46a"/>
+<rect x="114.53" y="218.82" width="5.33" height="55.18" fill="#ece7de"/>
+<path d="M114.53 216.82 V215.05 Q114.53 212.55 117.03 212.55 H117.36 Q119.86 212.55 119.86 215.05 V216.82 Z" fill="#c8a46a"/>
+<rect x="122.14" y="212.37" width="5.33" height="61.63" fill="#ece7de"/>
+<path d="M122.14 210.37 V209.17 Q122.14 206.67 124.64 206.67 H124.97 Q127.47 206.67 127.47 209.17 V210.37 Z" fill="#c8a46a"/>
+<rect x="129.76" y="248.89" width="5.33" height="25.11" fill="#ece7de"/>
+<path d="M129.76 246.89 V244.62 Q129.76 242.12 132.26 242.12 H132.59 Q135.09 242.12 135.09 244.62 V246.89 Z" fill="#c8a46a"/>
+<rect x="137.37" y="234.34" width="5.33" height="39.66" fill="#ece7de"/>
+<path d="M137.37 234.34 V234.34 Q137.37 231.94 139.78 231.94 H140.30 Q142.70 231.94 142.70 234.34 V234.34 Z" fill="#c8a46a"/>
+<rect x="144.99" y="202.69" width="5.33" height="71.31" fill="#ece7de"/>
+<path d="M144.99 200.69 V196.77 Q144.99 194.27 147.49 194.27 H147.82 Q150.32 194.27 150.32 196.77 V200.69 Z" fill="#c8a46a"/>
+<rect x="152.60" y="210.03" width="5.33" height="63.97" fill="#ece7de"/>
+<path d="M152.60 208.03 V205.57 Q152.60 203.07 155.10 203.07 H155.43 Q157.93 203.07 157.93 205.57 V208.03 Z" fill="#c8a46a"/>
+<rect x="160.22" y="167.86" width="5.33" height="106.14" fill="#ece7de"/>
+<path d="M160.22 165.86 V144.39 Q160.22 141.89 162.72 141.89 H163.05 Q165.55 141.89 165.55 144.39 V165.86 Z" fill="#c8a46a"/>
+<rect x="167.83" y="166.26" width="5.33" height="107.74" fill="#ece7de"/>
+<path d="M167.83 164.26 V156.90 Q167.83 154.40 170.33 154.40 H170.67 Q173.17 154.40 173.17 156.90 V164.26 Z" fill="#c8a46a"/>
+<rect x="175.45" y="143.17" width="5.33" height="130.83" fill="#ece7de"/>
+<path d="M175.45 141.17 V116.43 Q175.45 113.93 177.95 113.93 H178.28 Q180.78 113.93 180.78 116.43 V141.17 Z" fill="#c8a46a"/>
+<rect x="183.07" y="161.36" width="5.33" height="112.64" fill="#ece7de"/>
+<path d="M183.07 159.36 V150.97 Q183.07 148.47 185.57 148.47 H185.90 Q188.40 148.47 188.40 150.97 V159.36 Z" fill="#c8a46a"/>
+<rect x="190.68" y="185.95" width="5.33" height="88.05" fill="#ece7de"/>
+<path d="M190.68 183.95 V178.08 Q190.68 175.58 193.18 175.58 H193.51 Q196.01 175.58 196.01 178.08 V183.95 Z" fill="#c8a46a"/>
+<rect x="198.30" y="158.80" width="5.33" height="115.20" fill="#ece7de"/>
+<path d="M198.30 156.80 V147.75 Q198.30 145.25 200.80 145.25 H201.13 Q203.63 145.25 203.63 147.75 V156.80 Z" fill="#c8a46a"/>
+<rect x="205.91" y="159.19" width="5.33" height="114.81" fill="#ece7de"/>
+<path d="M205.91 157.19 V148.01 Q205.91 145.51 208.41 145.51 H208.74 Q211.24 145.51 211.24 148.01 V157.19 Z" fill="#c8a46a"/>
+<rect x="213.53" y="174.33" width="5.33" height="99.67" fill="#ece7de"/>
+<path d="M213.53 172.33 V164.42 Q213.53 161.92 216.03 161.92 H216.36 Q218.86 161.92 218.86 164.42 V172.33 Z" fill="#c8a46a"/>
+<rect x="221.14" y="168.62" width="5.33" height="105.38" fill="#ece7de"/>
+<path d="M221.14 166.62 V154.13 Q221.14 151.63 223.64 151.63 H223.97 Q226.47 151.63 226.47 154.13 V166.62 Z" fill="#c8a46a"/>
+<rect x="228.76" y="186.50" width="5.33" height="87.50" fill="#ece7de"/>
+<path d="M228.76 184.50 V176.86 Q228.76 174.36 231.26 174.36 H231.59 Q234.09 174.36 234.09 176.86 V184.50 Z" fill="#c8a46a"/>
+<rect x="236.37" y="229.23" width="5.33" height="44.77" fill="#ece7de"/>
+<path d="M236.37 227.23 V207.39 Q236.37 204.89 238.87 204.89 H239.20 Q241.70 204.89 241.70 207.39 V227.23 Z" fill="#c8a46a"/>
+<rect x="243.99" y="219.97" width="5.33" height="54.03" fill="#ece7de"/>
+<path d="M243.99 217.97 V197.22 Q243.99 194.72 246.49 194.72 H246.82 Q249.32 194.72 249.32 197.22 V217.97 Z" fill="#c8a46a"/>
+<rect x="251.60" y="176.19" width="5.33" height="97.81" fill="#ece7de"/>
+<path d="M251.60 174.19 V155.80 Q251.60 153.30 254.10 153.30 H254.43 Q256.93 153.30 256.93 155.80 V174.19 Z" fill="#c8a46a"/>
+<rect x="259.22" y="189.96" width="5.33" height="84.04" fill="#ece7de"/>
+<path d="M259.22 187.96 V172.63 Q259.22 170.13 261.72 170.13 H262.05 Q264.55 170.13 264.55 172.63 V187.96 Z" fill="#c8a46a"/>
+<rect x="266.83" y="185.52" width="5.33" height="88.48" fill="#ece7de"/>
+<path d="M266.83 183.52 V163.21 Q266.83 160.71 269.33 160.71 H269.67 Q272.17 160.71 272.17 163.21 V183.52 Z" fill="#c8a46a"/>
+<rect x="274.45" y="172.24" width="5.33" height="101.76" fill="#ece7de"/>
+<path d="M274.45 170.24 V142.42 Q274.45 139.92 276.95 139.92 H277.28 Q279.78 139.92 279.78 142.42 V170.24 Z" fill="#c8a46a"/>
+<rect x="282.07" y="191.14" width="5.33" height="82.86" fill="#ece7de"/>
+<path d="M282.07 189.14 V110.88 Q282.07 108.38 284.57 108.38 H284.90 Q287.40 108.38 287.40 110.88 V189.14 Z" fill="#c8a46a"/>
+<rect x="289.68" y="212.62" width="5.33" height="61.38" fill="#ece7de"/>
+<path d="M289.68 210.62 V196.42 Q289.68 193.92 292.18 193.92 H292.51 Q295.01 193.92 295.01 196.42 V210.62 Z" fill="#c8a46a"/>
+<rect x="297.30" y="196.68" width="5.33" height="77.32" fill="#ece7de"/>
+<path d="M297.30 194.68 V164.96 Q297.30 162.46 299.80 162.46 H300.13 Q302.63 162.46 302.63 164.96 V194.68 Z" fill="#c8a46a"/>
+<rect x="304.91" y="206.21" width="5.33" height="67.79" fill="#ece7de"/>
+<path d="M304.91 204.21 V190.09 Q304.91 187.59 307.41 187.59 H307.74 Q310.24 187.59 310.24 190.09 V204.21 Z" fill="#c8a46a"/>
+<rect x="312.53" y="211.89" width="5.33" height="62.11" fill="#ece7de"/>
+<path d="M312.53 209.89 V193.65 Q312.53 191.15 315.03 191.15 H315.36 Q317.86 191.15 317.86 193.65 V209.89 Z" fill="#c8a46a"/>
+<rect x="320.14" y="140.80" width="5.33" height="133.20" fill="#ece7de"/>
+<path d="M320.14 138.80 V119.20 Q320.14 116.70 322.64 116.70 H322.97 Q325.47 116.70 325.47 119.20 V138.80 Z" fill="#c8a46a"/>
+<rect x="327.76" y="181.15" width="5.33" height="92.85" fill="#ece7de"/>
+<path d="M327.76 179.15 V157.24 Q327.76 154.74 330.26 154.74 H330.59 Q333.09 154.74 333.09 157.24 V179.15 Z" fill="#c8a46a"/>
+<rect x="335.37" y="175.38" width="5.33" height="98.62" fill="#ece7de"/>
+<path d="M335.37 173.38 V160.03 Q335.37 157.53 337.87 157.53 H338.20 Q340.70 157.53 340.70 160.03 V173.38 Z" fill="#c8a46a"/>
+<rect x="342.99" y="200.59" width="5.33" height="73.41" fill="#ece7de"/>
+<path d="M342.99 198.59 V188.16 Q342.99 185.66 345.49 185.66 H345.82 Q348.32 185.66 348.32 188.16 V198.59 Z" fill="#c8a46a"/>
+<rect x="350.60" y="225.09" width="5.33" height="48.91" fill="#ece7de"/>
+<path d="M350.60 223.09 V207.42 Q350.60 204.92 353.10 204.92 H353.43 Q355.93 204.92 355.93 207.42 V223.09 Z" fill="#c8a46a"/>
+<rect x="358.22" y="202.45" width="5.33" height="71.55" fill="#ece7de"/>
+<path d="M358.22 200.45 V180.55 Q358.22 178.05 360.72 178.05 H361.05 Q363.55 178.05 363.55 180.55 V200.45 Z" fill="#c8a46a"/>
+<rect x="365.83" y="191.99" width="5.33" height="82.01" fill="#ece7de"/>
+<path d="M365.83 189.99 V172.51 Q365.83 170.01 368.33 170.01 H368.67 Q371.17 170.01 371.17 172.51 V189.99 Z" fill="#c8a46a"/>
+<rect x="373.45" y="197.71" width="5.33" height="76.29" fill="#ece7de"/>
+<path d="M373.45 195.71 V170.41 Q373.45 167.91 375.95 167.91 H376.28 Q378.78 167.91 378.78 170.41 V195.71 Z" fill="#c8a46a"/>
+<rect x="381.07" y="90.13" width="5.33" height="183.87" fill="#ece7de"/>
+<path d="M381.07 88.13 V36.50 Q381.07 34.00 383.57 34.00 H383.90 Q386.40 34.00 386.40 36.50 V88.13 Z" fill="#c8a46a"/>
+<rect x="388.68" y="144.36" width="5.33" height="129.64" fill="#ece7de"/>
+<path d="M388.68 142.36 V96.28 Q388.68 93.78 391.18 93.78 H391.51 Q394.01 93.78 394.01 96.28 V142.36 Z" fill="#c8a46a"/>
+<rect x="396.30" y="210.67" width="5.33" height="63.33" fill="#ece7de"/>
+<path d="M396.30 208.67 V176.45 Q396.30 173.95 398.80 173.95 H399.13 Q401.63 173.95 401.63 176.45 V208.67 Z" fill="#c8a46a"/>
+<rect x="403.91" y="214.59" width="5.33" height="59.41" fill="#ece7de"/>
+<path d="M403.91 212.59 V182.72 Q403.91 180.22 406.41 180.22 H406.74 Q409.24 180.22 409.24 182.72 V212.59 Z" fill="#c8a46a"/>
+<rect x="411.53" y="132.99" width="5.33" height="141.01" fill="#ece7de"/>
+<path d="M411.53 130.99 V62.28 Q411.53 59.78 414.03 59.78 H414.36 Q416.86 59.78 416.86 62.28 V130.99 Z" fill="#c8a46a"/>
+<rect x="419.14" y="165.18" width="5.33" height="108.82" fill="#ece7de"/>
+<path d="M419.14 163.18 V99.92 Q419.14 97.42 421.64 97.42 H421.97 Q424.47 97.42 424.47 99.92 V163.18 Z" fill="#c8a46a"/>
+<rect x="426.76" y="164.11" width="5.33" height="109.89" fill="#ece7de"/>
+<path d="M426.76 162.11 V106.41 Q426.76 103.91 429.26 103.91 H429.59 Q432.09 103.91 432.09 106.41 V162.11 Z" fill="#c8a46a"/>
+<rect x="434.37" y="179.17" width="5.33" height="94.83" fill="#ece7de"/>
+<path d="M434.37 177.17 V137.43 Q434.37 134.93 436.87 134.93 H437.20 Q439.70 134.93 439.70 137.43 V177.17 Z" fill="#c8a46a"/>
+<rect x="441.99" y="182.42" width="5.33" height="91.58" fill="#ece7de"/>
+<path d="M441.99 180.42 V133.71 Q441.99 131.21 444.49 131.21 H444.82 Q447.32 131.21 447.32 133.71 V180.42 Z" fill="#c8a46a"/>
+<rect x="449.60" y="223.71" width="5.33" height="50.29" fill="#ece7de"/>
+<path d="M449.60 221.71 V202.50 Q449.60 200.00 452.10 200.00 H452.43 Q454.93 200.00 454.93 202.50 V221.71 Z" fill="#c8a46a"/>
+<rect x="457.22" y="204.57" width="5.33" height="69.43" fill="#ece7de"/>
+<path d="M457.22 202.57 V181.12 Q457.22 178.62 459.72 178.62 H460.05 Q462.55 178.62 462.55 181.12 V202.57 Z" fill="#c8a46a"/>
+<rect x="464.83" y="174.76" width="5.33" height="99.24" fill="#ece7de"/>
+<path d="M464.83 172.76 V143.72 Q464.83 141.22 467.33 141.22 H467.67 Q470.17 141.22 470.17 143.72 V172.76 Z" fill="#c8a46a"/>
+<rect x="472.45" y="142.94" width="5.33" height="131.06" fill="#ece7de"/>
+<path d="M472.45 140.94 V107.48 Q472.45 104.98 474.95 104.98 H475.28 Q477.78 104.98 477.78 107.48 V140.94 Z" fill="#c8a46a"/>
+<rect x="480.07" y="180.31" width="5.33" height="93.69" fill="#ece7de"/>
+<path d="M480.07 178.31 V139.52 Q480.07 137.02 482.57 137.02 H482.90 Q485.40 137.02 485.40 139.52 V178.31 Z" fill="#c8a46a"/>
+<rect x="487.68" y="217.75" width="5.33" height="56.25" fill="#ece7de"/>
+<path d="M487.68 215.75 V177.60 Q487.68 175.10 490.18 175.10 H490.51 Q493.01 175.10 493.01 177.60 V215.75 Z" fill="#c8a46a"/>
+<rect x="495.30" y="209.70" width="5.33" height="64.30" fill="#ece7de"/>
+<path d="M495.30 207.70 V178.31 Q495.30 175.81 497.80 175.81 H498.13 Q500.63 175.81 500.63 178.31 V207.70 Z" fill="#c8a46a"/>
+<rect x="502.91" y="231.86" width="5.33" height="42.14" fill="#ece7de"/>
+<path d="M502.91 229.86 V215.88 Q502.91 213.38 505.41 213.38 H505.74 Q508.24 213.38 508.24 215.88 V229.86 Z" fill="#c8a46a"/>
+<rect x="510.53" y="239.21" width="5.33" height="34.79" fill="#ece7de"/>
+<path d="M510.53 237.21 V225.60 Q510.53 223.10 513.03 223.10 H513.36 Q515.86 223.10 515.86 225.60 V237.21 Z" fill="#c8a46a"/>
+<rect x="518.14" y="199.66" width="5.33" height="74.34" fill="#ece7de"/>
+<path d="M518.14 197.66 V183.81 Q518.14 181.31 520.64 181.31 H520.97 Q523.47 181.31 523.47 183.81 V197.66 Z" fill="#c8a46a"/>
+<rect x="525.76" y="209.71" width="5.33" height="64.29" fill="#ece7de"/>
+<path d="M525.76 207.71 V176.65 Q525.76 174.15 528.26 174.15 H528.59 Q531.09 174.15 531.09 176.65 V207.71 Z" fill="#c8a46a"/>
+<rect x="533.37" y="215.20" width="5.33" height="58.80" fill="#ece7de"/>
+<path d="M533.37 213.20 V181.81 Q533.37 179.31 535.87 179.31 H536.20 Q538.70 179.31 538.70 181.81 V213.20 Z" fill="#c8a46a"/>
+<rect x="540.99" y="176.82" width="5.33" height="97.18" fill="#ece7de"/>
+<path d="M540.99 174.82 V73.95 Q540.99 71.45 543.49 71.45 H543.82 Q546.32 71.45 546.32 73.95 V174.82 Z" fill="#c8a46a"/>
+<rect x="548.60" y="156.23" width="5.33" height="117.77" fill="#ece7de"/>
+<path d="M548.60 154.23 V74.25 Q548.60 71.75 551.10 71.75 H551.43 Q553.93 71.75 553.93 74.25 V154.23 Z" fill="#c8a46a"/>
+<rect x="556.22" y="199.94" width="5.33" height="74.06" fill="#ece7de"/>
+<path d="M556.22 197.94 V155.33 Q556.22 152.83 558.72 152.83 H559.05 Q561.55 152.83 561.55 155.33 V197.94 Z" fill="#c8a46a"/>
+<rect x="563.83" y="210.51" width="5.33" height="63.49" fill="#ece7de"/>
+<path d="M563.83 208.51 V179.39 Q563.83 176.89 566.33 176.89 H566.67 Q569.17 176.89 569.17 179.39 V208.51 Z" fill="#c8a46a"/>
+<rect x="571.45" y="209.70" width="5.33" height="64.30" fill="#ece7de"/>
+<path d="M571.45 207.70 V166.16 Q571.45 163.66 573.95 163.66 H574.28 Q576.78 163.66 576.78 166.16 V207.70 Z" fill="#c8a46a"/>
+<rect x="579.07" y="206.51" width="5.33" height="67.49" fill="#ece7de"/>
+<path d="M579.07 204.51 V170.79 Q579.07 168.29 581.57 168.29 H581.90 Q584.40 168.29 584.40 170.79 V204.51 Z" fill="#c8a46a"/>
+<rect x="586.68" y="214.72" width="5.33" height="59.28" fill="#ece7de"/>
+<path d="M586.68 212.72 V161.47 Q586.68 158.97 589.18 158.97 H589.51 Q592.01 158.97 592.01 161.47 V212.72 Z" fill="#c8a46a"/>
+<rect x="594.30" y="224.23" width="5.33" height="49.77" fill="#ece7de"/>
+<path d="M594.30 222.23 V197.68 Q594.30 195.18 596.80 195.18 H597.13 Q599.63 195.18 599.63 197.68 V222.23 Z" fill="#c8a46a"/>
+<rect x="601.91" y="236.28" width="5.33" height="37.72" fill="#ece7de"/>
+<path d="M601.91 234.28 V206.76 Q601.91 204.26 604.41 204.26 H604.74 Q607.24 204.26 607.24 206.76 V234.28 Z" fill="#c8a46a"/>
+<rect x="609.53" y="191.12" width="5.33" height="82.88" fill="#ece7de"/>
+<path d="M609.53 189.12 V173.10 Q609.53 170.60 612.03 170.60 H612.36 Q614.86 170.60 614.86 173.10 V189.12 Z" fill="#c8a46a"/>
+<rect x="617.14" y="188.80" width="5.33" height="85.20" fill="#ece7de"/>
+<path d="M617.14 186.80 V166.71 Q617.14 164.21 619.64 164.21 H619.97 Q622.47 164.21 622.47 166.71 V186.80 Z" fill="#c8a46a"/>
+<rect x="624.76" y="227.40" width="5.33" height="46.60" fill="#ece7de"/>
+<path d="M624.76 225.40 V199.24 Q624.76 196.74 627.26 196.74 H627.59 Q630.09 196.74 630.09 199.24 V225.40 Z" fill="#c8a46a"/>
+<rect x="632.37" y="214.62" width="5.33" height="59.38" fill="#ece7de"/>
+<path d="M632.37 212.62 V180.43 Q632.37 177.93 634.87 177.93 H635.20 Q637.70 177.93 637.70 180.43 V212.62 Z" fill="#c8a46a"/>
+<rect x="639.99" y="211.07" width="5.33" height="62.93" fill="#ece7de"/>
+<path d="M639.99 209.07 V156.70 Q639.99 154.20 642.49 154.20 H642.82 Q645.32 154.20 645.32 156.70 V209.07 Z" fill="#c8a46a"/>
+<rect x="647.60" y="220.76" width="5.33" height="53.24" fill="#ece7de"/>
+<path d="M647.60 218.76 V171.88 Q647.60 169.38 650.10 169.38 H650.43 Q652.93 169.38 652.93 171.88 V218.76 Z" fill="#c8a46a"/>
+<rect x="655.22" y="224.17" width="5.33" height="49.83" fill="#ece7de"/>
+<path d="M655.22 222.17 V200.92 Q655.22 198.42 657.72 198.42 H658.05 Q660.55 198.42 660.55 200.92 V222.17 Z" fill="#c8a46a"/>
+<rect x="662.83" y="232.67" width="5.33" height="41.33" fill="#ece7de"/>
+<path d="M662.83 230.67 V208.48 Q662.83 205.98 665.33 205.98 H665.67 Q668.17 205.98 668.17 208.48 V230.67 Z" fill="#c8a46a"/>
+<rect x="670.45" y="231.80" width="5.33" height="42.20" fill="#ece7de"/>
+<path d="M670.45 229.80 V205.87 Q670.45 203.37 672.95 203.37 H673.28 Q675.78 203.37 675.78 205.87 V229.80 Z" fill="#c8a46a"/>
+<rect x="678.07" y="205.60" width="5.33" height="68.40" fill="#ece7de"/>
+<path d="M678.07 203.60 V170.25 Q678.07 167.75 680.57 167.75 H680.90 Q683.40 167.75 683.40 170.25 V203.60 Z" fill="#c8a46a"/>
+<rect x="685.68" y="207.40" width="5.33" height="66.60" fill="#ece7de"/>
+<path d="M685.68 205.40 V164.76 Q685.68 162.26 688.18 162.26 H688.51 Q691.01 162.26 691.01 164.76 V205.40 Z" fill="#c8a46a"/>
+<line x1="688.3" x2="688.3" y1="36" y2="157.3" stroke="#6f6c66" stroke-dasharray="2 3"/>
+<rect x="693.30" y="221.80" width="5.33" height="52.20" fill="#ece7de"/>
+<path d="M693.30 219.80 V187.60 Q693.30 185.10 695.80 185.10 H696.13 Q698.63 185.10 698.63 187.60 V219.80 Z" fill="#c8a46a"/>
+<rect x="700.91" y="239.72" width="5.33" height="34.28" fill="#ece7de"/>
+<path d="M700.91 237.72 V164.40 Q700.91 161.90 703.41 161.90 H703.74 Q706.24 161.90 706.24 164.40 V237.72 Z" fill="#c8a46a"/>
+<rect x="708.53" y="205.01" width="5.33" height="68.99" fill="#ece7de"/>
+<path d="M708.53 203.01 V124.71 Q708.53 122.21 711.03 122.21 H711.36 Q713.86 122.21 713.86 124.71 V203.01 Z" fill="#c8a46a"/>
+<rect x="716.14" y="253.42" width="5.33" height="20.58" fill="#ece7de"/>
+<path d="M716.14 251.42 V218.42 Q716.14 215.92 718.64 215.92 H718.97 Q721.47 215.92 721.47 218.42 V251.42 Z" fill="#c8a46a"/>
+<rect x="723.76" y="247.71" width="5.33" height="26.29" fill="#ece7de"/>
+<path d="M723.76 245.71 V211.70 Q723.76 209.20 726.26 209.20 H726.59 Q729.09 209.20 729.09 211.70 V245.71 Z" fill="#c8a46a"/>
+<rect x="731.37" y="226.49" width="5.33" height="47.51" fill="#ece7de"/>
+<path d="M731.37 224.49 V153.67 Q731.37 151.17 733.87 151.17 H734.20 Q736.70 151.17 736.70 153.67 V224.49 Z" fill="#c8a46a"/>
+<rect x="738.99" y="254.23" width="5.33" height="19.77" fill="#ece7de"/>
+<path d="M738.99 252.23 V167.41 Q738.99 164.91 741.49 164.91 H741.82 Q744.32 164.91 744.32 167.41 V252.23 Z" fill="#c8a46a"/>
+<rect x="746.60" y="265.59" width="5.33" height="8.41" fill="#ece7de"/>
+<path d="M746.60 263.59 V162.61 Q746.60 160.11 749.10 160.11 H749.43 Q751.93 160.11 751.93 162.61 V263.59 Z" fill="#c8a46a"/>
+<rect x="754.22" y="271.20" width="5.33" height="2.80" fill="#ece7de"/>
+<path d="M754.22 269.20 V172.87 Q754.22 170.37 756.72 170.37 H757.05 Q759.55 170.37 759.55 172.87 V269.20 Z" fill="#c8a46a"/>
+<rect x="761.83" y="271.75" width="5.33" height="2.25" fill="#ece7de"/>
+<path d="M761.83 269.75 V164.53 Q761.83 162.03 764.33 162.03 H764.67 Q767.17 162.03 767.17 164.53 V269.75 Z" fill="#c8a46a"/>
+<path d="M769.45 274.00 V186.00 Q769.45 183.50 771.95 183.50 H772.28 Q774.78 183.50 774.78 186.00 V274.00 Z" fill="#c8a46a"/>
+<rect x="777.07" y="272.41" width="5.33" height="1.59" fill="#ece7de"/>
+<path d="M777.07 270.41 V207.15 Q777.07 204.65 779.57 204.65 H779.90 Q782.40 204.65 782.40 207.15 V270.41 Z" fill="#c8a46a"/>
+<rect x="784.68" y="271.27" width="5.33" height="2.73" fill="#ece7de"/>
+<path d="M784.68 269.27 V145.01 Q784.68 142.51 787.18 142.51 H787.51 Q790.01 142.51 790.01 145.01 V269.27 Z" fill="#c8a46a"/>
+<rect x="792.30" y="264.31" width="5.33" height="9.69" fill="#ece7de"/>
+<path d="M792.30 262.31 V155.67 Q792.30 153.17 794.80 153.17 H795.13 Q797.63 153.17 797.63 155.67 V262.31 Z" fill="#c8a46a"/>
+<rect x="799.91" y="269.35" width="5.33" height="4.65" fill="#ece7de"/>
+<path d="M799.91 267.35 V187.02 Q799.91 184.52 802.41 184.52 H802.74 Q805.24 184.52 805.24 187.02 V267.35 Z" fill="#c8a46a"/>
+<rect x="807.53" y="272.54" width="5.33" height="1.46" fill="#ece7de"/>
+<path d="M807.53 270.54 V136.94 Q807.53 134.44 810.03 134.44 H810.36 Q812.86 134.44 812.86 136.94 V270.54 Z" fill="#c8a46a"/>
 <line x1="22" x2="814.0" y1="275.5" y2="275.5" stroke="#4a4844"/>
 <text x="22.0" y="292.5" fill="#9a968e" font-size="10" text-anchor="start">1 Aug 2026</text>
 <text x="814.0" y="292.5" fill="#9a968e" font-size="10" text-anchor="end">12 Nov 2026</text>
-<text x="682.0" y="43.0" fill="#c8a46a" font-size="10" text-anchor="end">27 Oct: partner swaps settle confidentially</text>
+<text x="680.3" y="43.0" fill="#c8a46a" font-size="10" text-anchor="end">27 Oct: partner swaps settle confidentially</text>
 </svg>
