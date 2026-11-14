@@ -492,3 +492,7 @@ h1 { max-width: 19ch; text-wrap: balance; }
 /* the headline, typed */
 h1 { max-width: 20ch; font: 400 clamp(32px, 4vw, 54px)/1.13 "Special Elite", "Courier Prime", "Courier New", monospace; letter-spacing: -0.012em; }
 @media (max-width: 860px) { .lockup span.bracket { font-size: 19px; } }
+
+/* the headline is a long sentence now: smaller, and its second half quieter */
+h1 { max-width: 25ch; font-size: clamp(28px, 3.3vw, 45px); line-height: 1.16; }
+h1 span { color: var(--brass); }

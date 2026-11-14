@@ -6,7 +6,10 @@ The name comes from the track's own rule: a thesis here is "judged on the eviden
 conviction". So this one is laid out as evidence. Every chart on the page is a numbered
 exhibit, drawn from data you can rebuild with one command.
 
-The claim: NEAR is becoming an exchange with no order book. People swap Bitcoin,
+The claim: NEAR's becoming the venue people always wanted, with both the good parts of
+a CEX and DEX. Like an exchange, you send in one coin and take out another and nothing
+public links the two. Like a DEX, there is no account, and solvers compete to fill the
+swap. People swap Bitcoin,
 Zcash and dollars inside wallets they already use, NEAR settles the trade, and in
 one week of November 2026 nearly all of that volume went private. The business has
 customers and pricing power; NEAR does not yet keep much of what it earns.

@@ -259,9 +259,9 @@ def write(d, path):
     ]
     bear_list = "\n".join(f"{n + 1}. {text}" for n, text in enumerate(bear))
 
-    text = f"""# The Exchange With No Order Book
+    text = f"""# The Venue People Always Wanted
 
-### NEAR pivoted into a real business. Now it has to get paid for it.
+### NEAR's becoming a venue with both the good parts of a CEX and DEX. Now it has to get paid for it.
 
 **0xyuji**
 
@@ -280,6 +280,8 @@ NEAR Intents settles swaps that begin inside other companies' wallets. We counte
 Picture someone with a hardware wallet. They hold Bitcoin, they want dollars, they tap "swap" inside the wallet's app, and a minute later it's done. They paid about {b['bps']:.0f} bps for the privilege. Ask them which blockchain did the work and you'll get a blank stare.
 
 It was NEAR.
+
+Think about what people like about a big exchange. You send in one coin, you take out another, and nothing public ties the two together. Now think about what they like about a DEX. No account. Your own wallet. A price that comes from solvers competing for your order, not from one house running the book. For years you had to pick. NEAR Intents is turning into the venue people always wanted: both sets of good parts, in the same swap.
 
 That's the thesis in one scene. NEAR started in AI, became a chain, went back to AI, and somewhere along the way built the thing that actually works: a venue that settles swaps which begin inside other people's wallets. It has customers who pay. It has money sitting inside it. It has an operator who sees the flow. What it doesn't have is an order book... and since early November it doesn't have much you can see on-chain either.
 
