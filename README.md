@@ -1,4 +1,4 @@
-# Exhibit A
+# exhibit[A]
 
 **A long-term thesis on NEAR, tested against every partner swap of a 30-day window.**
 

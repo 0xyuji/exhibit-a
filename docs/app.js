@@ -1,4 +1,4 @@
-// Exhibit A: every mark on this page is a grid of small glyphs on a plain 2D canvas.
+// exhibit[A]: every mark on this page is a grid of small glyphs on a plain 2D canvas.
 // Readable text stands for what is public, rolling cipher glyphs for what is confidential.
 // All numbers come from data.json, written by build.py.
 
