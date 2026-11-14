@@ -81,9 +81,9 @@ class Sheet {
   }
 
   // row 0 is the bottom row
-  put(col, row, part) {
+  put(col, row, part, letter) {
     if (col < 0 || row < 0 || col >= this.cols || row >= this.rows) return;
-    const code = glyph(part, col, row);
+    const code = letter ?? glyph(part, col, row);
     if (code === 32) return;
     const i = row * this.cols + col;
     this.style[i] = STYLES.indexOf(part.style) + 1;
@@ -136,13 +136,20 @@ function columns(sheet, items, max, marks = []) {
   const per = Math.floor(cols / n);
   const even = Boolean(sheet.fit) && per >= 2; // the sheet was sized so each bar is `per` whole cells
   const spaced = even || cols >= n * 3;
+  // On a sheet that wraps, a bar too narrow for its word sets it like text in a narrow column: across the
+  // bar, then down. Bars one glyph wide carry the word on from the foot of one bar to the top of the next.
+  const wide = sheet.wrap && spaced ? (even ? per : Math.floor(cols / n)) - 1 : cols; // glyphs across one bar
+  const carry = [];
+  let start = 0;
   sheet.index = new Int16Array(cols).fill(-1);
   for (let c = 0; c < cols; c++) {
     const a = even ? Math.floor(c / per) : Math.min(n - 1, Math.floor((c * n) / cols));
     if (a >= n) break;
     const next = even ? Math.floor((c + 1) / per) : Math.floor(((c + 1) * n) / cols);
     sheet.index[c] = a;
+    if (sheet.index[c - 1] !== a) start = c;
     if (spaced && next !== a) continue; // a one-cell gap between bars
+    const across = even ? per - 1 : Math.ceil(((a + 1) * cols) / n) - Math.ceil((a * cols) / n) - 1;
     const b = spaced ? a + 1 : Math.max(a + 1, Math.min(n, next));
     let sum = 0;
     for (let p = 0; p < items[a].length; p++) {
@@ -151,7 +158,11 @@ function columns(sheet, items, max, marks = []) {
       const from = Math.round((sum / max) * rows);
       sum += v / (b - a);
       const to = Math.round((sum / max) * rows);
-      for (let r = from; r < to; r++) sheet.put(c, r, items[a][p]);
+      const word = (items[a][p].text || "").trim();
+      const wrap = word.length > wide;
+      const first = wide === 1 ? carry[p] || 0 : 0;
+      for (let r = from; r < to; r++) sheet.put(c, r, items[a][p], wrap ? word.charCodeAt((first + (to - 1 - r) * across + c - start) % word.length) : undefined);
+      if (wrap && wide === 1) carry[p] = first + to - from;
     }
     const mark = marks.find((m) => m.index === a && sheet.index[c - 1] !== a);
     if (mark) {
@@ -218,7 +229,10 @@ function plot(id, items, max, { tip, marks = [], play, cell } = {}) {
     columns(s, items, max, marks);
     if (markBox) markBox.innerHTML = marks.filter((m) => m.left != null).map((m) => `<span style="left:${(m.left * 100).toFixed(2)}%">${m.label}</span>`).join("");
   }, cell);
-  if (!cell) sheet.fit = items.length;
+  if (!cell) {
+    sheet.fit = items.length;
+    sheet.wrap = true;
+  }
   if (play) playback(box, canvas, sheet, play, marks, document.querySelector(`#${id} .replay`));
   else box.classList.add("reveal");
   if (tip) {
