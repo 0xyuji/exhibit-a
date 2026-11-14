@@ -98,7 +98,7 @@ which is 1 when one front-end has everything and *n* when *n* of them split it e
 We don't ask you to trust our counting. The build compares its own numbers with outside ones and prints the result every time it runs.
 
 - **The official fee figure is what partners charge.** On the sampled days of 2025 the fees counted from single swaps come to 100.0% of the official fee figure for the same days.
-- **The revenue wallets grew by about what the official revenue says.** The three wallets hold 402,364 NEAR more than 30 days earlier, about $1,254,746 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.
+- **The revenue wallets grew by about what the official revenue says.** The three wallets hold 402,769 NEAR more than 30 days earlier, about $1,252,113 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.
 - **Two ways of reading the revenue wallets agree.** Over 30 days our archive-node balances show 405,284 NEAR arriving; SQL over the chain's transfer tables (a third party's saved Dune query) shows 405,283. The largest gap on any one day is under 1 NEAR.
 - **The official volume counts both sides of every swap.** It is a sum of volume per token, so a swap of Bitcoin for dollars is in it twice. Counting our partner swaps the same way (every swap that touches a token), we get 82% of the official BTC volume, 78% of the official SOL volume, 96% of the official XRP volume over 29 days. A one-sided official figure could not be matched this closely. So we compare partner swaps to the official total on the both-sides basis throughout.
 
@@ -226,7 +226,7 @@ Three things follow. The move to confidential settlement was a default being swi
 
 ## 4. So where's the money?
 
-Some of it is sitting inside. The intents contract held about $192.7M when we built this (160 of 160 listed tokens could be read).
+Some of it is sitting inside. The intents contract held about $192.0M when we built this (160 of 160 listed tokens could be read).
 
 Some of it lands in wallets anyone can read (Section 3.6).
 
@@ -261,9 +261,9 @@ Here's the thing, though: it's already moving. Month by month, on the official s
 
 ## 5. What's it worth to the token?
 
-The bull case fits in one line: **the upside is a setting, not a new market.** Take the published half and revenue goes from $1.8M to $3.9M per 30 days, from 22.2% to 47.5% of the dollar value of new issuance. No new customers required. (The other lever, charging 5 bps more on the stablecoin half, only gets you to 27.1%.)
+The bull case fits in one line: **the upside is a setting, not a new market.** Take the published half and revenue goes from $1.8M to $3.9M per 30 days, from 22.2% to 47.7% of the dollar value of new issuance. No new customers required. (The other lever, charging 5 bps more on the stablecoin half, only gets you to 27.2%.)
 
-There's a second lever, and this one is already pulled. On 2 November 2026 NEAR's governance voted to lower the issuance cap from 2.5% to 1.6%, phased in over two years [11]. At 1.6% today's revenue covers 34.6% instead of 22.2%; with the published half as well, 74.2%.
+There's a second lever, and this one is already pulled. On 2 November 2026 NEAR's governance voted to lower the issuance cap from 2.5% to 1.6%, phased in over two years [11]. At 1.6% today's revenue covers 34.7% instead of 22.2%; with the published half as well, 74.5%.
 
 The model is a few lines. Revenue in a window, as a function of NEAR's cut *c* of partner fees, an extra fee of *b* basis points on swap value outside the partner API, and volume growth *g*:
 
@@ -279,7 +279,7 @@ $$C = \frac{R}{I} \qquad (6)$$
 
 $$c^{*} = \frac{I - (R_0 - c_0 F)}{F} \qquad (7)$$
 
-Today *c*\* is 137%. And the multiple, with *S* the supply and *T* the days in the window:
+Today *c*\* is 136%. And the multiple, with *S* the supply and *T* the days in the window:
 
 $$M = \frac{S \cdot P}{R \cdot 365 / T} \qquad (8)$$
 
@@ -287,27 +287,27 @@ $$M = \frac{S \cdot P}{R \cdot 365 / T} \qquad (8)$$
 
 | Case | Revenue per 30 days | Per year | Share of new issuance | All NEAR / a year of it |
 |---|---|---|---|---|
-| Today | $1.8M | $22.4M | 22.2% | 183x |
-| NEAR takes its published half of partner fees | $3.9M | $48.0M | 47.5% | 85x |
-| Swaps outside the partner API pay 1 bp more | $1.9M | $23.4M | 23.2% | 175x |
-| Swaps outside the partner API pay 5 bps more | $2.2M | $27.4M | 27.1% | 149x |
-| Published half, and volume triples | $11.8M | $143.9M | 142.5% | 28x |
-| Nothing changes but volume halves | $920K | $11.2M | 11.1% | 366x |
-| Issuance at the 1.6% cap already voted in | $1.8M | $22.4M | 34.6% | 183x |
-| Published half, at the 1.6% cap | $3.9M | $48.0M | 74.2% | 85x |
-| The largest integrator (SwapKit) leaves | $1.8M | $22.4M | 22.2% | 183x |
+| Today | $1.8M | $22.4M | 22.2% | 182x |
+| NEAR takes its published half of partner fees | $3.9M | $48.0M | 47.7% | 85x |
+| Swaps outside the partner API pay 1 bp more | $1.9M | $23.4M | 23.2% | 174x |
+| Swaps outside the partner API pay 5 bps more | $2.2M | $27.4M | 27.2% | 149x |
+| Published half, and volume triples | $11.8M | $143.9M | 143.0% | 28x |
+| Nothing changes but volume halves | $920K | $11.2M | 11.1% | 364x |
+| Issuance at the 1.6% cap already voted in | $1.8M | $22.4M | 34.7% | 182x |
+| Published half, at the 1.6% cap | $3.9M | $48.0M | 74.5% | 85x |
+| The largest integrator (SwapKit) leaves | $1.8M | $22.4M | 22.2% | 182x |
 
 ![Figure 12](docs/figures/model.svg)
 
 **Figure 12.** The scenarios of Table 4, as the share of new issuance that revenue would cover. At today's volume nothing gets to 100% on its own.
 
-The model assumes every dollar of revenue could buy NEAR and a NEAR price of $3.12. Issuance is the net new NEAR the chain actually created in the window, read from total supply. At today's price every NEAR in existence is worth 183 times a year of this revenue; at the published half, 85 times. Nobody is buying NEAR for today's fee line.
+The model assumes every dollar of revenue could buy NEAR and a NEAR price of $3.11. Issuance is the net new NEAR the chain actually created in the window, read from total supply. At today's price every NEAR in existence is worth 182 times a year of this revenue; at the published half, 85 times. Nobody is buying NEAR for today's fee line.
 
 ## 6. The bear case
 
 Evidence against. We'd be doing the thing we make fun of if we stopped at the bull case. Here's how we could be wrong, roughly in the order it worries us.
 
-1. **The maths doesn't close yet.** To match issuance at today's volume NEAR would need 137% of partner fees, which is more than all of them. At the published half it needs 2.1x the volume; at today's cut, 4.5x.
+1. **The maths doesn't close yet.** To match issuance at today's volume NEAR would need 136% of partner fees, which is more than all of them. At the published half it needs 2.1x the volume; at today's cut, 4.5x.
 2. **It's one integrator.** SwapKit produces 75% of partner fees, which is 62% of every fee NEAR Intents reports. NEAR is named on none of them. If that relationship sours, every chart here looks different. (Run the model with them gone: partner fees fall to $1.3M, and NEAR's revenue in the records doesn't move, because it was never named on those fees. Either NEAR is paid some other way, or it is giving away its biggest channel.)
 3. **The cut may be thin for a reason.** $402K of $5.0M. The partners own the customer, and whoever owns the customer sets the terms.
 4. **Half the volume is thin.** Counted the same way, partner swaps are 56% of official volume and 83% of official fees. The other 44% brings the remaining 17%. 93% of that gap is USDT and USDC, paying about 13 bps. Useful, and NEAR's own, but stablecoin margins won't carry the token.
@@ -390,10 +390,10 @@ So what's the trade? Long the venue, with eyes open about the token. The busines
 | Token | NEAR into the revenue wallets | 426,685 NEAR | 30 days, read from chain |
 | Token | Net new NEAR | 2,661,111 NEAR | 30 days, from total supply on chain |
 | Token | Inflow against new supply | 16% | both read from chain, no prices |
-| Token | NEAR in the revenue wallets | 4,303,628 NEAR | 0.33% of supply |
+| Token | NEAR in the revenue wallets | 4,304,033 NEAR | 0.33% of supply |
 | Token | Revenue against new issuance | 22% | dollars; the model's base case |
-| Token | All NEAR at today's price, over a year of this revenue | 182.8x | supply x $3.12, against $22.4M a year |
-| Token | Cut that would match issuance | 136.9% | NEAR's share of partner fees, at today's volume |
+| Token | All NEAR at today's price, over a year of this revenue | 182.2x | supply x $3.11, against $22.4M a year |
+| Token | Cut that would match issuance | 136.4% | NEAR's share of partner fees, at today's volume |
 | Token | Volume that would match issuance | 2.1x | at the published half of partner fees |
 | Privacy | Confidential share of volume | 99% | on 2026-11-12; 43% in the second half of October |
 | Reliability | Swaps that fail or refund | 2.6% | ordinary days; 62% on 2026-11-05 |
