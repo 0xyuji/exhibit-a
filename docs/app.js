@@ -14,6 +14,7 @@ const INK = {
   ghost: "rgba(236,231,222,0.3)",
   near: "rgba(0,236,151,0.92)",
   faint: "rgba(236,231,222,0.14)",
+  btc: "rgba(247,147,26,0.95)",
   mark: "rgba(236,231,222,0.36)",
 };
 const STYLES = Object.keys(INK);
@@ -36,6 +37,7 @@ class Sheet {
   constructor(canvas, paint, cell = { w: CW, h: CH, font: 8 }) {
     this.canvas = canvas;
     this.paint = paint;
+    this.base = cell;
     this.cw = cell.w;
     this.ch = cell.h;
     this.font = cell.font;
@@ -53,6 +55,15 @@ class Sheet {
     const w = this.canvas.clientWidth;
     const h = this.canvas.clientHeight;
     if (!w || !h) return;
+    if (this.fit) {
+      // Size the glyph so the bars fill the width exactly, each a whole number of cells with a one-cell gap.
+      // With too many bars for the usual glyph, it shrinks until that is true.
+      let per = Math.floor(w / (this.fit * this.base.w));
+      if (per < 3) per = w / (this.fit * 3) >= 2.9 ? 3 : 2;
+      this.cw = w / (this.fit * per) - 1e-6;
+      this.ch = this.cw * (this.base.h / this.base.w);
+      this.font = this.ch * (this.base.font / this.base.h);
+    }
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     this.canvas.width = Math.round(w * dpr);
     this.canvas.height = Math.round(h * dpr);
@@ -122,11 +133,14 @@ document.fonts?.ready.then(() => sheets.forEach((sheet) => sheet.layout()));
 function columns(sheet, items, max, marks = []) {
   const { cols, rows } = sheet;
   const n = items.length;
-  const spaced = cols >= n * 3;
+  const per = Math.floor(cols / n);
+  const even = Boolean(sheet.fit) && per >= 2; // the sheet was sized so each bar is `per` whole cells
+  const spaced = even || cols >= n * 3;
   sheet.index = new Int16Array(cols).fill(-1);
   for (let c = 0; c < cols; c++) {
-    const a = Math.min(n - 1, Math.floor((c * n) / cols));
-    const next = Math.floor(((c + 1) * n) / cols);
+    const a = even ? Math.floor(c / per) : Math.min(n - 1, Math.floor((c * n) / cols));
+    if (a >= n) break;
+    const next = even ? Math.floor((c + 1) / per) : Math.floor(((c + 1) * n) / cols);
     sheet.index[c] = a;
     if (spaced && next !== a) continue; // a one-cell gap between bars
     const b = spaced ? a + 1 : Math.max(a + 1, Math.min(n, next));
@@ -204,6 +218,7 @@ function plot(id, items, max, { tip, marks = [], play, cell } = {}) {
     columns(s, items, max, marks);
     if (markBox) markBox.innerHTML = marks.filter((m) => m.left != null).map((m) => `<span style="left:${(m.left * 100).toFixed(2)}%">${m.label}</span>`).join("");
   }, cell);
+  if (!cell) sheet.fit = items.length;
   if (play) playback(box, canvas, sheet, play, marks, document.querySelector(`#${id} .replay`));
   else box.classList.add("reveal");
   if (tip) {
@@ -451,10 +466,10 @@ if (data.monthly && data.monthly.length > 2) {
 
   const part = (h, name) => h.kinds[name] || 0;
   plot("mix", history.map((h) => [
-    { v: part(h, "Bitcoin"), style: "clear", text: "btc" },
+    { v: part(h, "Bitcoin"), style: "btc", text: "btc" },
     { v: part(h, "Zcash"), style: "cipher" },
-    { v: part(h, "Stablecoin pair"), style: "ghost" },
-    { v: 1 - part(h, "Bitcoin") - part(h, "Zcash") - part(h, "Stablecoin pair"), style: "faint" },
+    { v: part(h, "Stablecoin pair"), style: "clear", text: "usd" },
+    { v: 1 - part(h, "Bitcoin") - part(h, "Zcash") - part(h, "Stablecoin pair"), style: "ghost" },
   ]), 1, {
     tip: (i) => `<b>${label(history[i])}</b><br>Bitcoin ${pct(part(history[i], "Bitcoin"))} · Zcash ${pct(part(history[i], "Zcash"))}<br>stablecoin pairs ${pct(part(history[i], "Stablecoin pair"))}`,
   });
@@ -653,6 +668,7 @@ if (data.tokens) {
     panel.classList.toggle("split", !drawn);
     const cap = panel.querySelectorAll(".scCap span");
     if (drawn) {
+      sheet.fit = drawn.items.length;
       picture = { items: drawn.items, max: Math.max(...drawn.items.map((item) => item.reduce((sum, part) => sum + part.v, 0))) || 1 };
       cap[0].textContent = drawn.cap;
       cap[1].textContent = `${drawn.range[0]} to ${drawn.range[1]}`;

@@ -50,6 +50,7 @@ figcaption b, .model b, .text b { color: var(--paper); font-weight: 500; }
 .k.ghost { color: rgba(236, 231, 222, 0.42); }
 .k.faint { color: rgba(236, 231, 222, 0.28); }
 .k.near { color: var(--near); }
+.k.btc { color: #f7931a; }
 
 .plot { position: relative; height: 216px; border-bottom: 1px solid var(--line-strong); }
 .plot.tall { height: 342px; }
