@@ -166,5 +166,16 @@ class History(unittest.TestCase):
         self.assertTrue(all(day < "2026-10-14" for day in days))
 
 
+class Recipients(unittest.TestCase):
+    def test_addresses_and_small_recipients_are_folded_into_others(self):
+        from pipeline import swaps
+        fees = {"partner.near": 900.0, "0x" + "ab" * 20: 60.0, "f" * 64: 30.0, "tiny.near": 1.0,
+                "buybacks.multisignature.near": 2.0, "(others)": 7.0}
+        kept = swaps.named_recipients(fees)
+        self.assertEqual(set(kept), {"partner.near", "buybacks.multisignature.near", "(others)"})
+        self.assertAlmostEqual(sum(kept.values()), 1000.0)
+        self.assertAlmostEqual(kept["(others)"], 98.0)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,8 +1,11 @@
 """Counts every partner swap of one UTC day from the NEAR Intents Explorer API.
 
-The API terms forbid keeping its records for more than 24 hours, so records are
+The API terms forbid storing API data for more than 24 hours, so swap records are
 never written to disk: each one is folded into running totals and dropped. What
-is saved per day is counts and sums only: no addresses, no single swaps.
+is saved per day is counts and sums, grouped by front-end label, kind of swap,
+asset and named fee-recipient account. No user or deposit address, no transaction
+hash and no per-swap row is kept; fee recipients that are bare addresses, or that
+took under 0.5% of the day's fees, are folded into "(others)".
 """
 import collections
 import re
@@ -69,7 +72,7 @@ def fetch(params):
 
 
 def records(start, end):
-    """Every settled swap created in [start, end), newest first, each one once."""
+    """Every swap record created in [start, end) (completed, refunded or failed), newest first, each one once."""
     seen = set()
     cursor = end
     while cursor > start:
@@ -98,6 +101,21 @@ def records(start, end):
 
 def num(value):
     return float(value or 0)
+
+
+ADDRESS = re.compile(r"[0-9a-f]{64}|0x[0-9a-fA-F]{40}")
+
+
+def named_recipients(fees_by_account, floor=0.005, most=30):
+    """Fee recipients worth naming: named accounts (never bare addresses) that took at least
+    `floor` of the fees, and NEAR's own wallets. Everything else is summed as "(others)"."""
+    total = sum(fees_by_account.values())
+    named = lambda name: "." in name and not ADDRESS.fullmatch(name)
+    keep = {name: usd for name, usd in fees_by_account.items()
+            if name != "(others)" and (name in NEAR_OWNED or (named(name) and usd >= floor * total))}
+    keep = dict(sorted(keep.items(), key=lambda item: -item[1])[:most])
+    keep["(others)"] = total - sum(keep.values())
+    return keep
 
 
 class Day:
@@ -174,7 +192,10 @@ class Day:
             row[0] += value
             row[1] += fee
             row[2] += 1
-        row = self.front[record.get("referral") or "(none)"]
+        label = record.get("referral") or "(none)"
+        if ADDRESS.fullmatch(label):  # a label that is itself an address is not kept
+            label = "(an address)"
+        row = self.front[label]
         row[0] += value
         row[1] += fee
         row[2] += 1
@@ -190,8 +211,7 @@ class Day:
     def result(self):
         done = self.status.get("SUCCESS", 0)
         top = sorted(self.largest, reverse=True)[: max(1, done // 100)] if done else []
-        recipients = dict(self.recipient.most_common(30))
-        recipients["(others)"] = sum(self.recipient.values()) - sum(recipients.values())
+        recipients = named_recipients(self.recipient)
         table = lambda rows, keys: {name: dict(zip(keys, values)) for name, values in rows.items()}
         return {
             "swaps": sum(self.status.values()),

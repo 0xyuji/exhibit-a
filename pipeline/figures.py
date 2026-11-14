@@ -155,8 +155,9 @@ def _box(x, y, w, h, title, lines=(), stroke=BRASS, fill="#121316"):
 
 
 def _arrow(x1, y1, x2, y2, label=None, dash=False):
+    dashes = 'stroke-dasharray="3 3" ' if dash else ""
     out = [f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{BRASS}" stroke-opacity="0.8" '
-           f'{"stroke-dasharray=\'3 3\' " if dash else ""}marker-end="url(#tip)"/>']
+           f'{dashes}marker-end="url(#tip)"/>']
     if label:
         out.append(_text((x1 + x2) / 2, min(y1, y2) - 6, label, DIM, 9, "middle"))
     return "\n".join(out)
@@ -219,7 +220,7 @@ def pipeline(d):
     ]
     right = [
         ("docs/data.json", "the dashboard reads it"),
-        ("THESIS.md and the PDF", "this paper, numbers and all"),
+        ("THESIS.md, thesis.html", "this paper, numbers and all"),
         ("docs/figures/", "every figure here"),
         (f"{len(d['checks'])} checks, {len(d['tripwires'])} tripwires", "printed on every build"),
     ]

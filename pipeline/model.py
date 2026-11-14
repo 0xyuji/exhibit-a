@@ -81,7 +81,7 @@ def scenarios(inputs):
     top = inputs.get("top_front")
     if top:
         out.append(dict(run(inputs, lost_fees=top["fees"], lost_to_near=top["to_near"]),
-                        name=f"The largest integrator ({top['name']}) leaves"))
+                        name=f"The largest integrator ({ {'swapkit': 'SwapKit', 'lifi': 'LI.FI'}.get(top['name'], top['name']) }) leaves"))
     return out
 
 

@@ -12,8 +12,7 @@ PRICE = "https://coins.llama.fi/prices/current/coingecko:near"
 DUNE_QUERY = 5179085
 DUNE = "https://api.dune.com/api/v1/query/{query}/results?limit=5000"
 SPLIT = os.path.join(DATA, "confidential.csv")
-# NEAR's saved query "NEAR Intents - Token Volume": volume per token and day.
-TOKEN_QUERY = 5157527
+# NEAR's saved query 5157527, "NEAR Intents - Token Volume": volume per token and day.
 TOKEN_FILE = os.path.join(DATA, "official_tokens.csv")
 
 
@@ -27,7 +26,6 @@ def llama():
         "volume": series("dexs", "dailyVolume"),
         "fees": series("fees", "dailyFees"),
         "revenue": series("fees", "dailyRevenue"),
-        "methodology": http_json(LLAMA.format(kind="fees", series="dailyRevenue")).get("methodology", {}),
     }
 
 

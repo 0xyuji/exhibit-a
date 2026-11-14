@@ -267,15 +267,7 @@
  "paid_in": 4103092.800799999,
  "paid_out": 4080298.6353000016,
  "recipients": {
-  "(others)": 0.0,
-  "0x0891617fe27647731d6f1e764092b2f9f06130a0": 300.66749325000006,
-  "640b22cc1f9ad8e566bde5415ea2570aca50437ab81d8f1a0f16e84321eccc85": 1.09999,
-  "a74a1b91cdab26d474fa77f1532655e5fddd1d95f44181085527396617997386": 45.1930107,
-  "app-fee.near": 0.0012074,
-  "electriccoinco.near": 82.29387650000001,
-  "exblack.near": 6.9179586,
-  "skarbi.near": 0.07055422,
-  "surgecode.near": 12.7365026,
+  "(others)": 448.9805932700001,
   "swapkit.near": 125.95395219999999,
   "thorswap.near": 1256.5694055,
   "trustswapkit.near": 18131.020426400035

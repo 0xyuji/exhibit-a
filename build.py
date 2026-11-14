@@ -3,12 +3,14 @@
 
 It counts partner swaps day by day from the Explorer API (days already counted are
 reused), reads the official series from DefiLlama, reads NEAR itself over RPC, runs
-the model and writes docs/data.json, which the page in docs/ draws from, and THESIS.md.
+the model and writes docs/data.json (which the page in docs/ draws from), THESIS.md,
+docs/thesis.html and the figures in docs/figures/.
 
-  python3 build.py            the last 30 full days plus one day a month of history
+  python3 build.py            the last 30 full days plus three days a month of history
   python3 build.py --days 7   a shorter window (a 7-day run takes about 15 minutes cold)
   python3 build.py --fresh    count every day again instead of reusing saved totals
-  python3 build.py --offline  no key at all: rebuild from the day totals saved in data/days/
+  python3 build.py --offline  no key at all: rebuild from the day totals saved in data/days/,
+                              for the 30 days ending at the last saved day
 """
 import argparse
 import os
@@ -42,11 +44,16 @@ def main():
 
     # Two days back, so the official series for the last day is complete.
     end = min(shift(today(), -2), max(llama["volume"]))
+    offline = args.offline or not env("EXPLORER_API_KEY")
+    if offline:  # without a key no new day can be counted, so the window ends at the last saved day
+        saved = sorted(name[:-5] for name in os.listdir(os.path.dirname(swaps.path_of(end))) if name.endswith(".json"))
+        if saved and saved[-1] < end:
+            end = saved[-1]
+            print(f"  no Explorer key in use: the window ends at the last saved day, {end}")
     window = [shift(end, -offset) for offset in range(args.days - 1, -1, -1)]
     wanted = assemble.history_days(window[0]) + window
     print(f"  window {window[0]} to {window[-1]}, plus {len(wanted) - len(window)} history days")
 
-    offline = args.offline or not env("EXPLORER_API_KEY")
     if offline:
         missing = [day for day in window if not os.path.exists(swaps.path_of(day))]
         if missing:
@@ -86,10 +93,13 @@ def main():
     print(f"  confidential, last day                     {bar(d['share_last'])} {d['share_last']:.0%}")
     print(f"  revenue against new issuance               {bar(m['covered'])} {m['covered']:.1%}")
     print()
+    for check in data["checks"]:
+        print(f"  [ check ] {check['name']}. {check['detail']}")
+    print()
     for wire in data["tripwires"]:
         print(f"  [{'TRIPPED' if wire['tripped'] else '  ok   '}] {wire['name']}: {wire['now']:.1%} (limit {wire['limit']:.0%})")
     print()
-    print("  wrote docs/data.json and THESIS.md. Open the page with:  python3 -m http.server -d docs 8787")
+    print("  wrote docs/data.json, THESIS.md, docs/thesis.html and docs/figures/. Open the page with:  python3 -m http.server -d docs 8787")
 
 
 if __name__ == "__main__":

@@ -369,6 +369,12 @@
  "fees": 206480.96665900268,
  "fees_to_near": 13082.86359315593,
  "front_ends": {
+  "(an address)": {
+   "fees": 1.24986625,
+   "fees_to_near": 0.624933125,
+   "swaps": 1,
+   "volume": 249.97325
+  },
   "(none)": {
    "fees": 3556.484395309172,
    "fees_to_near": 1734.086324324461,
@@ -380,12 +386,6 @@
    "fees_to_near": 0.0,
    "swaps": 2,
    "volume": 2.808592050103
-  },
-  "0x5a6574b3b82feb557121d5717e85f666459f7d33": {
-   "fees": 1.24986625,
-   "fees_to_near": 0.624933125,
-   "swaps": 1,
-   "volume": 249.97325
   },
   "allbridgenext": {
    "fees": 23.786925064256817,
@@ -971,35 +971,20 @@
  "paid_in": 63733426.770964354,
  "paid_out": 63441724.7716464,
  "recipients": {
-  "(others)": 2833.0546227311715,
-  "0x2034356235e03b0476885FD39D88c56441572c3c": 450.01632277157717,
-  "0xB9df39958441577Fd4F3D2f73523e23062afd5Bd": 749.9978487677369,
-  "0xa6BfeA38fDddefE2E2987b486957714256d3C970": 208.79204057195332,
-  "1fad79eb2223d76e33b93dbc43f3d565b315566642bae76ffeaa4486f146f77a": 668.267673283175,
-  "8b8f06d79196f428774d8a1e35716799284053057c09232ff5bbea9f70d2cdde": 382.4708549409727,
+  "(others)": 9733.37038901486,
   "XxYyabcdqad001.near": 1478.5434540457104,
   "buybacks.multisignature.near": 8646.805538115541,
-  "coolbitx.near": 526.3376840775326,
   "draining.near": 1280.1242151895137,
-  "f6e2a398796c74b6f555dd3786c02e2792ea53d6ad4ee3a59fd95576682b27a2": 412.26969009429513,
   "fefundsadmin.sputnik-dao.near": 4436.058055040357,
   "feminine.near": 1280.1242151895137,
   "greed.tg": 1280.1242151895137,
   "hvlnear.near": 8385.817927221762,
-  "ktpblack.near": 395.054298632365,
   "ledgerswapkit.near": 97719.45434673948,
   "lifi_int.near": 1296.6877852522102,
-  "narrowgif6666.near": 322.8522270048355,
-  "onekeyoky.near": 564.5331478888955,
-  "rangoni.near": 260.871131778514,
   "rangotw.near": 4928.585522748428,
-  "swapkit-widget.near": 896.7059541000003,
   "swapkit.near": 5847.365242909263,
-  "swapspaceswapkit.near": 534.6940677729871,
   "tangemswapkit.near": 9082.261417699645,
   "thorswap.near": 4748.947243930556,
-  "transit-swapkit.near": 218.29407770207465,
-  "trustswap.near": 309.1587468967785,
   "trustswapkit.near": 24969.757324955764,
   "zodlswaps.near": 21366.939765760206
  },

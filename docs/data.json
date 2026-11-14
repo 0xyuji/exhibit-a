@@ -133,7 +133,7 @@
    "volume_share": 0.009446694268601313
   }
  ],
- "built": "2026-11-14 16:08 UTC",
+ "built": "2026-11-14 17:10 UTC",
  "capture": {
   "front_end": 0.193,
   "partners": 0.104,
@@ -143,8 +143,8 @@
   "what": "NEAR's own revenue dashboard: its capture over the last 30 days, as shares of gross fees, by mechanism"
  },
  "chain": {
-  "block": 224536970,
-  "block_before": 220099677,
+  "block": 224543490,
+  "block_before": 220105980,
   "fee_pips": 1,
   "held": {
    "tokens_listed": 160,
@@ -152,51 +152,51 @@
    "top": [
     {
      "symbol": "wNEAR",
-     "usd": 53083070.125896454
+     "usd": 50983205.78917822
     },
     {
      "symbol": "USDC",
-     "usd": 38114018.452172086
+     "usd": 37605917.56445299
     },
     {
      "symbol": "USDT",
-     "usd": 25381592.623476744
+     "usd": 24525530.487251785
     },
     {
      "symbol": "ZEC",
-     "usd": 21917705.82141804
+     "usd": 22074911.598315176
     },
     {
      "symbol": "BTC",
-     "usd": 15825880.07676652
+     "usd": 15258557.2213386
     },
     {
      "symbol": "WBTC",
-     "usd": 9798142.20585999
+     "usd": 9595800.94425748
     },
     {
      "symbol": "ETH",
-     "usd": 5713654.16563421
+     "usd": 5700302.2431708835
     },
     {
      "symbol": "QTC",
-     "usd": 4443580.784545973
+     "usd": 3944727.78785666
     }
    ],
-   "total": 196308548.6917598
+   "total": 191159643.40677938
   },
   "max_inflation": 0.025,
-  "moved": 400650.21763584856,
-  "moved_usd": 1275527.8747211418,
+  "moved": 401952.4650490554,
+  "moved_usd": 1238623.506982507,
   "protocol_version": 88,
-  "supply": 1311701736.3083975,
-  "time": 1794672410,
+  "supply": 1311701664.361643,
+  "time": 1794676118,
   "wallets": [
    {
     "account": "fefundsadmin.sputnik-dao.near",
     "before": 1904406.3535410522,
     "label": "Front-end fees",
-    "now": 2016923.730110561
+    "now": 2017685.5904696947
    },
    {
     "account": "1csfundsadmin.sputnik-dao.near",
@@ -206,9 +206,9 @@
    },
    {
     "account": "buybacks.multisignature.near",
-    "before": 1995399.7364938867,
+    "before": 1995918.6318234808,
     "label": "Buybacks",
-    "now": 2283532.5775602264
+    "now": 2284591.8599438937
    }
   ],
   "window_days": 30
@@ -1398,7 +1398,7 @@
    ]
   },
   {
-   "detail": "The three wallets hold 400,650 NEAR more than 30 days earlier, about $1,275,528 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.",
+   "detail": "The three wallets hold 401,952 NEAR more than 30 days earlier, about $1,238,624 at today's price, against $1,839,089 of official revenue. The gap includes price moves and anything the wallets paid out.",
    "name": "The revenue wallets grew by about what the official revenue says"
   },
   {
@@ -4420,8 +4420,8 @@
   {
    "group": "Scale",
    "kind": "usd",
-   "name": "Held by the contract",
-   "note": "its largest token holdings, at today's prices",
+   "name": "Held by the contract, six largest tokens",
+   "note": "at today's prices",
    "value": 141440017.07563645
   },
   {
@@ -4541,35 +4541,35 @@
    "kind": "near",
    "name": "NEAR in the revenue wallets",
    "note": "0.33% of supply",
-   "value": 4300727.1835622
+   "value": 4302548.326305001
   },
   {
    "group": "Token",
    "kind": "pct",
    "name": "Revenue against new issuance",
    "note": "dollars; the model's base case",
-   "value": 0.2170776706367984
+   "value": 0.22427202380289984
   },
   {
    "group": "Token",
    "kind": "x",
    "name": "All NEAR at today's price, over a year of this revenue",
-   "note": "supply x $3.18, against $22.4M a year",
-   "value": 186.63165522195945
+   "note": "supply x $3.08, against $22.4M a year",
+   "value": 180.6447459363534
   },
   {
    "group": "Token",
    "kind": "pct",
    "name": "Cut that would match issuance",
    "note": "NEAR's share of partner fees, at today's volume",
-   "value": 1.4035030564734854
+   "value": 1.3492857290676992
   },
   {
    "group": "Token",
    "kind": "x",
    "name": "Volume that would match issuance",
    "note": "at the published half of partner fees",
-   "value": 2.14857119626878
+   "value": 2.0796478427164193
   },
   {
    "group": "Privacy",
@@ -4607,18 +4607,11 @@
    "value": 5.6958715911014295
   }
  ],
- "methodology": {
-  "Fees": "Gross fees charged on NEAR Intents swaps - the protocol fee plus the affiliate (distribution) fee each frontend collects, summed across all integrators.",
-  "HoldersRevenue": "Since 2026-02-23, NEAR's captured Intents revenue is used to buy back $NEAR on the open market (not burned), returning value to holders.",
-  "ProtocolRevenue": "Captured revenue held by the treasury before the 2026-02-23 buyback program.",
-  "Revenue": "NEAR's net captured revenue, measured as NEAR/wNEAR swept into its revenue wallets (reconciles with revenue.near.org and the on-chain buyback). Split by destination wallet into front-end affiliate revenue and Other. Transfers between those wallets are excluded.",
-  "SupplySideRevenue": "Gross fees minus NEAR's captured revenue - the affiliate fees kept by solvers and third-party distribution channels (e.g. SwapKit)."
- },
  "model": {
   "breakeven": {
-   "cut": 1.4035030564734854,
-   "growth_at_half": 2.14857119626878,
-   "growth_at_todays_cut": 4.6066460777218365
+   "cut": 1.3492857290676992,
+   "growth_at_half": 2.0796478427164193,
+   "growth_at_todays_cut": 4.458870897240595
   },
   "inputs": {
    "days": 30,
@@ -4628,10 +4621,10 @@
    "official_volume": 3774153452.0,
    "partner_fees": 5012635.662802163,
    "partner_volume": 1065440664.198245,
-   "price": 3.1836445322499998,
+   "price": 3.08151738,
    "rest_volume": 821636061.801755,
    "revenue": 1839089.0,
-   "supply": 1311701736.3083975,
+   "supply": 1311701664.361643,
    "top_front": {
     "fees": 3746817.4627756597,
     "name": "swapkit",
@@ -4642,11 +4635,11 @@
   "issuance_basis": "measured",
   "scenarios": [
    {
-    "covered": 0.2170776706367984,
+    "covered": 0.22427202380289984,
     "cut": 0.08025844532944958,
     "growth": 1.0,
-    "issuance": 8472032.128431374,
-    "multiple": 186.63165522195945,
+    "issuance": 8200260.419535308,
+    "multiple": 180.6447459363534,
     "name": "Today",
     "partner_fees": 5012635.662802163,
     "rest_bps": 0.0,
@@ -4654,11 +4647,11 @@
     "revenue_year": 22375582.833333332
    },
    {
-    "covered": 0.4654255822365139,
+    "covered": 0.4808506418537708,
     "cut": 0.5,
     "growth": 1.0,
-    "issuance": 8472032.128431374,
-    "multiple": 87.04627877993472,
+    "issuance": 8200260.419535308,
+    "multiple": 84.25394339564389,
     "name": "NEAR takes its published half of partner fees",
     "partner_fees": 5012635.662802163,
     "rest_bps": 0.0,
@@ -4666,11 +4659,11 @@
     "revenue_year": 47974389.24756977
    },
    {
-    "covered": 0.22677588765659012,
+    "covered": 0.23429165756775427,
     "cut": 0.08025844532944958,
     "growth": 1.0,
-    "issuance": 8472032.128431374,
-    "multiple": 178.65023217998944,
+    "issuance": 8200260.419535308,
+    "multiple": 172.91935692926077,
     "name": "Swaps outside the partner API pay 1 bp more",
     "partner_fees": 5012635.662802163,
     "rest_bps": 1,
@@ -4678,11 +4671,11 @@
     "revenue_year": 23375240.0418588
    },
    {
-    "covered": 0.26556875573575706,
+    "covered": 0.2743701926271721,
     "cut": 0.08025844532944958,
     "growth": 1.0,
-    "issuance": 8472032.128431374,
-    "multiple": 152.55395865537864,
+    "issuance": 8200260.419535308,
+    "multiple": 147.66021910972847,
     "name": "Swaps outside the partner API pay 5 bps more",
     "partner_fees": 5012635.662802163,
     "rest_bps": 5,
@@ -4690,11 +4683,11 @@
     "revenue_year": 27373868.875960674
    },
    {
-    "covered": 1.3962767467095416,
+    "covered": 1.4425519255613122,
     "cut": 0.5,
     "growth": 3,
-    "issuance": 8472032.128431374,
-    "multiple": 29.015426259978245,
+    "issuance": 8200260.419535308,
+    "multiple": 28.084647798547966,
     "name": "Published half, and volume triples",
     "partner_fees": 15037906.988406487,
     "rest_bps": 0.0,
@@ -4702,11 +4695,11 @@
     "revenue_year": 143923167.74270928
    },
    {
-    "covered": 0.1085388353183992,
+    "covered": 0.11213601190144992,
     "cut": 0.08025844532944958,
     "growth": 0.5,
-    "issuance": 8472032.128431374,
-    "multiple": 373.2633104439189,
+    "issuance": 8200260.419535308,
+    "multiple": 361.2894918727068,
     "name": "Nothing changes but volume halves",
     "partner_fees": 2506317.8314010813,
     "rest_bps": 0.0,
@@ -4714,11 +4707,11 @@
     "revenue_year": 11187791.416666666
    },
    {
-    "covered": 0.3391838603699975,
+    "covered": 0.350425037192031,
     "cut": 0.08025844532944958,
     "growth": 1.0,
-    "issuance": 5422100.56219608,
-    "multiple": 186.63165522195945,
+    "issuance": 5248166.668502597,
+    "multiple": 180.6447459363534,
     "name": "Issuance at the 1.6% cap already voted in",
     "partner_fees": 5012635.662802163,
     "rest_bps": 0.0,
@@ -4726,11 +4719,11 @@
     "revenue_year": 22375582.833333332
    },
    {
-    "covered": 0.727227472244553,
+    "covered": 0.7513291278965168,
     "cut": 0.5,
     "growth": 1.0,
-    "issuance": 5422100.56219608,
-    "multiple": 87.04627877993472,
+    "issuance": 5248166.668502597,
+    "multiple": 84.25394339564389,
     "name": "Published half, at the 1.6% cap",
     "partner_fees": 5012635.662802163,
     "rest_bps": 0.0,
@@ -4738,12 +4731,12 @@
     "revenue_year": 47974389.24756977
    },
    {
-    "covered": 0.2170776706367984,
+    "covered": 0.22427202380289984,
     "cut": 0.08025844532944958,
     "growth": 1.0,
-    "issuance": 8472032.128431374,
-    "multiple": 186.63165522195945,
-    "name": "The largest integrator (swapkit) leaves",
+    "issuance": 8200260.419535308,
+    "multiple": 180.6447459363534,
+    "name": "The largest integrator (SwapKit) leaves",
     "partner_fees": 1265818.2000265028,
     "rest_bps": 0.0,
     "revenue": 1839089.0,
@@ -4751,11 +4744,11 @@
    }
   ],
   "today": {
-   "covered": 0.2170776706367984,
+   "covered": 0.22427202380289984,
    "cut": 0.08025844532944958,
    "growth": 1.0,
-   "issuance": 8472032.128431374,
-   "multiple": 186.63165522195945,
+   "issuance": 8200260.419535308,
+   "multiple": 180.6447459363534,
    "partner_fees": 5012635.662802163,
    "rest_bps": 0.0,
    "revenue": 1839089.0,
@@ -4952,7 +4945,7 @@
    }
   ]
  },
- "price": 3.1836445322499998,
+ "price": 3.08151738,
  "recipients": [
   {
    "name": "ledgerswapkit.near",
@@ -4981,20 +4974,14 @@
   {
    "name": "thorswap.near",
    "near": false,
-   "share": 0.0718120792937443,
-   "usd": 359967.7896877994
+   "share": 0.07166370044251398,
+   "usd": 359224.02056651673
   },
   {
    "name": "tangemswapkit.near",
    "near": false,
    "share": 0.05781976356496714,
    "usd": 289829.4088605434
-  },
-  {
-   "name": "f6e2a398\u20262b27a2",
-   "near": false,
-   "share": 0.022782573404095934,
-   "usd": 114200.73993577935
   },
   {
    "name": "swapkit.near",
@@ -5005,14 +4992,20 @@
   {
    "name": "trezorswapkit.near",
    "near": false,
-   "share": 0.012911688001974937,
-   "usd": 64721.58774567437
+   "share": 0.01253198821716425,
+   "usd": 62818.29106317401
   },
   {
    "name": "rangotw.near",
    "near": false,
-   "share": 0.008891973868326302,
-   "usd": 44572.22532507733
+   "share": 0.008027762581762077,
+   "usd": 40240.24900984935
+  },
+  {
+   "name": "lifi_int.near",
+   "near": false,
+   "share": 0.004536240318023076,
+   "usd": 22738.519993163496
   }
  ],
  "routes": [
@@ -5200,7 +5193,7 @@
    "bad": "below",
    "limit": 0.1,
    "name": "Revenue covers under 10% of new NEAR issued",
-   "now": 0.2170776706367984,
+   "now": 0.22427202380289984,
    "tripped": false,
    "unit": "share"
   },

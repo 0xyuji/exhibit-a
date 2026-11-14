@@ -27,8 +27,6 @@
 </header>
 <div class="tape" aria-hidden="true"><canvas></canvas></div>
 
-
-
 <main>
   <section class="hero">
     <div class="heroGrid">
@@ -63,7 +61,7 @@
       <div class="flowBox"><canvas aria-hidden="true"></canvas><div class="flowLabels"></div></div>
       <details><summary>Query</summary><pre>GET explorer.near-intents.org/api/v0/transactions      -- every successful partner swap in the window
 
--- left:  fee dollars by what was swapped   (sum(amountInUsd * appFees[].fee / 10000), grouped as in "Who pays")
+-- left:  fee dollars by what was swapped   (sum(amountInUsd * appFees[].fee / 10000), grouped as in "Who's paying?")
 -- right: the same dollars by appFees[].recipient; the three NEAR revenue wallets are drawn in green
 -- band width is proportional to dollars; code: pipeline/swaps.py</pre></details>
     </figure>
@@ -93,8 +91,6 @@ group by date_at
 -- (equals public before 2026-09-01 and public + confidential from that day on)</pre></details>
     </figure>
   </section>
-
-  <section class="stats" id="stats"></section>
 
   <section>
     <div class="chart" id="score">
@@ -157,7 +153,7 @@ group by date_at
       </figcaption>
       <div class="legend"><span><i class="k clear">name</i> share of partner volume</span><span class="scale">right: fee in bps · <i class="k near">bps named to NEAR</i></span></div>
       <div class="bars"></div>
-      <details><summary>Query</summary><pre>-- same swap records as "Who pays", grouped by the referral field
+      <details><summary>Query</summary><pre>-- same swap records as "Who's paying?", grouped by the referral field
 -- fee charged   = sum(amountInUsd * appFees[].fee / 10000) / sum(amountInUsd)
 -- named to NEAR = the part whose appFees[].recipient is one of
 --   buybacks.multisignature.near, fefundsadmin.sputnik-dao.near, 1csfundsadmin.sputnik-dao.near</pre></details>
@@ -202,8 +198,8 @@ GET api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue    -- NEAR/wNEA
       <div class="legend"><span><i class="k clear">fees</i> partner fees per day</span><span class="scale" data-f="growthScale"></span></div>
       <div class="plot"><canvas></canvas><div class="tip"></div></div>
       <div class="axis"><span data-f="growthFrom"></span><span>last 30 days</span></div>
-      <details><summary>Query</summary><pre>-- one full day counted per month (the 15th), then the daily average of the last 30 days
--- same Explorer request and fee rule as "Who pays"</pre></details>
+      <details><summary>Query</summary><pre>-- three full days counted per month (the 5th, 15th and 25th), then the daily average of the window
+-- same Explorer request and fee rule as "Who's paying?"</pre></details>
     </figure>
 
     <figure class="chart" id="mix">
@@ -214,8 +210,8 @@ GET api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue    -- NEAR/wNEA
       <div class="legend"><span><i class="k clear">btc</i> Bitcoin</span><span><i class="k cipher">%#&amp;</i> Zcash</span><span><i class="k ghost">;:+</i> stablecoin pairs</span><span><i class="k faint">...</i> the rest</span></div>
       <div class="plot"><canvas></canvas><div class="tip"></div></div>
       <div class="axis"><span data-f="growthFrom"></span><span>last 30 days</span></div>
-      <details><summary>Query</summary><pre>-- share of each day's partner volume by group (groups as in "Who pays")
--- one sampled day per month, so the path between months is not shown</pre></details>
+      <details><summary>Query</summary><pre>-- share of each day's partner volume by group (groups as in "Who's paying?")
+-- three sampled days per month, so the path between them is not shown</pre></details>
     </figure>
   </section>
 

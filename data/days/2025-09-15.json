@@ -275,22 +275,10 @@
  "paid_in": 4471606.171100011,
  "paid_out": 4438600.477800005,
  "recipients": {
-  "(others)": 0.0,
-  "0x0891617fe27647731d6f1e764092b2f9f06130a0": 33.52469515000001,
-  "0xe5e53b486a3ec8da828215be10a80b5f764c4d46": 0.0045911,
-  "640b22cc1f9ad8e566bde5415ea2570aca50437ab81d8f1a0f16e84321eccc85": 49.480153,
-  "a74a1b91cdab26d474fa77f1532655e5fddd1d95f44181085527396617997386": 43.51369129999999,
-  "crosspay.near": 0.02015,
-  "electriccoinco.near": 119.2066755,
-  "leodex.near": 0.03033675,
-  "mosaic-vint.near": 0.0024630000000000003,
-  "myrandomname.near": 0.0226525,
-  "skarbi.near": 1.1234135,
-  "soonsalt3099.near": 0.004631100000000001,
+  "(others)": 246.93840890000138,
   "swapkit.near": 383.60225015000003,
   "thorswap.near": 3829.1690655,
-  "trustswapkit.near": 24205.169339400014,
-  "web_starlight.near": 0.004956
+  "trustswapkit.near": 24205.169339400014
  },
  "refund_reasons": {},
  "route": {

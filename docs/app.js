@@ -379,14 +379,6 @@ fill("winTo", shortDate(win.to));
   fill("darkTo", `${shortDate(dark.last.day)} · ${pct(dark.share_last)} confidential`);
 }
 
-// ---------- four numbers ----------
-document.querySelector("#stats").innerHTML = [
-  [int(p.swaps), `swaps in ${win.days} days. Almost none of them started in a NEAR app`],
-  [`${p.bps.toFixed(0)} bps`, `what the wallets and apps charge on average. ${usd(p.fees)} in all`],
-  [pct(p.near_cut), "of that names a NEAR wallet. The published schedule says half"],
-  [pct(dark.share_last), `of all volume was confidential on ${shortDate(dark.last.day)}`],
-].map(([big, small]) => `<div class="stat"><strong>${big}</strong><span>${small}</span></div>`).join("");
-
 // ---------- who pays ----------
 {
   const rows = [...data.kinds].sort((a, b) => b.fee_share - a.fee_share);
@@ -554,7 +546,7 @@ if (data.tokens) {
       trail: ["Explorer API", "Grouped by referral name", "python3 build.py"],
     },
     Token: {
-      tile: ["/-\\", "|*|", "\\-/"], lead: "Revenue against new issuance", see: ["#model", "The model"],
+      tile: ["/-\\", "|*|", "\\-/"], lead: "Revenue against new issuance", see: ["#model", "What's the trade?"],
       trace: () => inflow.length ? { items: inflow.map((d) => [{ v: Math.max(0, d.inflow), style: "near", text: "near" }]), cap: "NEAR arriving in the revenue wallets, a day", range: span(inflow) } : null,
       trail: ["NEAR archive node", "Balances and supply at each day's end", "python3 -m pipeline.model"],
     },
@@ -775,7 +767,7 @@ if (data.peers) {
   document.querySelector("#peers").closest("section").remove();
 }
 
-// ---------- the bar's mark, and the tape under it ----------
+// ---------- the tape under the header ----------
 
 // The tape: label, value, a knot of glyphs, and on to the next, drifting slowly to the left.
 const tape = (() => {

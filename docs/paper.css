@@ -29,7 +29,6 @@ a { color: inherit; }
 .bracket, .mark { font: 500 21px/1 var(--mono); letter-spacing: -0.02em; color: var(--paper); }
 .bracket em, .mark em { font-style: normal; color: var(--brass); }
 main .front .mark { margin: 0 0 26px; font-size: 17px; }
-.markGlyph { display: block; width: 30px; height: 30px; border: 1px solid rgba(200, 164, 106, 0.38); border-radius: 8px; background: rgba(200, 164, 106, 0.06); }
 .masthead nav { display: flex; align-items: center; gap: 4px; font: 400 12.5px/1 var(--mono); }
 .masthead nav a { padding: 9px 11px; border-radius: 999px; color: var(--dim); text-decoration: none; transition: color 200ms ease, background 200ms ease; }
 .masthead nav a:hover { color: var(--paper); background: rgba(236, 231, 222, 0.06); }

@@ -316,16 +316,9 @@
  "paid_in": 12989296.780900007,
  "paid_out": 12911842.632099971,
  "recipients": {
-  "(others)": 0.0,
-  "0x0891617fe27647731d6f1e764092b2f9f06130a0": 45.36449365,
-  "640b22cc1f9ad8e566bde5415ea2570aca50437ab81d8f1a0f16e84321eccc85": 0.9997950000000001,
-  "a74a1b91cdab26d474fa77f1532655e5fddd1d95f44181085527396617997386": 65.0833288,
-  "crosspay.near": 122.8019545,
+  "(others)": 320.51440095,
   "electriccoinco.near": 5391.941506500001,
-  "exblack.near": 68.268375,
   "fefundsadmin.sputnik-dao.near": 7683.8655512,
-  "leodex.near": 17.996454,
-  "recipient.near": 0.0,
   "swapkit.near": 405.9685509000001,
   "thorswap.near": 4051.110330499999,
   "trustswapkit.near": 43574.49786270001

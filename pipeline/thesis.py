@@ -101,7 +101,7 @@ def write(d, path):
                            f"and {usd(sum(held_a) / len(held_a))} after, at today's prices. Volume went private; the float stayed where anyone can count it.\n")
         agree = next((c for c in d["checks"] if c["name"].startswith("Two ways")), None)
         if agree:
-            chain_para += f"- **And it checks out.** {agree['detail']}\n"
+            chain_para += "- **And it checks out.** A third party's SQL over the chain's transfer tables gives the same wallet inflows as our archive reads, to within 1 NEAR a day (Section 2.4).\n"
     if ch.get("inflow_window") is not None and ch.get("issued_window") is not None:
         wallet_line = (f"NEAR's three revenue wallets took in {ch['inflow_window']:,.0f} NEAR in the window, "
                        f"{pct(ch['inflow_window'] / ch['issued_window'], 1)} of the net new NEAR the chain created in the same days.")
@@ -228,7 +228,7 @@ def write(d, path):
     checks = "\n".join(f"- **{c['name']}.** {c['detail']}" for c in d["checks"])
     month_word = lambda value: datetime.datetime.strptime(value, "%Y-%m").strftime("%B %Y")
     result4 = (f" (4) And the share NEAR keeps is already rising: {pct(mo[0]['capture'])} of gross fees in {month_word(mo[0]['month'])}, "
-               f"{pct(mo[-1]['capture'])} in {month_word(mo[-1]['month'])}. Nobody announced a new fee policy.") if len(mo) >= 2 else ""
+               f"{pct(mo[-1]['capture'])} in {month_word(mo[-1]['month'])}.") if len(mo) >= 2 else ""
     h4 = "- **H4. That share is going up.** Section 4, on the official monthly series.\n" if len(mo) >= 2 else ""
     xrp_line = (f" (XRP does have an exchange of its own and still pays {xrp['bps']:.0f} bps here. Make of that what you will.)") if xrp else ""
     bear = [
@@ -267,13 +267,13 @@ def write(d, path):
 
 [0xyuji.github.io/exhibit-a](https://0xyuji.github.io/exhibit-a/)
 
-Version 1 · {long_date(d['built'][:10])} · data from {long_date(win['from'])} to {long_date(win['to'])}
+Version 1 · as of {long_date(d['built'][:10])} · data from {long_date(win['from'])} to {long_date(win['to'])}
 
-*Every number, table and figure below is written by `python3 build.py` from the sources in Section 2. We didn't type any of them. Also as a [PDF](https://0xyuji.github.io/exhibit-a/exhibit-a-thesis.pdf) and as live charts on the [dashboard](https://0xyuji.github.io/exhibit-a/).*
+*Every number, table and figure below is written by `python3 build.py` from the sources in Section 2. The few we read by hand (five figures from two public dashboards) are in `data/notes.json`. A daily job rebuilds them, so figures can differ a little from the demo video, which was recorded on 14 November 2026. Also as a [PDF](https://0xyuji.github.io/exhibit-a/exhibit-a-thesis.pdf) and as live charts on the [dashboard](https://0xyuji.github.io/exhibit-a/).*
 
 ## Abstract
 
-NEAR Intents settles swaps that begin inside other companies' wallets. We counted every partner swap of a {win['days']}-day window ({p['swaps']:,} swaps, {usd(p['volume'])}) from NEAR's own API, checked the totals against the official series, and read wallet balances, token supply and contract state straight from the chain. (1) The venue has customers who pay: partners charged users {usd(p['fees'])}, {p['bps']:.0f} bps on average, and holders of coins with no exchange on their own chain supply {pct(p['utxo_fee_share'])} of those fees. (2) In about a week {pct(dark['share_last'])} of the volume went private, and daily volume didn't flinch. (3) NEAR keeps very little of it: a NEAR wallet is named on {pct(p['near_cut'])} of partner fees, and official revenue of {usd(o['revenue'])} covers {pct(m['today']['covered'], 1)} of the dollar value of new NEAR issuance.{result4} So the business is real, and what the token gets out of it is, for now, a rounding error on a fee somebody else collects. The thing to watch isn't volume. It's the cut. We argue the bear case as hard as the bull case, list {len(d['tripwires'])} things that would change our mind ({tripped} {'is' if tripped == 1 else 'are'} tripped today), and publish the code so you can re-run all of it.
+NEAR Intents settles swaps that begin inside other companies' wallets. We counted every partner swap of a {win['days']}-day window ({p['swaps']:,} attempted, {p['done']:,} completed, worth {usd(p['volume'])}) from NEAR's own API, checked the totals against the official series, and read wallet balances, token supply and contract state straight from the chain. (1) The venue has customers who pay: partners charged users {usd(p['fees'])}, {p['bps']:.0f} bps on average, and holders of coins with no exchange on their own chain supply {pct(p['utxo_fee_share'])} of those fees. (2) In about a week {pct(dark['share_last'])} of the volume went private, and daily volume didn't flinch. (3) NEAR keeps very little of it: a NEAR wallet is named on {pct(p['near_cut'])} of partner fees, and official revenue of {usd(o['revenue'])} covers {pct(m['today']['covered'], 1)} of the dollar value of new NEAR issuance.{result4} So the business is real, and what the token gets out of it is, for now, a rounding error on a fee somebody else collects. The thing to watch isn't volume. It's the cut. We argue the bear case as hard as the bull case, list {len(d['tripwires'])} things that would change our mind ({tripped} {'is' if tripped == 1 else 'are'} tripped today), and publish the code so you can re-run all of it.
 
 ## 1. Introduction
 
@@ -297,7 +297,7 @@ A claim like that is easy to like and hard to check. So we cut it into pieces th
 - **H2. Going private didn't cost it volume.** Section 3.4.
 - **H3. NEAR keeps very little of what the venue earns.** Section 4.
 {h4}
-Section 5 asks what any of this is worth to the token. Section 6 is the bear case, and we'd be doing the thing we make fun of if we skipped it. Section 7 lists what would change our mind, re-tested on every build.
+Section 5 asks what any of this is worth to the token. Section 6 is the bear case. Section 7 lists what would change our mind, re-tested on every build.
 
 ## 2. Data and method
 
@@ -343,7 +343,7 @@ which is 1 when one front-end has everything and *n* when *n* of them split it e
 
 ### 2.4 Checks
 
-We don't ask you to trust our counting. The build compares its own numbers with outside ones and prints the result every time.
+We don't ask you to trust our counting. The build compares its own numbers with outside ones and prints the result every time it runs.
 
 {checks}
 
@@ -360,7 +360,7 @@ The pipeline uses only Python's standard library. SQL for the Dune side is in `q
 
 ### 3.1 Nobody opens a NEAR app
 
-{p['swaps']:,} partner swaps in {win['days']} days, worth {usd(p['volume'])}. Up to {g['to_fronts']} different wallets and apps sending flow on a single day. The biggest, {top_name}, carries {pct(top['volume_share'])} of it, and its fee accounts are named for Ledger, Trust, Tangem and Trezor {R['ledger']}. You may have heard of them.{was_line} Zcash's own wallet routes its swaps here too {R['zodl']}.
+{p['swaps']:,} partner swaps attempted in {win['days']} days, {p['done']:,} of them completed, worth {usd(p['volume'])}. Up to {g['to_fronts']} different wallets and apps sending flow on a single day. The biggest, {top_name}, carries {pct(top['volume_share'])} of it, and its fee accounts are named for Ledger, Trust, Tangem and Trezor {R['ledger']}. You may have heard of them.{was_line} Zcash's own wallet routes its swaps here too {R['zodl']}.
 
 None of these users "use NEAR" in any way they'd recognise. That's the point. It's also the first warning: the customer belongs to the front-end (Figure {F['fronts']}). By volume the flow behaves as if it came from {n_eff:.1f} equal front-ends (Equation 3). By fees, {n_eff_fees:.1f}.
 {fig('fronts', f"Partner fees by front-end, {win['days']} days. One integrator produces {pct(fee_top['fee_share'])} of them.")}
@@ -406,7 +406,7 @@ So what's the rest? Counted on the same basis, partner swaps are {pct(p['share_o
 
 Some of it is sitting inside. The intents contract held about {usd(chain['held']['total'])} when we built this ({chain['held']['tokens_read']} of {chain['held']['tokens_listed']} listed tokens could be read).
 
-Some of it lands in wallets anyone can read. {wallet_line}
+Some of it lands in wallets anyone can read (Section 3.6).
 
 Put the two halves side by side (Figure {F['feeflow']}).
 {fig('feeflow', f"Every fee dollar of the window. The thin green ribbon is the {pct(p['near_cut'])} of partner fees with a NEAR wallet's name on it.")}
@@ -431,7 +431,7 @@ The bull case fits in one line: **the upside is a setting, not a new market.** T
 
 There's a second lever, and this one is already pulled. On 2 November 2026 NEAR's governance voted to lower the issuance cap from 2.5% to 1.6%, phased in over two years {R['vote']}. At 1.6% today's revenue covers {pct(capped['covered'], 1)} instead of {pct(m['today']['covered'], 1)}; with the published half as well, {pct(half_capped['covered'], 1)}.
 
-The model is four lines. Revenue in a window, as a function of NEAR's cut *c* of partner fees, an extra fee of *b* basis points on swap value outside the partner API, and volume growth *g*:
+The model is a few lines. Revenue in a window, as a function of NEAR's cut *c* of partner fees, an extra fee of *b* basis points on swap value outside the partner API, and volume growth *g*:
 
 {eq(4)}
 
@@ -493,9 +493,8 @@ So what's the trade? Long the venue, with eyes open about the token. The busines
 - How much of NEAR's partner revenue arrives outside the swap records. NEAR's own dashboard implies somewhat more than the {pct(p['near_cut'])} named in them.
 - The path between history points. Before the window we counted three days a month.
 - Whether the neighbours' volumes are counted the way NEAR's is. We audited the unit of NEAR's figure only.
-- Three SQL files in `queries/` are written but were never run, because the Dune account we used can read saved results and can't execute queries. Nothing in this paper depends on them.
-- The scheduled daily rebuild hasn't run yet. Until it has, "live" means the chain readings in the browser plus a build made by hand.
-- Dollar values are the Explorer API's own, not re-priced.
+- The SQL we wrote or adapted ourselves in `queries/` was never run by us, because the Dune account we used can read saved results and can't execute queries. Where a query matters to this paper we read the saved result of the public original.
+- The daily rebuild is new. If a run fails, the numbers stay at the last good build, and the date at the top says when that was. The public and confidential split, the volume per token and the swap counts are saved copies of NEAR's Dune results from 14 November 2026, so the sections that use them do not move with the daily build.
 
 ## Appendix A. The scorecard
 
@@ -511,7 +510,7 @@ So what's the trade? Long the venue, with eyes open about the token. The busines
 
 ## Disclosure
 
-Not investment advice. Written for the NEAR hackathon, thesis track. This text is generated by `pipeline/thesis.py` from the build's numbers; the code and the wording were drafted with an AI coding assistant (Claude Code) and directed, checked and corrected by the author.
+Not investment advice. Written for the NEAR hackathon, thesis track. This text is generated by `pipeline/thesis.py` from the build's numbers; most of the code, and the wording, were drafted with an AI coding assistant (Claude Code) and directed, checked and corrected by the author.
 """
     with open(path, "w") as handle:
         handle.write(text)

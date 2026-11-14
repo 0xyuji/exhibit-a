@@ -1,4 +1,4 @@
--- Daily volume per chain. A next step for "who is behind the dollars that pay nothing":
+-- Daily volume per chain. A next step for "who sends the stablecoin flow outside the partner API":
 -- on the days we looked, most of the official volume touched Ethereum or Tron.
 -- NEAR's own saved query: https://dune.com/queries/5157565
 select

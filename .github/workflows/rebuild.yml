@@ -1,5 +1,6 @@
 # Rebuilds the numbers every day and commits them, so the page stays current.
 # Needs one repository secret: EXPLORER_API_KEY (and, optionally, DUNE_API_KEY).
+# Without the secret the rebuild job is skipped.
 name: rebuild
 on:
   schedule:
@@ -8,7 +9,24 @@ on:
 permissions:
   contents: write
 jobs:
+  key:
+    runs-on: ubuntu-latest
+    outputs:
+      have: ${{ steps.look.outputs.have }}
+    steps:
+      - name: Is there a key?
+        id: look
+        env:
+          EXPLORER_API_KEY: ${{ secrets.EXPLORER_API_KEY }}
+        run: |
+          if [ -n "$EXPLORER_API_KEY" ]; then
+            echo "have=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::No EXPLORER_API_KEY secret is set, so there is nothing to rebuild."
+          fi
   rebuild:
+    needs: key
+    if: needs.key.outputs.have == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

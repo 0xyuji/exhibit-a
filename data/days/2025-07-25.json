@@ -186,14 +186,9 @@
  "paid_in": 1647179.4618000004,
  "paid_out": 1642648.0656999983,
  "recipients": {
-  "(others)": 0.0,
-  "0x0891617fe27647731d6f1e764092b2f9f06130a0": 1110.1533742499992,
-  "df395f72caea1bb79dd9e52acf8c30c265e308b7117d74c9f8a73aa24aea17d3": 200.775879,
-  "surgecode.near": 1.1153663000000003,
+  "(others)": 1312.0662978499995,
   "swapkit.near": 280.3689571,
-  "thorswap.near": 2789.7427304999997,
-  "trustswapkit.near": 0.0216783,
-  "zaluponogiy.near": 0.0
+  "thorswap.near": 2789.7427304999997
  },
  "refund_reasons": {},
  "route": {

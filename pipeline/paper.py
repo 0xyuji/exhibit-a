@@ -117,7 +117,7 @@ def convert(text, equations=None):
             if section == "References":
                 rows = []
                 for n, item in enumerate(items, 1):
-                    linked = re.sub(rf"(?<![\w/@.])({HOSTS}[^\s<)]*[^\s<).,])", r'<a href="https://\1">\1</a>', inline(item, cite=False))
+                    linked = re.sub(rf"(?<![\w/@.])({HOSTS}[^\s<)]*[^\s<).,:])", r'<a href="https://\1">\1</a>', inline(item, cite=False))
                     rows.append(f'<li id="ref-{n}">{linked}</li>')
                 out.append(f'<ol class="refs">{"".join(rows)}</ol>')
             else:

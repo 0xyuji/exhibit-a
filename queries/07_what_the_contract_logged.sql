@@ -2,7 +2,7 @@
 -- the intents contract logged per day. If swaps moved off the public ledger in early November
 -- 2026, the public swap events (dip4 / token_diff) should fall away while volume holds.
 -- NOT RUN BY US: our Dune account is read-only, and the public block feed rate-limited our own
--- sampler (pipeline/onchain.py). Paste it into dune.com to run it.
+-- sampler (an earlier block sampler, since removed). Paste it into dune.com to run it.
 select
   block_date,
   json_extract_scalar(event, '$.standard')   as standard,

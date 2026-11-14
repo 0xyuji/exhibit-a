@@ -344,17 +344,17 @@
  "fees": 133698.15073712025,
  "fees_to_near": 38010.177425720205,
  "front_ends": {
+  "(an address)": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 2,
+   "volume": 1.9981
+  },
   "(none)": {
    "fees": 9371.91494154999,
    "fees_to_near": 4617.45624736,
    "swaps": 2553,
    "volume": 3766226.623799968
-  },
-  "0x5a6574b3b82feb557121d5717e85f666459f7d33": {
-   "fees": 0.0,
-   "fees_to_near": 0.0,
-   "swaps": 2,
-   "volume": 1.9981
   },
   "allbridgenext": {
    "fees": 0.3944072,
@@ -790,35 +790,17 @@
  "paid_in": 46905154.404200114,
  "paid_out": 46658717.04390052,
  "recipients": {
-  "(others)": 455.25987067999085,
-  "0x09c8e7b234540821b1dd1c6035fc92259f126077": 657.2683304,
-  "0x0d9dab1a248f63b0a48965ba8435e4de7497a3dc": 137.28762052,
-  "0x516B375E81772C91C986cF722729b62667d13953": 57.696313750000016,
-  "0x9899f62ecf16b70bffc88677023026c47e48c218": 205.18496100000013,
-  "0x9f1d0c72a50088172220990474f97A63854949CF": 126.17287829999998,
-  "812356896127877ccd8908c20ad3fd8d6f7102c44ffa703fcf14c4da1ff199a8": 168.93792397,
-  "8b8f06d79196f428774d8a1e35716799284053057c09232ff5bbea9f70d2cdde": 552.673386,
-  "bitboxswapkit.near": 68.4483135,
+  "(others)": 4666.161022460001,
   "buybacks.multisignature.near": 23140.259503679994,
-  "electriccoinco.near": 65.00343725,
-  "f7e9682425b7db45340553d93edd5c0b200b3177dba99d60f5694c5e24580d9e": 68.06448079999998,
   "fefundsadmin.sputnik-dao.near": 14869.91792204,
   "hvlnear.near": 789.0944333000006,
-  "intents.tg": 55.696944920000114,
-  "ironwalletswapkit.near": 388.07178099999993,
   "ktpblack.near": 3205.2277637499997,
   "ledgerswapkit.near": 33102.689345090024,
   "lifi_int.near": 3200.595152380003,
-  "meteor-cold.near": 554.2934151999997,
   "narrowgif6666.near": 721.135208,
-  "near_mobile.near": 656.6795754200003,
   "onekeyoky.near": 845.8744724999998,
   "swapkit.near": 3255.7801296200014,
-  "swapmybuddy.near": 131.00062165,
-  "swapspaceswapkit.near": 142.60623500000003,
   "thorswap.near": 19097.318389,
-  "transit-swapkit.near": 125.30767949999996,
-  "trustswap.near": 50.50725359999999,
   "trustswapkit.near": 19616.032816359984,
   "zodlswaps.near": 7188.0645789400005
  },

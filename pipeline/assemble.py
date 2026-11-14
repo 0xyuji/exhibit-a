@@ -378,7 +378,7 @@ def build(day_totals, window, llama, volumes, chain, price, official_tokens=None
     if hb.get("state_growth_window") is not None:
         kpis.append(kpi("Scale", "New contract state", hb["state_growth_window"], "bytes", f"{days} days of intents.near storage growth"))
     if hb.get("holdings_usd") is not None:
-        kpis.append(kpi("Scale", "Held by the contract", hb["holdings_usd"], "usd", "its largest token holdings, at today's prices"))
+        kpis.append(kpi("Scale", "Held by the contract, six largest tokens", hb["holdings_usd"], "usd", "at today's prices"))
 
     # Token by token: the official volume against partner swaps that touch the token.
     official_tokens = official_tokens or {}
@@ -489,5 +489,4 @@ def build(day_totals, window, llama, volumes, chain, price, official_tokens=None
         "kpis": kpis,
         "checks": checks,
         "tripwires": tripwires,
-        "methodology": llama.get("methodology", {}),
     }

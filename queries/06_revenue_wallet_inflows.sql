@@ -2,7 +2,8 @@
 -- native transfers plus wrapped NEAR. The build reads the same thing from an archive node
 -- (pipeline/history.py); this is the SQL form.
 -- Adapted from a third party's saved query: https://dune.com/queries/6740088
--- NOT RUN BY US: our Dune account is read-only. Paste it into dune.com to run it.
+-- We read the saved result of that query (data/dune_wallet_inflows.csv) and the build checks it
+-- against the archive node. This adapted SQL itself was not run by us: our Dune account is read-only.
 with wallets as (
   select wallet from (values
     ('fefundsadmin.sputnik-dao.near'),

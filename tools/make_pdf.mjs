@@ -28,6 +28,9 @@ const send = (method, params = {}) => new Promise((done) => { const i = ++id; pe
 await send("Page.enable");
 await send("Page.navigate", { url });
 await sleep(4000); // fonts and figures
+// Links that are relative on the page must point at the live site in the PDF, not at this local server.
+const site = process.env.SITE || "https://0xyuji.github.io/exhibit-a/";
+await send("Runtime.evaluate", { expression: `document.querySelectorAll("a[href]").forEach((a) => { const h = a.getAttribute("href"); if (!/^(https?:|#|mailto:)/.test(h)) a.setAttribute("href", new URL(h, ${JSON.stringify(site)}).href); })` });
 const pdf = await send("Page.printToPDF", { printBackground: true, preferCSSPageSize: true, displayHeaderFooter: false });
 writeFileSync(out, Buffer.from(pdf.data, "base64"));
 console.log(`wrote ${out}`);
