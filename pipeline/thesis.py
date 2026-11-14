@@ -118,8 +118,9 @@ def write(d, path):
         low = min(mo[:-1], key=lambda r: r["capture"])
         rising = (f"Here's the thing, though: it's already moving. Month by month, on the official series, NEAR kept {pct(mo[0]['capture'])} of gross fees in "
                   f"{month_name(mo[0]['month'])}, {pct(low['capture'])} at the low in {month_name(low['month'])}, and {pct(mo[-1]['capture'])} in {month_name(mo[-1]['month'])}. "
-                  f"Revenue went from {usd(mo[0]['revenue'])} to {usd(mo[-1]['revenue'])} a month over the same stretch. Nobody announced a new fee policy. "
-                  "The number just kept going up.\n\n")
+                  f"Revenue went from {usd(mo[0]['revenue'])} to {usd(mo[-1]['revenue'])} a month over the same stretch. "
+                  f"This one isn't a mystery. NEAR switched fees on at the end of February 2026 [[switch]], and its own front-end keeps all of what it charges [[q2]]. "
+                  "What hasn't moved is the partner side, and that is where the money is.\n\n")
     split_line = ""
     lifi, kit = fronts.get("lifi"), fronts.get("swapkit")
     if lifi and kit and lifi["fees"] > 0 and kit["fees"] > 0:
@@ -221,8 +222,15 @@ def write(d, path):
         ("zodl", "Zodl. Swaps powered by NEAR Intents in the Zcash wallet. zodl.com/zashi-swaps-decentralized-on-ramp-is-live."),
         ("defiant", "The Defiant, 18 September 2026, on near.com. thedefiant.io/news/markets/bitcoin-81000-near-tokenization-tokens-lead-rally-sep-18-2026."),
         ("peers", "DefiLlama. Daily volume for THORChain, Chainflip and Maya (`pipeline/official.py`)."),
+        ("switch", "NEAR. \"Evolving NEAR Tokenomics\", 24 February 2026: the Intents fee switch. near.org/blog/evolving-near-tokenomics."),
+        ("q2", "NEAR. \"The State of NEAR: Q2 2026\", 8 July 2026: fee capture and the owned front-end. near.org/blog/the-state-of-near-q-2-2026."),
+        ("zcash", "Zcash community forum. \"The Orchard Counterfeiting Vulnerability, and Next Steps\", June 2026. forum.zcashcommunity.com/t/the-orchard-counterfeiting-vulnerability-and-next-steps/56015."),
     ]
     R = {key: f"[{n + 1}]" for n, (key, _) in enumerate(refs)}
+    rising = rising.replace("[[switch]]", R["switch"]).replace("[[q2]]", R["q2"])
+    calendar = "\n".join(
+        f"| {e['date']} | {e['shows']} | {e['said']} | {('[' + e['source'] + '](' + e['link'] + ')') if e.get('link') else ''} |"
+        for e in d.get("events") or [])
     ref_list = "\n".join(f"{n + 1}. {text}" for n, (_, text) in enumerate(refs))
 
     checks = "\n".join(f"- **{c['name']}.** {c['detail']}" for c in d["checks"])
@@ -248,7 +256,7 @@ def write(d, path):
         f"**Whales.** The largest 1% of swaps carry {pct(p['top_1pct_share'])} of partner volume.",
         (f"**The switch broke things.** On {long_date(p['worst_day']['day'])}, {pct(p['worst_day']['not_done_share'])} of swaps were refunded or failed. "
          f"Over the whole window {pct(p['not_done_share'], 1)} didn't complete. Strip out the worst days and it's {pct(p['not_done_share_calm'], 1)}... "
-         "but users don't get to strip out the worst days."),
+         "but users don't get to strip out the worst days. (Table 2 has the detail: almost all of it was one error, and completed swaps never dipped.)"),
         (f"**\"Private\" has an asterisk.** Every swap we counted was read from NEAR's own Explorer API {R['explorer']}, after the switch. "
          "Users trust the operator the way they'd trust an exchange, and an exchange without identity checks carries regulatory risk "
          "that no chart here can measure."),
@@ -402,6 +410,18 @@ So what's the rest? Counted on the same basis, partner swaps are {pct(p['share_o
 
 {chain_para}{fig('inflow', "NEAR arriving in the three revenue wallets each day, from balances at the last block of the day.")}
 {peers_para}{fig('peers', f"Volume over the same {win['days']} days at venues that swap native assets between chains. NEAR's figure is halved to count each swap once; the others are as reported.")}
+### 3.8 What happened on those days
+
+Charts jump on particular days, and a number without a reason invites a story. So for each day that stands out we went looking for what was announced. The left column is measured by the build. The right column is what a public source says, with the link, and we did not measure it. Where we found nothing, we say so.
+
+**Table 2.** Days that stand out, and what was announced.
+
+| Date | What our data shows | What was announced | Source |
+|---|---|---|---|
+{calendar}
+
+Three things follow. The move to confidential settlement was a default being switched, not users choosing privacy one by one. The ugly refund day was one error repeated, while completed swaps carried on as normal. And NEAR's rising cut began with a decision NEAR announced.
+
 ## 4. So where's the money?
 
 Some of it is sitting inside. The intents contract held about {usd(chain['held']['total'])} when we built this ({chain['held']['tokens_read']} of {chain['held']['tokens_listed']} listed tokens could be read).
@@ -411,7 +431,7 @@ Some of it lands in wallets anyone can read (Section 3.6).
 Put the two halves side by side (Figure {F['feeflow']}).
 {fig('feeflow', f"Every fee dollar of the window. The thin green ribbon is the {pct(p['near_cut'])} of partner fees with a NEAR wallet's name on it.")}
 
-**Table 2.** The two halves of the venue, same {win['days']} days.
+**Table 3.** The two halves of the venue, same {win['days']} days.
 
 | | Share of volume | Fees charged | Rate | What NEAR gets |
 |---|---|---|---|---|
@@ -424,7 +444,7 @@ That quiet half has a name, by the way. NEAR's own front-end is near.com, which 
 
 Now the uncomfortable number, and it's H3. Of the {usd(p['fees'])} partners charged, a NEAR wallet is named on {usd(p['to_near'])}. NEAR's own published fee schedule says it takes half {R['docs']}.{split_line}
 
-{rising}{fig('capture', "NEAR's revenue as a share of gross fees, month by month, on the official series. H4 holds, and nobody had to announce anything.")}
+{rising}{fig('capture', "NEAR's revenue as a share of gross fees, month by month, on the official series. H4 holds. The step up in February is the fee switch.")}
 ## 5. What's it worth to the token?
 
 The bull case fits in one line: **the upside is a setting, not a new market.** Take the published half and revenue goes from {usd(m['today']['revenue'])} to {usd(half['revenue'])} per {win['days']} days, from {pct(m['today']['covered'], 1)} to {pct(half['covered'], 1)} of the dollar value of new issuance. No new customers required. (The other lever, charging 5 bps more on the stablecoin half, only gets you to {pct(five['covered'], 1)}.)
@@ -449,12 +469,12 @@ Today *c*\\* is {pct(even['cut'])}. And the multiple, with *S* the supply and *T
 
 {eq(8)}
 
-**Table 3.** Scenarios. Inputs are measured by the build; the levers are assumptions.
+**Table 4.** Scenarios. Inputs are measured by the build; the levers are assumptions.
 
 | Case | Revenue per {win['days']} days | Per year | Share of new issuance | All NEAR / a year of it |
 |---|---|---|---|---|
 {rows}
-{fig('model', "The scenarios of Table 3, as the share of new issuance that revenue would cover. At today's volume nothing gets to 100% on its own.")}
+{fig('model', "The scenarios of Table 4, as the share of new issuance that revenue would cover. At today's volume nothing gets to 100% on its own.")}
 The model assumes every dollar of revenue could buy NEAR and a NEAR price of ${d['price']:.2f}. Issuance is {"the net new NEAR the chain actually created in the window, read from total supply" if m.get('issuance_basis') == 'measured' else "the protocol's maximum setting"}. At today's price every NEAR in existence is worth {m['today']['multiple']:,.0f} times a year of this revenue; at the published half, {half['multiple']:,.0f} times. Nobody is buying NEAR for today's fee line.
 
 ## 6. The bear case
@@ -467,7 +487,7 @@ Evidence against. We'd be doing the thing we make fun of if we stopped at the bu
 
 Every line gets re-tested on each build. {tripped} of {len(d['tripwires'])} {'is' if tripped == 1 else 'are'} tripped right now.
 
-**Table 4.** Tripwires.
+**Table 5.** Tripwires.
 
 | Tripwire | Now | State |
 |---|---|---|

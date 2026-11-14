@@ -288,7 +288,7 @@ class Flow {
       ctx.rect(0, top, wide * CW, lines * CH);
       ctx.clip();
       ctx.clearRect(0, top, wide * CW, lines * CH);
-      ctx.fillStyle = INK[bar.style];
+      ctx.fillStyle = bar.color || INK[bar.style];
       for (let r = 0; r < lines; r++) {
         for (let k = 0; k <= wide; k++) {
           const code = bar.style === "ghost" ? RAMP.charCodeAt(2 + (hash(k + base, r) % 8)) : text.charCodeAt((k + base + r * 2) % text.length);
@@ -484,7 +484,7 @@ if (data.monthly && data.monthly.length > 2) {
   plot("broken", daily.map((d) => [{ v: d.not_done_share, style: "clear", text: "fail" }]), worst.not_done_share, {
     tip: (i) => `<b>${date(daily[i].day)}</b><br>${int(daily[i].not_done)} of ${int(daily[i].swaps)} swaps did not complete · ${pct(daily[i].not_done_share, 1)}`,
   });
-  fill("brokenLine", `On ${shortDate(worst.day)}, switch week, <b>${pct(worst.not_done_share)}</b> of swaps were refunded or failed. Ugly. On the other days it's <b>${pct(p.not_done_share_calm, 1)}</b>.`);
+  fill("brokenLine", `On ${shortDate(worst.day)}, switch week, <b>${pct(worst.not_done_share)}</b> of swaps were refunded or failed. Ugly. But it was one error repeated, and completed swaps never dipped (see the calendar below). On the other days it's <b>${pct(p.not_done_share_calm, 1)}</b>.`);
   fill("brokenScale", `top of chart ${pct(worst.not_done_share)}`);
 
   const max = Math.max(...daily.map((d) => d.official));
@@ -503,12 +503,14 @@ if (data.tokens) {
   const t = data.tokens;
   const rows = t.rows.slice(0, 8);
   const top = rows[0].official;
+  // each token in its own colour
+  const TOKEN = { USDT: "#26a17b", USDC: "#3b8ee6", BTC: "#f7931a", ZEC: "#f4b728", ETH: "#8f8cf7", wNEAR: "#00ec97", NEAR: "#00ec97", SOL: "#c065f5", XRP: "#d5d9de", DOGE: "#c9a53b", LTC: "#a7b4c6", TRX: "#ef4b4b", BNB: "#f0b90b" };
   bars("tokens", rows.map((r) => ({
     label: r.symbol,
     value: `<b>${pct(r.share)}</b> · ${usd(r.official)}`,
     parts: [
       { share: r.official / top, style: "ghost", rows: 2 },
-      { share: r.partner / top, style: "clear", text: `${r.symbol.toLowerCase()} `, rows: 3 },
+      { share: r.partner / top, style: "clear", color: TOKEN[r.symbol], text: `${r.symbol.toLowerCase()} `, rows: 3 },
     ],
   })));
   const pick = (symbol) => t.rows.find((r) => r.symbol === symbol);
@@ -735,6 +737,14 @@ if (data.tokens) {
     waiting = setTimeout(settle, 120);
   }).observe(root);
   document.fonts?.ready.then(settle);
+}
+
+// ---------- what happened on those days ----------
+if (data.events?.length) {
+  document.querySelector("#calendar tbody").innerHTML = data.events.map((e) =>
+    `<tr><th>${e.date}</th><td>${e.shows}</td><td>${e.said}${e.link ? ` <a href="${e.link}">${e.source}</a>` : ""}</td></tr>`).join("");
+} else {
+  document.querySelector("#calendar").closest("section").remove();
 }
 
 // ---------- what the chain says ----------

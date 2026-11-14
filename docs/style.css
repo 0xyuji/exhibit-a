@@ -484,3 +484,15 @@ h1 { max-width: 23ch; font-size: clamp(29px, 3.6vw, 49px); line-height: 1.16; }
 .pitch b { color: var(--paper); font-weight: 500; }
 .rule { margin-top: 26px; }
 h1 span { color: var(--brass); }
+
+/* the calendar: days that stand out, what the data shows and what was announced */
+.tableBox { margin-top: 22px; overflow-x: auto; }
+#calendar table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; color: var(--dim); }
+#calendar thead th { padding: 0 18px 10px 0; text-align: left; font: 500 10.5px/1.3 var(--mono); letter-spacing: 0.09em; text-transform: uppercase; color: var(--brass); border-bottom: 1px solid var(--line-strong); }
+#calendar tbody th { width: 150px; padding: 13px 18px 13px 0; text-align: left; vertical-align: top; font: 400 12.5px/1.6 var(--mono); color: var(--paper); white-space: nowrap; }
+#calendar td { padding: 13px 22px 13px 0; vertical-align: top; width: 42%; text-align: left; font: 400 14.5px/1.5 var(--sans); }
+#calendar td:nth-child(2) { color: rgba(236, 231, 222, 0.82); }
+#calendar tbody tr { border-bottom: 1px solid var(--line); transition: background 200ms ease; }
+#calendar tbody tr:hover { background: rgba(236, 231, 222, 0.03); }
+#calendar td a { color: var(--paper); text-decoration-color: rgba(200, 164, 106, 0.6); text-underline-offset: 3px; white-space: nowrap; }
+@media (max-width: 860px) { #calendar table { min-width: 640px; font-size: 13.5px; } }

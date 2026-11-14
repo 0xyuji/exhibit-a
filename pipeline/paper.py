@@ -8,7 +8,7 @@ import html
 import re
 
 RAMP = ".,:;'-+/\\|!*=%#&$@"
-HOSTS = r"(?:dune\.com|api\.llama\.fi|revenue\.near\.org|x\.com|ledger\.com|zodl\.com|thedefiant\.io)"
+HOSTS = r"(?:dune\.com|api\.llama\.fi|revenue\.near\.org|x\.com|ledger\.com|zodl\.com|thedefiant\.io|near\.org|forum\.zcashcommunity\.com)"
 
 
 def slug(text):

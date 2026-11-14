@@ -16,7 +16,7 @@ import argparse
 import os
 import sys
 
-from pipeline import assemble, chain, history, official, swaps, thesis
+from pipeline import assemble, chain, events, history, official, swaps, thesis
 from pipeline.common import ROOT, SITE, env, read_json, shift, today, write_json
 
 RAMP = ".,:;'-+/\\|!*=%#&$@"
@@ -80,6 +80,7 @@ def main():
     data = assemble.build(totals, window, llama, volumes, onchain, price, official.tokens(), chain_days,
                           official.peers(window), official.swap_counts(), read_json(os.path.join(ROOT, "data", "notes.json"), {}),
                           official.wallet_inflows())
+    data["events"] = events.build(data, totals)
     write_json(os.path.join(SITE, "data.json"), data)
     thesis.write(data, os.path.join(ROOT, "THESIS.md"))
 
