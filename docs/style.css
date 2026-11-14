@@ -494,5 +494,10 @@ h1 { max-width: 20ch; font: 400 clamp(32px, 4vw, 54px)/1.13 "Special Elite", "Co
 @media (max-width: 860px) { .lockup span.bracket { font-size: 19px; } }
 
 /* the headline is a long sentence now: smaller, and its second half quieter */
-h1 { max-width: 25ch; font-size: clamp(28px, 3.3vw, 45px); line-height: 1.16; }
+h1 { max-width: 23ch; font-size: clamp(29px, 3.6vw, 49px); line-height: 1.16; }
+.pitch { margin: 26px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; max-width: 62ch; }
+.pitch li { position: relative; padding-left: 26px; font-size: 16.5px; line-height: 1.5; color: var(--dim); }
+.pitch li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 9px; height: 9px; border: 1.5px solid var(--brass); transform: rotate(45deg); }
+.pitch b { color: var(--paper); font-weight: 500; }
+.rule { margin-top: 26px; }
 h1 span { color: var(--brass); }

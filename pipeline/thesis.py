@@ -259,9 +259,9 @@ def write(d, path):
     ]
     bear_list = "\n".join(f"{n + 1}. {text}" for n, text in enumerate(bear))
 
-    text = f"""# The Venue People Always Wanted
+    text = f"""# The Exchange Everyone Asked For but Nobody Shipped
 
-### NEAR's becoming a venue with both the good parts of a CEX and DEX. Now it has to get paid for it.
+### NEAR pivoted into a real business. Now it has to get paid for it.
 
 **0xyuji**
 
@@ -281,7 +281,10 @@ Picture someone with a hardware wallet. They hold Bitcoin, they want dollars, th
 
 It was NEAR.
 
-Think about what people like about a big exchange. You send in one coin, you take out another, and nothing public ties the two together. Now think about what they like about a DEX. No account. Your own wallet. A price that comes from solvers competing for your order, not from one house running the book. For years you had to pick. NEAR Intents is turning into the venue people always wanted: both sets of good parts, in the same swap.
+For years you had to pick. A big exchange was simple and kept your trades off the public record, but it wanted your ID and it held your coins. A DEX let you keep your coins, but everything was public, and it couldn't swap a coin like Bitcoin on its own chain. NEAR has become the exchange everyone asked for but nobody shipped:
+
+- **Private and simple like a CEX, without the formalities.** Send in one coin, take out another. Nothing public links the two, and nobody asks for your ID.
+- **Yours, and fair, like a DEX.** It starts and ends in your own wallet. No account, and no house setting the price: solvers compete for your swap.
 
 That's the thesis in one scene. NEAR started in AI, became a chain, went back to AI, and somewhere along the way built the thing that actually works: a venue that settles swaps which begin inside other people's wallets. It has customers who pay. It has money sitting inside it. It has an operator who sees the flow. What it doesn't have is an order book... and since early November it doesn't have much you can see on-chain either.
 
