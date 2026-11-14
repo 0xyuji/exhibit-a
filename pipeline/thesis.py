@@ -286,7 +286,7 @@ For years you had to pick. A big exchange was simple and kept your trades off th
 - **Private and simple like a CEX, without the formalities.** Send in one coin, take out another. Nothing public links the two, and nobody asks for your ID.
 - **Yours, and fair, like a DEX.** It starts and ends in your own wallet. No account, and no house setting the price: solvers compete for your swap.
 
-That's the thesis in one scene. NEAR started in AI, became a chain, went back to AI, and somewhere along the way built the thing that actually works: a venue that settles swaps which begin inside other people's wallets. It has customers who pay. It has money sitting inside it. It has an operator who sees the flow. What it doesn't have is an order book... and since early November it doesn't have much you can see on-chain either.
+How did it get here? NEAR started in AI, became a chain, went back to AI, and somewhere along the way built the thing that actually works: a venue that settles swaps which begin inside other people's wallets. It has customers who pay. It has money sitting inside it. It has an operator who sees the flow. What it doesn't have is an order book... and since early November it doesn't have much you can see on-chain either.
 
 **Our claim: this is the business NEAR's long-term value rests on, and it's worth owning for years on one condition. NEAR has to start keeping more of what the business earns.** Partners charge users {p['bps']:.0f} bps on average. A NEAR wallet is named on {pct(p['near_cut'])} of that. The distribution is there. The pricing power is there. The capture isn't. Yet.
 
