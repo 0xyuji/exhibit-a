@@ -1,0 +1,145 @@
+{
+ "asset": {
+  "BTC": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 12.9322
+  },
+  "DOGE": {
+   "fees": 0.031089000000000006,
+   "swaps": 1,
+   "volume": 3.1089
+  },
+  "ETH": {
+   "fees": 0.00190215,
+   "swaps": 3,
+   "volume": 15.8572
+  },
+  "SOL": {
+   "fees": 0.031089000000000006,
+   "swaps": 1,
+   "volume": 3.1089
+  },
+  "USDC": {
+   "fees": 0.0,
+   "swaps": 9,
+   "volume": 17.4764
+  },
+  "USDT": {
+   "fees": 0.0,
+   "swaps": 4,
+   "volume": 0.6977999999999999
+  },
+  "USDT0": {
+   "fees": 0.00190215,
+   "swaps": 1,
+   "volume": 1.2681
+  },
+  "wNEAR": {
+   "fees": 0.0,
+   "swaps": 5,
+   "volume": 2.3547000000000007
+  }
+ },
+ "fees": 0.032991150000000004,
+ "fees_to_near": 0.0,
+ "front_ends": {
+  "(none)": {
+   "fees": 0.00190215,
+   "fees_to_near": 0.0,
+   "swaps": 7,
+   "volume": 16.555
+  },
+  "referral": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 9,
+   "volume": 17.4764
+  },
+  "unity_wallet": {
+   "fees": 0.031089000000000006,
+   "fees_to_near": 0.0,
+   "swaps": 1,
+   "volume": 3.1089
+  }
+ },
+ "kind": {
+  "Bitcoin": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 12.9322
+  },
+  "Everything else": {
+   "fees": 0.00190215,
+   "swaps": 6,
+   "volume": 3.6228000000000002
+  },
+  "Other UTXO coin": {
+   "fees": 0.031089000000000006,
+   "swaps": 1,
+   "volume": 3.1089
+  },
+  "Stablecoin pair": {
+   "fees": 0.0,
+   "swaps": 9,
+   "volume": 17.4764
+  }
+ },
+ "no_fee_volume": 32.7633,
+ "paid_in": 37.1403,
+ "paid_out": 37.071,
+ "recipients": {
+  "(others)": 0.0,
+  "03d77093caf9e01e9042cac2d6eb2c23f8ccd1ae7eb353d3ceba4302372d7214": 0.031089000000000006,
+  "0x0193a8a52D77E27bDd4f12E0cDd52d8Ff1d97d68": 0.00190215
+ },
+ "refund_reasons": {},
+ "route": {
+  "cross asset": {
+   "fees": 0.032991150000000004,
+   "swaps": 8,
+   "volume": 19.6639
+  },
+  "stable pair": {
+   "fees": 0.0,
+   "swaps": 9,
+   "volume": 17.4764
+  }
+ },
+ "sizes": [
+  [
+   5,
+   1.6977
+  ],
+  [
+   11,
+   22.5104
+  ],
+  [
+   1,
+   12.9322
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ]
+ ],
+ "status": {
+  "SUCCESS": 17
+ },
+ "swaps": 17,
+ "top_1pct_volume": 12.9322,
+ "volume": 37.1403
+}

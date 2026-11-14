@@ -1,0 +1,49 @@
+{
+ "asset": {},
+ "fees": 0.0,
+ "fees_to_near": 0.0,
+ "front_ends": {},
+ "kind": {},
+ "no_fee_volume": 0.0,
+ "paid_in": 0.0,
+ "paid_out": 0.0,
+ "recipients": {
+  "(others)": 0
+ },
+ "refund_reasons": {},
+ "route": {},
+ "sizes": [
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ],
+  [
+   0,
+   0.0
+  ]
+ ],
+ "status": {},
+ "swaps": 0,
+ "top_1pct_volume": 0,
+ "volume": 0.0
+}

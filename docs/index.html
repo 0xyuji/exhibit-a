@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exhibit A: the exchange with no order book</title>
+<meta name="description" content="A long-term thesis on NEAR, tested against every partner swap of the last 30 days. Every chart can be rebuilt with one command.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="masthead" id="top">
+  <a class="lockup" href="#top"><canvas class="markGlyph" aria-hidden="true"></canvas><span>Exhibit A</span></a>
+  <nav>
+    <a class="in" href="#flow">Fees</a>
+    <a class="in" href="#dark">Privacy</a>
+    <a class="in" href="#score">Scorecard</a>
+    <a class="in" href="#model">Model</a>
+    <a class="in" href="#against">Bear case</a>
+    <a class="out" href="thesis.html">Thesis</a>
+    <a class="out" href="https://github.com/0xyuji/exhibit-a">Code</a>
+  </nav>
+</header>
+<div class="tape" aria-hidden="true"><canvas></canvas></div>
+
+
+
+<main>
+  <section class="hero">
+    <div class="heroGrid">
+      <div class="brief">
+        <h1>NEAR is becoming an exchange with no order book.</h1>
+        <canvas class="rule" aria-hidden="true"></canvas>
+        <dl class="terms">
+          <div style="--i:0"><dt>What happens</dt><dd data-f="briefWhat"></dd></div>
+          <div style="--i:1"><dt>For</dt><dd data-f="briefFor"></dd></div>
+          <div style="--i:2"><dt>Against</dt><dd data-f="briefAgainst"></dd></div>
+          <div style="--i:3"><dt>Watch</dt><dd data-f="briefWatch"></dd></div>
+        </dl>
+      </div>
+      <div class="coin">
+        <canvas id="solid" aria-hidden="true"></canvas>
+        <a class="readIt" href="thesis.html">Read the thesis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gap">
+    <figure class="chart" id="flow">
+      <figcaption>
+        <h2>Follow the fee</h2>
+        <p data-f="flowLine"></p>
+      </figcaption>
+      <div class="flowHead"><span>who pays</span><span>settled by NEAR Intents</span><span>who is paid</span></div>
+      <div class="flowBox"><canvas aria-hidden="true"></canvas><div class="flowLabels"></div></div>
+      <details><summary>Query</summary><pre>GET explorer.near-intents.org/api/v0/transactions      -- every successful partner swap in the window
+
+-- left:  fee dollars by what was swapped   (sum(amountInUsd * appFees[].fee / 10000), grouped as in "Who pays")
+-- right: the same dollars by appFees[].recipient; the three NEAR revenue wallets are drawn in green
+-- band width is proportional to dollars; code: pipeline/swaps.py</pre></details>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="chart" id="dark">
+      <figcaption>
+        <h2>The week it went dark</h2>
+        <p data-f="darkLine"></p>
+      </figcaption>
+      <div class="legend">
+        <span><i class="k clear">public</i> readable on-chain</span>
+        <span><i class="k cipher">%#&amp;$@</i> confidential</span>
+        <span class="scale"><span data-f="darkScale"></span> · <button class="replay" type="button">Replay</button></span>
+      </div>
+      <div class="plot tall"><canvas aria-hidden="true"></canvas><div class="marks"></div><div class="tip"></div></div>
+      <div class="axis"><span data-f="darkFrom"></span><span data-f="darkTo"></span></div>
+      <details><summary>Query</summary><pre>-- NEAR's own saved query: <a href="https://dune.com/queries/5179085">dune.com/queries/5179085</a> (dataset dune.near.dataset_near_intents_metrics)
+select date_at,
+       sum(case when source_type = 'public'       then cast(volume_amount_usd as double) end) as public_volume_usd,
+       sum(case when source_type = 'confidential' then cast(volume_amount_usd as double) end) as confidential_volume_usd
+from dune.near.dataset_near_intents_metrics
+group by date_at
+
+-- cross-check: api.llama.fi/summary/dexs/near-intents?dataType=dailyVolume
+-- (equals public before 2026-09-01 and public + confidential from that day on)</pre></details>
+    </figure>
+  </section>
+
+  <section class="stats" id="stats"></section>
+
+  <section>
+    <div class="chart" id="score">
+      <div class="scHead">
+        <h2>The scorecard</h2>
+        <p class="sub2"><span data-f="window"></span>. Every number is rebuilt by one command, and each group says where it comes from.</p>
+      </div>
+      <div class="scGrid">
+        <div class="scSide">
+          <div class="scList" role="tablist" aria-label="Groups of figures" aria-orientation="vertical"></div>
+          <div class="scNav">
+            <button type="button" class="scPrev" aria-label="Previous group">&#8249;</button>
+            <button type="button" class="scNext" aria-label="Next group">&#8250;</button>
+            <span class="scCount"></span>
+          </div>
+          <div class="live" id="live" aria-live="polite"><span class="dot"></span><span id="liveText">reading the chain…</span></div>
+        </div>
+        <div class="scPanel" id="scPanel" role="tabpanel">
+          <header>
+            <pre class="scTile" aria-hidden="true"></pre>
+            <h3></h3>
+            <a class="scOut" href="#"></a>
+          </header>
+          <div class="scLead"><b></b><div><span></span><small></small></div></div>
+          <div class="scTrace">
+            <canvas aria-hidden="true"></canvas>
+            <div class="scSplit"></div>
+          </div>
+          <p class="scCap"><span></span><span></span></p>
+          <dl class="scCells"></dl>
+          <p class="scNote" aria-live="polite"></p>
+          <ol class="scTrail"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair">
+    <figure class="chart" id="kinds">
+      <figcaption>
+        <h2>Who's paying?</h2>
+        <p data-f="kindsLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k ghost">;:+/|</i> share of volume</span><span><i class="k clear">fees</i> share of fees</span></div>
+      <div class="bars"></div>
+      <details><summary>Query</summary><pre>GET explorer.near-intents.org/api/v0/transactions
+    ?statuses=SUCCESS,REFUNDED,FAILED&amp;numberOfTransactions=1000
+    &amp;startTimestampUnix={day start}&amp;endTimestampUnix={cursor}     -- paged back through each day
+
+-- per successful swap:  fee = amountInUsd * sum(appFees[].fee) / 10000
+-- group: both sides in {USDC, USDT, DAI} -> stablecoin pair; else touches BTC -> Bitcoin;
+--        else ZEC -> Zcash; else LTC / DOGE / BCH -> other UTXO coin; else everything else
+-- code: pipeline/swaps.py</pre></details>
+    </figure>
+
+    <figure class="chart" id="fronts">
+      <figcaption>
+        <h2>Nobody opens a NEAR app</h2>
+        <p data-f="frontsLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">name</i> share of partner volume</span><span class="scale">right: fee in bps · <i class="k near">bps named to NEAR</i></span></div>
+      <div class="bars"></div>
+      <details><summary>Query</summary><pre>-- same swap records as "Who pays", grouped by the referral field
+-- fee charged   = sum(amountInUsd * appFees[].fee / 10000) / sum(amountInUsd)
+-- named to NEAR = the part whose appFees[].recipient is one of
+--   buybacks.multisignature.near, fefundsadmin.sputnik-dao.near, 1csfundsadmin.sputnik-dao.near</pre></details>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="chart" id="monthly">
+      <figcaption>
+        <h2>The cut is rising</h2>
+        <p data-f="monthlyLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k near">near</i> what NEAR kept</span><span><i class="k ghost">;:+/|</i> the rest of gross fees</span><span class="scale" data-f="monthlyScale"></span></div>
+      <div class="plot"><canvas aria-hidden="true"></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="monthlyFrom"></span><span data-f="monthlyTo"></span></div>
+      <details><summary>Query</summary><pre>GET api.llama.fi/summary/fees/near-intents?dataType=dailyFees       -- gross fees, per day
+GET api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue    -- NEAR/wNEAR swept into its revenue wallets, per day
+-- summed by calendar month; share kept = revenue / fees. Full months only.
+-- DefiLlama builds both from NEAR's Dune datasets and the three revenue wallets (see "What the chain says").</pre></details>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="chart" id="recipients">
+      <figcaption>
+        <h2>So where's the money?</h2>
+        <p data-f="recipientsLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">account</i> partner's fee account</span><span><i class="k near">near</i> a NEAR revenue wallet</span></div>
+      <div class="bars"></div>
+      <details><summary>Query</summary><pre>-- same swap records, grouped by appFees[].recipient
+-- dollars = sum(amountInUsd * fee / 10000) per recipient, successful swaps only</pre></details>
+    </figure>
+  </section>
+
+  <section class="pair">
+    <figure class="chart" id="growth">
+      <figcaption>
+        <h2>From lunch money</h2>
+        <p data-f="growthLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">fees</i> partner fees per day</span><span class="scale" data-f="growthScale"></span></div>
+      <div class="plot"><canvas></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="growthFrom"></span><span>last 30 days</span></div>
+      <details><summary>Query</summary><pre>-- one full day counted per month (the 15th), then the daily average of the last 30 days
+-- same Explorer request and fee rule as "Who pays"</pre></details>
+    </figure>
+
+    <figure class="chart" id="mix">
+      <figcaption>
+        <h2>The mix keeps rotating</h2>
+        <p data-f="mixLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">btc</i> Bitcoin</span><span><i class="k cipher">%#&amp;</i> Zcash</span><span><i class="k ghost">;:+</i> stablecoin pairs</span><span><i class="k faint">...</i> the rest</span></div>
+      <div class="plot"><canvas></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="growthFrom"></span><span>last 30 days</span></div>
+      <details><summary>Query</summary><pre>-- share of each day's partner volume by group (groups as in "Who pays")
+-- one sampled day per month, so the path between months is not shown</pre></details>
+    </figure>
+  </section>
+
+  <section class="pair">
+    <figure class="chart" id="broken">
+      <figcaption>
+        <h2>It breaks sometimes</h2>
+        <p data-f="brokenLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">fail</i> swaps refunded or failed, share of the day</span><span class="scale" data-f="brokenScale"></span></div>
+      <div class="plot"><canvas></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="winFrom"></span><span data-f="winTo"></span></div>
+      <details><summary>Query</summary><pre>-- same Explorer request; per day:
+-- (count(status = REFUNDED) + count(status = FAILED)) / count(*)</pre></details>
+    </figure>
+
+    <figure class="chart" id="share">
+      <figcaption>
+        <h2>The part we can count</h2>
+        <p data-f="shareLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">swap</i> partner swaps</span><span><i class="k ghost">;:+/|</i> the rest of official volume</span><span class="scale" data-f="shareScale"></span></div>
+      <div class="plot"><canvas></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="winFrom"></span><span data-f="winTo"></span></div>
+      <details><summary>Query</summary><pre>-- partner swaps: 2 * sum(amountInUsd) of successful swaps per day (Explorer API);
+--   doubled because the official figure counts both sides of a swap
+-- official:      api.llama.fi/summary/dexs/near-intents?dataType=dailyVolume
+-- official swap counts, for the same check by count: <a href="https://dune.com/queries/4374089">dune.com/queries/4374089</a></pre></details>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="chart" id="tokens">
+      <figcaption>
+        <h2>The other side of the ledger</h2>
+        <p data-f="tokensLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k ghost">;:+/|</i> official volume of the token</span><span><i class="k clear">token</i> partner swaps that touch it</span><span class="scale">right: partner share · official volume</span></div>
+      <div class="bars"></div>
+      <details><summary>Query</summary><pre>-- official, per token and day: NEAR's saved query <a href="https://dune.com/queries/5157527">dune.com/queries/5157527</a>
+select date_at, symbol, sum(cast(volume_amount_usd as double)) as volume_usd
+from dune.near.dataset_near_intents_metrics
+group by date_at, symbol
+
+-- ours: sum(amountInUsd) of successful partner swaps whose origin or destination asset is the token
+-- (Explorer API, pipeline/swaps.py). Both count a swap once for each of its two tokens.</pre></details>
+    </figure>
+  </section>
+
+  <section class="pair" id="chain">
+    <figure class="chart" id="inflow">
+      <figcaption>
+        <h2>What the chain says</h2>
+        <p data-f="inflowLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k near">near</i> NEAR arriving in the three revenue wallets, per day</span><span class="scale" data-f="inflowScale"></span></div>
+      <div class="plot"><canvas aria-hidden="true"></canvas><div class="tip"></div></div>
+      <div class="axis"><span data-f="chainFrom"></span><span data-f="chainTo"></span></div>
+      <details><summary>Query</summary><pre>-- NEAR archival RPC, no key. For the last block of each UTC day:
+query { request_type: "view_account", block_id: &lt;block&gt;, account_id: &lt;wallet&gt; }   -- three wallets
+block { block_id: &lt;block&gt; }.header.total_supply                                  -- net new NEAR per day
+
+-- wallets: fefundsadmin.sputnik-dao.near, 1csfundsadmin.sputnik-dao.near, buybacks.multisignature.near
+-- code: pipeline/history.py      the same thing in SQL: <a href="https://dune.com/queries/6740088">dune.com/queries/6740088</a> (a third party's)</pre></details>
+    </figure>
+
+    <figure class="chart" id="state">
+      <figcaption>
+        <h2>A meter nobody publishes</h2>
+        <p data-f="stateLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k clear">bytes</i> new contract state per day</span><span class="scale" data-f="stateScale"></span></div>
+      <div class="plot"><canvas aria-hidden="true"></canvas><div class="marks"></div><div class="tip"></div></div>
+      <div class="axis"><span data-f="chainFrom"></span><span data-f="chainTo"></span></div>
+      <details><summary>Query</summary><pre>-- NEAR archival RPC, no key. For the last block of each UTC day:
+query { request_type: "view_account", block_id: &lt;block&gt;, account_id: "intents.near" }.storage_usage
+
+-- the day's growth in bytes the contract stores: new accounts, keys, balances and intents
+-- code: pipeline/history.py</pre></details>
+    </figure>
+  </section>
+
+  <section>
+    <figure class="chart" id="peers">
+      <figcaption>
+        <h2>The neighbours</h2>
+        <p data-f="peersLine"></p>
+      </figcaption>
+      <div class="legend"><span><i class="k near">near</i> NEAR Intents, one side of each swap</span><span><i class="k clear">venue</i> other venues, as DefiLlama reports them</span></div>
+      <div class="bars"></div>
+      <details><summary>Query</summary><pre>GET api.llama.fi/summary/dexs/{thorchain-dex, chainflip-amm, maya-protocol, near-intents}?dataType=dailyVolume
+-- summed over the same days. NEAR Intents is halved, because its figure counts both sides of a swap
+-- (see "The other side of the ledger"). The others are shown as reported; we did not audit their basis.</pre></details>
+    </figure>
+  </section>
+
+  <section id="model" class="model">
+    <div class="modelText">
+      <h2>What's the trade?</h2>
+      <p data-f="modelLine"></p>
+      <label>NEAR's share of what partners charge <output id="cutOut"></output>
+        <input id="cut" type="range" min="0" max="50" step="0.5"></label>
+      <label>An extra fee on swaps outside the partner API <output id="restOut"></output>
+        <input id="rest" type="range" min="0" max="10" step="0.5" value="0"></label>
+      <label>Volume against today <output id="growOut"></output>
+        <input id="grow" type="range" min="0.25" max="4" step="0.25" value="1"></label>
+      <label>Issuance cap <output id="capOut"></output>
+        <input id="cap" type="range" min="1.6" max="2.5" step="0.1" value="2.5"></label>
+      <button id="reset" type="button">Back to today</button>
+      <p class="note" data-f="evenLine"></p>
+    </div>
+    <div class="modelOut">
+      <p class="big"><span id="covered"></span><small>of new NEAR issued, in dollars</small></p>
+      <div class="meter"><canvas></canvas></div>
+      <p class="sub"><span id="revYear"></span> revenue a year · <span id="issYear"></span> issued a year<br>all NEAR at today's price is <span id="multiple"></span> a year of that revenue</p>
+      <table id="wallets"></table>
+      <details><summary>Query</summary><pre>revenue  = (revenue_now - cut_now * partner_fees) * growth
+         + cut * partner_fees * growth
+         + rest_bps / 10000 * (official_volume / 2 - partner_volume) * growth
+issuance = net new NEAR in the window * price * (cap / 2.5%)
+covered  = revenue / issuance
+
+-- run it yourself:  python3 -m pipeline.model --cut 0.5 --growth 2 --cap 0.016
+
+-- total_supply:        RPC block(final).header.total_supply
+-- max_inflation_rate:  RPC EXPERIMENTAL_protocol_config
+-- revenue_now:         api.llama.fi/summary/fees/near-intents?dataType=dailyRevenue
+-- wallets:             RPC view_account now and 30 days earlier (archival node)
+-- code: pipeline/model.py, pipeline/chain.py</pre></details>
+    </div>
+  </section>
+
+  <section id="against" class="pair text">
+    <div>
+      <h2>The bear case</h2>
+      <p class="note">Evidence against.</p>
+      <ul id="againstList"></ul>
+    </div>
+    <div>
+      <h2>What would change our mind</h2>
+      <ul id="wires" class="wires"></ul>
+      <p class="note">Every line gets re-tested on each build.</p>
+    </div>
+  </section>
+
+  <section class="text">
+    <h2>Checks</h2>
+    <div id="checks"></div>
+  </section>
+</main>
+
+<footer>
+  <p class="foot"><span class="brand"><span class="brandMark" aria-hidden="true">@#</span>Exhibit A</span><a href="thesis.html">Thesis</a><a href="https://github.com/0xyuji/exhibit-a">Code</a></p>
+  <p>Built <span data-f="built"></span> by <code>python3 build.py</code>. Sources: NEAR Intents Explorer API, DefiLlama, NEAR RPC, NEAR's Dune dataset. Swap records are counted and dropped, never stored.</p>
+  <p>Not investment advice. Made for the NEAR hackathon thesis track by the author of <a href="https://rahasya.chat">Rahasya</a>, a separate entry.</p>
+</footer>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,949 @@
+{
+ "asset": {
+  "?": {
+   "fees": 0.22209610000000007,
+   "swaps": 39,
+   "volume": 259.6088
+  },
+  "AAVE": {
+   "fees": 49.56528745,
+   "swaps": 25,
+   "volume": 12232.085900000002
+  },
+  "ADA": {
+   "fees": 2697.239706209999,
+   "swaps": 157,
+   "volume": 196164.23910000006
+  },
+  "ALEO": {
+   "fees": 1.8091388499999999,
+   "swaps": 14,
+   "volume": 1888.5417
+  },
+  "APT": {
+   "fees": 7.127022650000001,
+   "swaps": 24,
+   "volume": 2101.1272
+  },
+  "ARB": {
+   "fees": 105.39070964000001,
+   "swaps": 119,
+   "volume": 34067.438
+  },
+  "ASTER": {
+   "fees": 0.74575265,
+   "swaps": 39,
+   "volume": 8895.924400000002
+  },
+  "AURORA": {
+   "fees": 0.12322578,
+   "swaps": 313,
+   "volume": 22033.02199999997
+  },
+  "AVAX": {
+   "fees": 4.17997037,
+   "swaps": 247,
+   "volume": 44757.71389999998
+  },
+  "BCH": {
+   "fees": 174.06994339000002,
+   "swaps": 33,
+   "volume": 37954.5885
+  },
+  "BERA": {
+   "fees": 0.0253032,
+   "swaps": 8,
+   "volume": 17.6796
+  },
+  "BLACKDRAGON": {
+   "fees": 8.18227008,
+   "swaps": 14,
+   "volume": 1460.0884999999998
+  },
+  "BNB": {
+   "fees": 328.1336653837175,
+   "swaps": 2011,
+   "volume": 266158.62030137185
+  },
+  "BOME": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 203.0933
+  },
+  "BTC": {
+   "fees": 54875.98916120003,
+   "swaps": 2910,
+   "volume": 18721259.43809999
+  },
+  "COW": {
+   "fees": 0.027196899999999996,
+   "swaps": 3,
+   "volume": 27.1969
+  },
+  "DAI": {
+   "fees": 1458.1105174400004,
+   "swaps": 115,
+   "volume": 1271816.4295000008
+  },
+  "DASH": {
+   "fees": 435.0834297999999,
+   "swaps": 27,
+   "volume": 68529.7726
+  },
+  "DOGE": {
+   "fees": 1917.7801105300002,
+   "swaps": 239,
+   "volume": 457766.5422
+  },
+  "ETH": {
+   "fees": 58094.216891463904,
+   "swaps": 6984,
+   "volume": 11511850.36536807
+  },
+  "EURe": {
+   "fees": 0.0,
+   "swaps": 2,
+   "volume": 304.97860000000003
+  },
+  "GNO": {
+   "fees": 4.74157952,
+   "swaps": 35,
+   "volume": 3147.0504000000005
+  },
+  "GRAM": {
+   "fees": 803.9111126199998,
+   "swaps": 794,
+   "volume": 371309.59529999964
+  },
+  "HAPI": {
+   "fees": 0.0195597,
+   "swaps": 2,
+   "volume": 6.5255
+  },
+  "INX": {
+   "fees": 0.0890203,
+   "swaps": 5,
+   "volume": 89.02029999999999
+  },
+  "ITLX": {
+   "fees": 0.0021626,
+   "swaps": 1,
+   "volume": 0.983
+  },
+  "JAMBO": {
+   "fees": 0.005572499999999999,
+   "swaps": 2,
+   "volume": 2.229
+  },
+  "KAITO": {
+   "fees": 0.026291400000000003,
+   "swaps": 2,
+   "volume": 26.291400000000003
+  },
+  "KNC": {
+   "fees": 0.0484682,
+   "swaps": 2,
+   "volume": 48.4682
+  },
+  "LINK": {
+   "fees": 100.79661162,
+   "swaps": 57,
+   "volume": 27793.979199999987
+  },
+  "LTC": {
+   "fees": 937.23747658,
+   "swaps": 445,
+   "volume": 160573.15750000006
+  },
+  "MON": {
+   "fees": 13.10874637,
+   "swaps": 97,
+   "volume": 7934.002
+  },
+  "NEAR": {
+   "fees": 0.022401800000000003,
+   "swaps": 9,
+   "volume": 21.3124
+  },
+  "NPRO": {
+   "fees": 5.9035035800000015,
+   "swaps": 45,
+   "volume": 1338.9965
+  },
+  "NearKat": {
+   "fees": 0.1258575,
+   "swaps": 1,
+   "volume": 50.343
+  },
+  "OKB": {
+   "fees": 0.11599675,
+   "swaps": 4,
+   "volume": 23.5138
+  },
+  "OP": {
+   "fees": 2.5301987500000003,
+   "swaps": 26,
+   "volume": 3344.9230000000002
+  },
+  "PENGU": {
+   "fees": 1.9497459999999998,
+   "swaps": 14,
+   "volume": 870.2677999999999
+  },
+  "PEPE": {
+   "fees": 61.223269150000014,
+   "swaps": 33,
+   "volume": 8401.141
+  },
+  "POL": {
+   "fees": 14.10121653000001,
+   "swaps": 535,
+   "volume": 10161.251000000006
+  },
+  "PUBLIC": {
+   "fees": 0.00794404,
+   "swaps": 9,
+   "volume": 2.8481
+  },
+  "RHEA": {
+   "fees": 81.17641708,
+   "swaps": 56,
+   "volume": 35798.2856
+  },
+  "SAFE": {
+   "fees": 0.26356349999999995,
+   "swaps": 1,
+   "volume": 263.5635
+  },
+  "SHIB": {
+   "fees": 239.38250986999998,
+   "swaps": 46,
+   "volume": 34650.7887
+  },
+  "SHITZU": {
+   "fees": 0.0039447,
+   "swaps": 1,
+   "volume": 1.3149
+  },
+  "SOL": {
+   "fees": 17843.94416545,
+   "swaps": 4096,
+   "volume": 4296122.669800003
+  },
+  "SPX": {
+   "fees": 28.417889560000003,
+   "swaps": 17,
+   "volume": 5251.3002000000015
+  },
+  "STRK": {
+   "fees": 0.7434321000000005,
+   "swaps": 364,
+   "volume": 371.6791000000003
+  },
+  "SUI": {
+   "fees": 283.35687067000003,
+   "swaps": 77,
+   "volume": 30749.867
+  },
+  "SWEAT": {
+   "fees": 1.6059150999999998,
+   "swaps": 452,
+   "volume": 12079.094099999991
+  },
+  "TITN": {
+   "fees": 2.3165223999999998,
+   "swaps": 6,
+   "volume": 192.2924
+  },
+  "TRUMP": {
+   "fees": 2.2594662999999997,
+   "swaps": 4,
+   "volume": 326.69509999999997
+  },
+  "TRX": {
+   "fees": 3740.9050182999963,
+   "swaps": 1686,
+   "volume": 748799.4813000006
+  },
+  "TURBO": {
+   "fees": 0.14692416000000003,
+   "swaps": 8,
+   "volume": 180.36599999999999
+  },
+  "UNI": {
+   "fees": 1.21127524,
+   "swaps": 12,
+   "volume": 10149.4584
+  },
+  "USAD": {
+   "fees": 0.0064978499999999995,
+   "swaps": 1,
+   "volume": 12.9957
+  },
+  "USD1": {
+   "fees": 0.13589046000000002,
+   "swaps": 2,
+   "volume": 679.4523
+  },
+  "USDC": {
+   "fees": 120065.63243853058,
+   "swaps": 8769,
+   "volume": 34267569.09009993
+  },
+  "USDT": {
+   "fees": 100751.2581672015,
+   "swaps": 9889,
+   "volume": 32391944.382837236
+  },
+  "USDT0": {
+   "fees": 227.93490612999994,
+   "swaps": 361,
+   "volume": 901115.3823000003
+  },
+  "VVV": {
+   "fees": 110.14539425,
+   "swaps": 38,
+   "volume": 42731.86500000001
+  },
+  "WBTC": {
+   "fees": 3199.8897719399993,
+   "swaps": 93,
+   "volume": 1499505.7172000012
+  },
+  "WETH": {
+   "fees": 1.8245058,
+   "swaps": 6,
+   "volume": 5112.123
+  },
+  "XAUT": {
+   "fees": 360.47749515,
+   "swaps": 41,
+   "volume": 126932.42330000002
+  },
+  "XLM": {
+   "fees": 32.79215095000002,
+   "swaps": 67,
+   "volume": 7343.772200000001
+  },
+  "XRP": {
+   "fees": 11523.985316030012,
+   "swaps": 659,
+   "volume": 1212096.548699999
+  },
+  "ZEC": {
+   "fees": 145397.83643653028,
+   "swaps": 3183,
+   "volume": 32722961.97399999
+  },
+  "cbBTC": {
+   "fees": 626.32022996,
+   "swaps": 108,
+   "volume": 162846.44890000002
+  },
+  "kV-gtSOLb": {
+   "fees": 0.00019989999999999998,
+   "swaps": 1,
+   "volume": 0.1999
+  },
+  "mpDAO": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 0.0529
+  },
+  "stNEAR": {
+   "fees": 0.0,
+   "swaps": 8,
+   "volume": 241.1178
+  },
+  "wBTC": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 9.8822
+  },
+  "wNEAR": {
+   "fees": 19988.192317320063,
+   "swaps": 5397,
+   "volume": 6383975.1465000305
+  },
+  "xDAI": {
+   "fees": 0.03237338,
+   "swaps": 4,
+   "volume": 161.9269
+  }
+ },
+ "fees": 277463.9548572756,
+ "fees_to_near": 66198.98643167694,
+ "front_ends": {
+  "(none)": {
+   "fees": 5214.274596443721,
+   "fees_to_near": 1682.4026113568593,
+   "swaps": 5680,
+   "volume": 5990822.770301319
+  },
+  "allbridgenext": {
+   "fees": 0.029040599999999996,
+   "fees_to_near": 0.014520299999999998,
+   "swaps": 12,
+   "volume": 29.040600000000005
+  },
+  "anzo": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 18,
+   "volume": 4069.6490999999996
+  },
+  "app.vdex.trade": {
+   "fees": 76.45725660000001,
+   "fees_to_near": 38.228628300000004,
+   "swaps": 4,
+   "volume": 76457.2566
+  },
+  "aurora-widget-cmpff1u2z00mn0dlhm0tbjtpk": {
+   "fees": 0.042272000000000004,
+   "fees_to_near": 0.0,
+   "swaps": 12,
+   "volume": 4.2272
+  },
+  "aurora-widget-cmpzdp16m00dp0dl74qong36i": {
+   "fees": 0.00022608,
+   "fees_to_near": 0.0,
+   "swaps": 3,
+   "volume": 1.1304
+  },
+  "aurora-widget-widget-studio-user": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 5,
+   "volume": 12346.3273
+  },
+  "auto": {
+   "fees": 0.014994300000000002,
+   "fees_to_near": 0.007497150000000001,
+   "swaps": 1,
+   "volume": 4.9981
+  },
+  "avnu": {
+   "fees": 0.7432104000000005,
+   "fees_to_near": 0.7432104000000005,
+   "swaps": 363,
+   "volume": 371.6052000000003
+  },
+  "betkarma": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 8,
+   "volume": 111392.7714
+  },
+  "blackmarket.tg": {
+   "fees": 96.68401379999999,
+   "fees_to_near": 48.342006899999994,
+   "swaps": 24,
+   "volume": 17423.9132
+  },
+  "brave": {
+   "fees": 6.088563000000001,
+   "fees_to_near": 6.088563000000001,
+   "swaps": 12,
+   "volume": 6088.563
+  },
+  "brswap": {
+   "fees": 264.11605599999996,
+   "fees_to_near": 0.0,
+   "swaps": 109,
+   "volume": 105646.42240000002
+  },
+  "bungee": {
+   "fees": 7.00729465,
+   "fees_to_near": 7.00729465,
+   "swaps": 20,
+   "volume": 28436.81260000001
+  },
+  "cashmere": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 50,
+   "volume": 1472.3756000000008
+  },
+  "cow": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 217,
+   "volume": 762673.4322000007
+  },
+  "depouch": {
+   "fees": 1.353621,
+   "fees_to_near": 0.6768105,
+   "swaps": 1,
+   "volume": 225.6035
+  },
+  "dzap": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 11,
+   "volume": 1322.5604
+  },
+  "e1a72603-64b3-4be1-8265-8bae5970d396": {
+   "fees": 2155.1636111500015,
+   "fees_to_near": 173.22730097000002,
+   "swaps": 175,
+   "volume": 178207.2455
+  },
+  "exchai": {
+   "fees": 0.8192031999999999,
+   "fees_to_near": 0.40960159999999995,
+   "swaps": 1,
+   "volume": 512.002
+  },
+  "exchange": {
+   "fees": 295.04629485000004,
+   "fees_to_near": 34.232131550000005,
+   "swaps": 87,
+   "volume": 34697.97289999999
+  },
+  "fastswap": {
+   "fees": 0.8000984,
+   "fees_to_near": 0.4000492,
+   "swaps": 1,
+   "volume": 400.0492
+  },
+  "gas-refueler": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 12,
+   "volume": 3888.6677
+  },
+  "gemwallet": {
+   "fees": 2966.0796854999994,
+   "fees_to_near": 1483.0398427499997,
+   "swaps": 129,
+   "volume": 593215.9371000002
+  },
+  "hidden-wallet": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 6,
+   "volume": 1886.8038
+  },
+  "hiddenswap": {
+   "fees": 3.5018111999999997,
+   "fees_to_near": 1.7509055999999998,
+   "swaps": 4,
+   "volume": 875.4528
+  },
+  "infinex.near": {
+   "fees": 25.864516860000002,
+   "fees_to_near": 25.864516860000002,
+   "swaps": 35,
+   "volume": 26811.254399999998
+  },
+  "instaswap": {
+   "fees": 63.6109998,
+   "fees_to_near": 31.8054999,
+   "swaps": 12,
+   "volume": 18437.099000000002
+  },
+  "intents.tg": {
+   "fees": 118.73054184999991,
+   "fees_to_near": 0.05141775,
+   "swaps": 977,
+   "volume": 368700.45460000064
+  },
+  "keepkey": {
+   "fees": 78.31479060000001,
+   "fees_to_near": 48.914125950000006,
+   "swaps": 3,
+   "volume": 19600.4431
+  },
+  "kingrefs": {
+   "fees": 0.0415044,
+   "fees_to_near": 0.027669599999999996,
+   "swaps": 1,
+   "volume": 13.8348
+  },
+  "kyberswap": {
+   "fees": 0.11993087999999999,
+   "fees_to_near": 0.08994816000000001,
+   "swaps": 11,
+   "volume": 99.9424
+  },
+  "l2pass": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 11,
+   "volume": 42205.0839
+  },
+  "lifi": {
+   "fees": 3483.6138251799944,
+   "fees_to_near": 1741.8069125899972,
+   "swaps": 2991,
+   "volume": 6549345.372699987
+  },
+  "loaf.cash": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 1,
+   "volume": 2.1569
+  },
+  "lobstr": {
+   "fees": 4.485691000000001,
+   "fees_to_near": 2.2428455000000005,
+   "swaps": 24,
+   "volume": 448.56909999999993
+  },
+  "luxucard": {
+   "fees": 0.39372599999999996,
+   "fees_to_near": 0.19686299999999998,
+   "swaps": 1,
+   "volume": 131.242
+  },
+  "meru": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 55,
+   "volume": 283202.56330000004
+  },
+  "meteor": {
+   "fees": 32.1782074,
+   "fees_to_near": 0.0,
+   "swaps": 56,
+   "volume": 16089.103699999998
+  },
+  "motus": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 1,
+   "volume": 0.9991
+  },
+  "mucho": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 37,
+   "volume": 24561.2744
+  },
+  "nativeswap.io": {
+   "fees": 501.71283150000005,
+   "fees_to_near": 250.85641575000002,
+   "swaps": 15,
+   "volume": 132029.6925
+  },
+  "near-intents.intents-referral.near": {
+   "fees": 4373.700563100001,
+   "fees_to_near": 4373.700563100001,
+   "swaps": 255,
+   "volume": 4296220.2479
+  },
+  "near-mobile": {
+   "fees": 2505.9544313600013,
+   "fees_to_near": 1373.9914581200007,
+   "swaps": 223,
+   "volume": 519961.44849999965
+  },
+  "new.intents-referral.near": {
+   "fees": 50961.88667640001,
+   "fees_to_near": 50960.33745348002,
+   "swaps": 2146,
+   "volume": 29748379.3966
+  },
+  "onswitch.xyz": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 5,
+   "volume": 79.6423
+  },
+  "peerfolio.near": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 12,
+   "volume": 3.8203999999999994
+  },
+  "ping-checkout": {
+   "fees": 0.255971,
+   "fees_to_near": 0.1279855,
+   "swaps": 3,
+   "volume": 51.194199999999995
+  },
+  "rango": {
+   "fees": 769.8216373000002,
+   "fees_to_near": 0.0,
+   "swaps": 6519,
+   "volume": 3941226.696466661
+  },
+  "ref.hevn.tg": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 5,
+   "volume": 3127.7706
+  },
+  "referral": {
+   "fees": 0.47201380000000004,
+   "fees_to_near": 0.43855160000000004,
+   "swaps": 4,
+   "volume": 439.8575
+  },
+  "rhea": {
+   "fees": 189.66935978000004,
+   "fees_to_near": 0.0,
+   "swaps": 119,
+   "volume": 206482.9906999999
+  },
+  "rhea_bridge": {
+   "fees": 8.654832189999997,
+   "fees_to_near": 0.0,
+   "swaps": 35,
+   "volume": 86548.32190000004
+  },
+  "rhea_lending": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 15,
+   "volume": 28596.372200000005
+  },
+  "rhea_perps": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 8,
+   "volume": 3249.2219999999993
+  },
+  "rubic": {
+   "fees": 109.30751597000001,
+   "fees_to_near": 8.96900597,
+   "swaps": 18,
+   "volume": 10048.7213
+  },
+  "shapeshift": {
+   "fees": 1333.4376817999998,
+   "fees_to_near": 190.4910974,
+   "swaps": 21,
+   "volume": 190491.0974
+  },
+  "solswap.intents-referral.near": {
+   "fees": 2923.8830679000007,
+   "fees_to_near": 2923.8830679000007,
+   "swaps": 47,
+   "volume": 1786628.8434000001
+  },
+  "sovalabs": {
+   "fees": 1.4030470000000002,
+   "fees_to_near": 0.0,
+   "swaps": 22,
+   "volume": 280.60940000000005
+  },
+  "stableflow": {
+   "fees": 47.815202060000004,
+   "fees_to_near": 23.907601030000002,
+   "swaps": 40,
+   "volume": 531834.8207000002
+  },
+  "swapkit": {
+   "fees": 94894.17504927126,
+   "fees_to_near": 0.0,
+   "swaps": 5969,
+   "volume": 14405131.14757067
+  },
+  "sweat-app": {
+   "fees": 0.7701571000000003,
+   "fees_to_near": 0.7701571000000003,
+   "swaps": 490,
+   "volume": 770.1570999999999
+  },
+  "templar-liquidator": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 10,
+   "volume": 14244.1093
+  },
+  "thorwallet": {
+   "fees": 26.31173505,
+   "fees_to_near": 4.7550798,
+   "swaps": 23,
+   "volume": 2351.0684999999994
+  },
+  "trezu": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 1,
+   "volume": 19.9957
+  },
+  "trustp2p": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 4,
+   "volume": 3254.3048
+  },
+  "trustswap": {
+   "fees": 101.42068280000001,
+   "fees_to_near": 50.710341400000004,
+   "swaps": 23,
+   "volume": 25355.170700000006
+  },
+  "turboswap.intents-referral.near": {
+   "fees": 0.0006846,
+   "fees_to_near": 0.0006846,
+   "swaps": 4,
+   "volume": 0.2282
+  },
+  "unity_wallet": {
+   "fees": 69.3142934,
+   "fees_to_near": 37.8077964,
+   "swaps": 14,
+   "volume": 6301.299400000001
+  },
+  "vizor": {
+   "fees": 1335.5814488800002,
+   "fees_to_near": 667.7907244400001,
+   "swaps": 9,
+   "volume": 196409.03660000002
+  },
+  "wowmax": {
+   "fees": 0.115694,
+   "fees_to_near": 0.115694,
+   "swaps": 1,
+   "volume": 115.694
+  },
+  "zcash-wallet": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 1,
+   "volume": 32.1146
+  },
+  "zeroex": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 3,
+   "volume": 201.93040000000002
+  },
+  "zodl": {
+   "fees": 102412.71469787008,
+   "fees_to_near": 2.7619805499999996,
+   "swaps": 1268,
+   "volume": 15285587.616299998
+  }
+ },
+ "kind": {
+  "Bitcoin": {
+   "fees": 54875.98916120003,
+   "swaps": 2910,
+   "volume": 18721259.43809999
+  },
+  "Everything else": {
+   "fees": 79488.34380138412,
+   "swaps": 17550,
+   "volume": 17248919.54116814
+  },
+  "Other UTXO coin": {
+   "fees": 2763.2767466899945,
+   "swaps": 612,
+   "volume": 606254.1782999999
+  },
+  "Stablecoin pair": {
+   "fees": 13058.055503861307,
+   "swaps": 4464,
+   "volume": 20338356.383570634
+  },
+  "Zcash": {
+   "fees": 127278.28964414015,
+   "swaps": 2977,
+   "volume": 29792788.081500035
+  }
+ },
+ "no_fee_volume": 26129930.42626654,
+ "paid_in": 86707577.47923857,
+ "paid_out": 86237119.51684858,
+ "recipients": {
+  "(others)": 977.3812834100099,
+  "0x09c8e7b234540821b1dd1c6035fc92259f126077": 141.04665695999998,
+  "0x0d9dab1a248f63b0a48965ba8435e4de7497a3dc": 1483.0398427499997,
+  "0x516B375E81772C91C986cF722729b62667d13953": 264.6989367499999,
+  "0x9f1d0c72a50088172220990474f97A63854949CF": 202.25919609999997,
+  "0xa58dC7e628c29C88942770aeF4082728a8Ac3F56": 1814.3637776299997,
+  "812356896127877ccd8908c20ad3fd8d6f7102c44ffa703fcf14c4da1ff199a8": 1981.9363101799997,
+  "8b8f06d79196f428774d8a1e35716799284053057c09232ff5bbea9f70d2cdde": 197.37868850685874,
+  "bgwallet.near": 937.9567788,
+  "bitboxswapkit.near": 135.947538,
+  "buybacks.multisignature.near": 37070.80015859687,
+  "exchac.near": 412.73780951,
+  "f6e2a398796c74b6f555dd3786c02e2792ea53d6ad4ee3a59fd95576682b27a2": 667.7907244400001,
+  "fefundsadmin.sputnik-dao.near": 29128.186273080002,
+  "hvlnear.near": 1621.8386188999998,
+  "ktpblack.near": 506.0615648,
+  "ledgerswapkit.near": 54379.42150021998,
+  "lifi_int.near": 1741.8069125899972,
+  "manyfields.near": 1330.56539875,
+  "nativeswap.near": 250.85641575000002,
+  "ndf.rhealab.near": 188.85473432,
+  "near_mobile.near": 1131.9629732399997,
+  "rangoni.near": 311.14910725000004,
+  "rangorng.near": 457.78566855,
+  "shapeshifttokenomics.sputnik-dao.near": 1142.9465844000001,
+  "swapkit.near": 2508.51482118,
+  "swapmybuddy.near": 260.8141633,
+  "swapspaceswapkit.near": 298.20097259999994,
+  "thorswap.near": 3711.2546770999984,
+  "trustswapkit.near": 29796.444052291397,
+  "zodlswaps.near": 102409.95271732008
+ },
+ "refund_reasons": {
+  "AMOUNT_LESS_THAN_MIN_AMOUNT_OUT": 491,
+  "AMOUNT_MORE_THAN_BALANCE": 239,
+  "INSUFFICIENT_BALANCE": 16,
+  "INTENT_SUBMIT_FAILED": 11,
+  "NO_LIQUIDITY": 123,
+  "PARTIAL_DEPOSIT": 13,
+  "UNKNOWN": 2
+ },
+ "route": {
+  "cross asset": {
+   "fees": 262816.55072024395,
+   "swaps": 20750,
+   "volume": 56818030.29816841
+  },
+  "same asset": {
+   "fees": 1589.3486331700008,
+   "swaps": 3299,
+   "volume": 9551190.940899998
+  },
+  "stable pair": {
+   "fees": 13058.055503861307,
+   "swaps": 4464,
+   "volume": 20338356.383570634
+  }
+ },
+ "sizes": [
+  [
+   4093,
+   1045.4438999999757
+  ],
+  [
+   4735,
+   22994.205966664154
+  ],
+  [
+   7961,
+   347113.84330137057
+  ],
+  [
+   7292,
+   2477392.2899706615
+  ],
+  [
+   3110,
+   12495024.348399982
+  ],
+  [
+   1180,
+   39667043.47049999
+  ],
+  [
+   142,
+   31696964.02059999
+  ]
+ ],
+ "status": {
+  "FAILED": 23,
+  "REFUNDED": 872,
+  "SUCCESS": 28513
+ },
+ "swaps": 29408,
+ "top_1pct_volume": 43274943.3934,
+ "volume": 86707577.62263858
+}

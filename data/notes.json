@@ -1,0 +1,18 @@
+{
+ "protocol_fee": {
+  "usd": 2346.47,
+  "gross": 6124081.56,
+  "to": "2026-11-04",
+  "source": "https://dune.com/queries/9074851",
+  "read": "2026-11-14",
+  "what": "gross fees minus affiliate fees over the 30 days to the date, from NEAR's fee datasets on Dune"
+ },
+ "capture": {
+  "front_end": 0.193,
+  "partners": 0.104,
+  "quote_improvement": 0.036,
+  "read": "2026-11-13",
+  "source": "https://revenue.near.org",
+  "what": "NEAR's own revenue dashboard: its capture over the last 30 days, as shares of gross fees, by mechanism"
+ }
+}

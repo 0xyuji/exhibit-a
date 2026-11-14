@@ -1,0 +1,1104 @@
+{
+ "days": {
+  "2026-09-15": {
+   "block": 215846543,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 145.39250536,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 13376068.725672,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9365724.589927,
+    "nbtc.bridge.near": 143.91223829,
+    "wrap.near": 10483476.09559523,
+    "zec.omft.near": 30822.55938074
+   },
+   "state_bytes": 11852116991,
+   "supply": 1306434002.8022847,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 7.669830931317124,
+    "buybacks.multisignature.near": 1644486.7614417407,
+    "fefundsadmin.sputnik-dao.near": 1721828.2769932612
+   }
+  },
+  "2026-09-16": {
+   "block": 215986772,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 141.24827299,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 13437025.296649,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8630994.329502,
+    "nbtc.bridge.near": 149.18456185,
+    "wrap.near": 10516397.554093206,
+    "zec.omft.near": 28371.00069241
+   },
+   "state_bytes": 11876292538,
+   "supply": 1306515720.0887632,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 7.669830931317124,
+    "buybacks.multisignature.near": 1656196.0895754683,
+    "fefundsadmin.sputnik-dao.near": 1725696.2738875435
+   }
+  },
+  "2026-09-17": {
+   "block": 216127139,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 142.70888823,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 12680151.449684,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 7863326.419054,
+    "nbtc.bridge.near": 147.93177496,
+    "wrap.near": 10649053.6425638,
+    "zec.omft.near": 30731.61024995
+   },
+   "state_bytes": 11905460188,
+   "supply": 1306597157.3127604,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 7.669830931317124,
+    "buybacks.multisignature.near": 1679822.869557945,
+    "fefundsadmin.sputnik-dao.near": 1734605.6310338862
+   }
+  },
+  "2026-09-18": {
+   "block": 216269258,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 142.27790478,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 14556657.554714,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10938104.170475,
+    "nbtc.bridge.near": 154.61300955,
+    "wrap.near": 10953352.3742181,
+    "zec.omft.near": 30037.00262151
+   },
+   "state_bytes": 11937842850,
+   "supply": 1306677457.4060037,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 7.669830931317124,
+    "buybacks.multisignature.near": 1705372.747628076,
+    "fefundsadmin.sputnik-dao.near": 1743004.722779856
+   }
+  },
+  "2026-09-19": {
+   "block": 216412270,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 142.11394666,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 12542203.779883,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9783074.37386,
+    "nbtc.bridge.near": 153.01447288,
+    "wrap.near": 12232104.919702517,
+    "zec.omft.near": 31109.11336478
+   },
+   "state_bytes": 11964138913,
+   "supply": 1306784674.346018,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1716882.3888986306,
+    "fefundsadmin.sputnik-dao.near": 1747915.4204927743
+   }
+  },
+  "2026-09-20": {
+   "block": 216553324,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 142.06943613,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 15093631.96578,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8615357.202339,
+    "nbtc.bridge.near": 149.35190921,
+    "wrap.near": 12943153.036716936,
+    "zec.omft.near": 30902.64229047
+   },
+   "state_bytes": 11989793307,
+   "supply": 1306866141.7012472,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1724419.2740820632,
+    "fefundsadmin.sputnik-dao.near": 1751878.2361402407
+   }
+  },
+  "2026-09-21": {
+   "block": 216696052,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 142.56536844,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 14621276.577867,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10240721.662944,
+    "nbtc.bridge.near": 146.17494351,
+    "wrap.near": 14409413.873178234,
+    "zec.omft.near": 30208.86142996
+   },
+   "state_bytes": 12031282577,
+   "supply": 1306946432.0652702,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1742992.5984297488,
+    "fefundsadmin.sputnik-dao.near": 1761656.506829825
+   }
+  },
+  "2026-09-22": {
+   "block": 216835292,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 144.07453747,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 15069587.642899,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9738718.544244,
+    "nbtc.bridge.near": 148.05022092,
+    "wrap.near": 16856548.134014186,
+    "zec.omft.near": 33271.76064334
+   },
+   "state_bytes": 12065465329,
+   "supply": 1307054581.145394,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1759835.0826182184,
+    "fefundsadmin.sputnik-dao.near": 1771064.8439443095
+   }
+  },
+  "2026-09-23": {
+   "block": 216976126,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 144.88648164,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 16225578.686598,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8009885.223216,
+    "nbtc.bridge.near": 156.26823859,
+    "wrap.near": 18867182.62262041,
+    "zec.omft.near": 33807.50344457
+   },
+   "state_bytes": 12099198253,
+   "supply": 1307135620.0877094,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1776706.782463801,
+    "fefundsadmin.sputnik-dao.near": 1779065.8131650586
+   }
+  },
+  "2026-09-24": {
+   "block": 217118982,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 143.14902721,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 16571508.670758,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8029109.452434,
+    "nbtc.bridge.near": 144.22848012,
+    "wrap.near": 20823952.894990183,
+    "zec.omft.near": 34038.44887074
+   },
+   "state_bytes": 12128955134,
+   "supply": 1307215643.8586063,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1788592.8205795747,
+    "fefundsadmin.sputnik-dao.near": 1784558.754235569
+   }
+  },
+  "2026-09-25": {
+   "block": 217263876,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 144.28345423,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18694295.041468,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9823463.639939,
+    "nbtc.bridge.near": 167.50579917,
+    "wrap.near": 22200893.126624115,
+    "zec.omft.near": 33072.92129411
+   },
+   "state_bytes": 12160671950,
+   "supply": 1307294623.6655881,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.7768352524309,
+    "buybacks.multisignature.near": 1801649.7178927034,
+    "fefundsadmin.sputnik-dao.near": 1790413.4706184273
+   }
+  },
+  "2026-09-26": {
+   "block": 217410111,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 144.21764738,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18920829.504376,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10246203.15314,
+    "nbtc.bridge.near": 171.5374596,
+    "wrap.near": 22600613.284594055,
+    "zec.omft.near": 32120.73501738
+   },
+   "state_bytes": 12187688098,
+   "supply": 1307399637.4564118,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1807047.1101978673,
+    "fefundsadmin.sputnik-dao.near": 1793210.8893190043
+   }
+  },
+  "2026-09-28": {
+   "block": 217701687,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 143.3163501,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 20330401.082994,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12481174.66998,
+    "nbtc.bridge.near": 164.28295628,
+    "wrap.near": 22884874.799766093,
+    "zec.omft.near": 31598.61990166
+   },
+   "state_bytes": 12268866955,
+   "supply": 1307582423.4213445,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1822893.9967350427,
+    "fefundsadmin.sputnik-dao.near": 1799820.6447354746
+   }
+  },
+  "2026-09-29": {
+   "block": 217845404,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 146.81889819,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 19355465.664622,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10557749.697974,
+    "nbtc.bridge.near": 169.57280827,
+    "wrap.near": 20566919.318427738,
+    "zec.omft.near": 33006.09441631
+   },
+   "state_bytes": 12308882411,
+   "supply": 1307661530.8055053,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1833801.6171106582,
+    "fefundsadmin.sputnik-dao.near": 1804065.0763540003
+   }
+  },
+  "2026-09-30": {
+   "block": 217984976,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 146.03563362,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18952851.262906,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10942885.434672,
+    "nbtc.bridge.near": 133.48169707,
+    "wrap.near": 20365314.331186388,
+    "zec.omft.near": 32458.77748172
+   },
+   "state_bytes": 12341356679,
+   "supply": 1307742138.6488678,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1847719.6696479227,
+    "fefundsadmin.sputnik-dao.near": 1809615.3334455618
+   }
+  },
+  "2026-10-01": {
+   "block": 218126914,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 145.858837,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 17553581.875297,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10279367.668589,
+    "nbtc.bridge.near": 148.50574638,
+    "wrap.near": 20417117.817693487,
+    "zec.omft.near": 31459.55699979
+   },
+   "state_bytes": 12365298463,
+   "supply": 1307821213.6046,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1857884.1558580913,
+    "fefundsadmin.sputnik-dao.near": 1814301.66042311
+   }
+  },
+  "2026-10-02": {
+   "block": 218273398,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 138.85190107,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 19159541.164657,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10298028.378989,
+    "nbtc.bridge.near": 140.31255842,
+    "wrap.near": 20724155.010469586,
+    "zec.omft.near": 31488.39694652
+   },
+   "state_bytes": 12390651449,
+   "supply": 1307926045.5553381,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1865758.6607643869,
+    "fefundsadmin.sputnik-dao.near": 1818008.649290411
+   }
+  },
+  "2026-10-03": {
+   "block": 218420665,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 137.01394683,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18039919.733247,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9575345.65824,
+    "nbtc.bridge.near": 141.90707732,
+    "wrap.near": 20547737.718485,
+    "zec.omft.near": 31401.2938401
+   },
+   "state_bytes": 12411236642,
+   "supply": 1308004137.0770342,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1869501.25058218,
+    "fefundsadmin.sputnik-dao.near": 1819616.5622632878
+   }
+  },
+  "2026-10-04": {
+   "block": 218567668,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 138.08083506,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 17657401.626295,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9555377.53003,
+    "nbtc.bridge.near": 133.57154935,
+    "wrap.near": 19004698.978267156,
+    "zec.omft.near": 31571.06117751
+   },
+   "state_bytes": 12431572984,
+   "supply": 1308108480.2822933,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1874472.494082711,
+    "fefundsadmin.sputnik-dao.near": 1844391.7998909631
+   }
+  },
+  "2026-10-05": {
+   "block": 218714586,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 136.69645392,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18028460.291563,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9132927.546782,
+    "nbtc.bridge.near": 130.91167718,
+    "wrap.near": 18615337.467664678,
+    "zec.omft.near": 33213.2848173
+   },
+   "state_bytes": 12456849995,
+   "supply": 1308186530.6935277,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1882735.6836208163,
+    "fefundsadmin.sputnik-dao.near": 1846188.4289605736
+   }
+  },
+  "2026-10-06": {
+   "block": 218861408,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 137.71413809,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18352099.676249,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9769490.668304,
+    "nbtc.bridge.near": 123.79764732,
+    "wrap.near": 18396351.781603493,
+    "zec.omft.near": 32373.20225579
+   },
+   "state_bytes": 12485740620,
+   "supply": 1308264597.3616612,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1890080.1468903108,
+    "fefundsadmin.sputnik-dao.near": 1851007.290625289
+   }
+  },
+  "2026-10-07": {
+   "block": 219007405,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 138.27965675,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 17498470.688588,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9663343.557458,
+    "nbtc.bridge.near": 114.24842528,
+    "wrap.near": 17507392.033360824,
+    "zec.omft.near": 32559.50573496
+   },
+   "state_bytes": 12514215668,
+   "supply": 1308369598.8669133,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1897731.3720559827,
+    "fefundsadmin.sputnik-dao.near": 1855244.904525697
+   }
+  },
+  "2026-10-08": {
+   "block": 219154067,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 136.20631143,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18913317.508093,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 11165674.956765,
+    "nbtc.bridge.near": 141.46500239,
+    "wrap.near": 18066691.613747586,
+    "zec.omft.near": 31503.44558064
+   },
+   "state_bytes": 12556510948,
+   "supply": 1308447462.5370424,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1913969.7027698809,
+    "fefundsadmin.sputnik-dao.near": 1865616.7772466063
+   }
+  },
+  "2026-10-09": {
+   "block": 219300711,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 136.2596432,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 20777348.153982,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10771622.072357,
+    "nbtc.bridge.near": 152.75980334,
+    "wrap.near": 18261564.73552126,
+    "zec.omft.near": 33351.96645706
+   },
+   "state_bytes": 12589564925,
+   "supply": 1308552153.5996516,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1930866.9866411034,
+    "fefundsadmin.sputnik-dao.near": 1871955.6239264722
+   }
+  },
+  "2026-10-10": {
+   "block": 219447521,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 137.74949851,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 18846529.201891,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 7971905.645878,
+    "nbtc.bridge.near": 155.3915272,
+    "wrap.near": 17858212.958415046,
+    "zec.omft.near": 33016.49554762
+   },
+   "state_bytes": 12616071510,
+   "supply": 1308629061.42197,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1941541.424418627,
+    "fefundsadmin.sputnik-dao.near": 1876118.6855609734
+   }
+  },
+  "2026-10-11": {
+   "block": 219594854,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 137.80158013,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 20890685.558848,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8554232.244729,
+    "nbtc.bridge.near": 127.14457294,
+    "wrap.near": 17905452.259532,
+    "zec.omft.near": 33668.42985215
+   },
+   "state_bytes": 12640980556,
+   "supply": 1308704560.6147938,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1951906.2222291005,
+    "fefundsadmin.sputnik-dao.near": 1879582.0691805305
+   }
+  },
+  "2026-10-12": {
+   "block": 219740459,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 136.20451446,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22420386.756193,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9752524.167308,
+    "nbtc.bridge.near": 126.39498603,
+    "wrap.near": 17184100.11132096,
+    "zec.omft.near": 33602.72109354
+   },
+   "state_bytes": 12670714267,
+   "supply": 1308809574.7770233,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1960118.3213147107,
+    "fefundsadmin.sputnik-dao.near": 1883709.0623607535
+   }
+  },
+  "2026-10-13": {
+   "block": 219879130,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.69150692,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22710889.843991,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9668829.686377,
+    "nbtc.bridge.near": 146.08944042,
+    "wrap.near": 17194834.312430784,
+    "zec.omft.near": 32825.69495997
+   },
+   "state_bytes": 12700891048,
+   "supply": 1308888011.538407,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1967173.550451355,
+    "fefundsadmin.sputnik-dao.near": 1887875.9359136499
+   }
+  },
+  "2026-10-14": {
+   "block": 220001293,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.47696866,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24330574.176902,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8967518.426644,
+    "nbtc.bridge.near": 143.09970529,
+    "wrap.near": 16969332.67129758,
+    "zec.omft.near": 32236.74582898
+   },
+   "state_bytes": 12731388363,
+   "supply": 1308982203.9373012,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1977862.0151661055,
+    "fefundsadmin.sputnik-dao.near": 1894137.8361158813
+   }
+  },
+  "2026-10-15": {
+   "block": 220147832,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.64524892,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24265369.415342,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10012126.847569,
+    "nbtc.bridge.near": 135.42484743,
+    "wrap.near": 16894933.17201493,
+    "zec.omft.near": 31237.0657383
+   },
+   "state_bytes": 12755905216,
+   "supply": 1309057509.8220859,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 1997792.3417932459,
+    "fefundsadmin.sputnik-dao.near": 1905170.6279364028
+   }
+  },
+  "2026-10-16": {
+   "block": 220291960,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.26790331,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23719322.921805,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10354918.405026,
+    "nbtc.bridge.near": 135.81910811,
+    "wrap.near": 16748401.678063238,
+    "zec.omft.near": 30867.30762057
+   },
+   "state_bytes": 12780578835,
+   "supply": 1309163647.8662388,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2003725.1087790998,
+    "fefundsadmin.sputnik-dao.near": 1908368.5953236518
+   }
+  },
+  "2026-10-17": {
+   "block": 220436690,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.13400479,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24326420.764898,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9762758.180491,
+    "nbtc.bridge.near": 108.71854115,
+    "wrap.near": 16794802.638504412,
+    "zec.omft.near": 33666.89298926
+   },
+   "state_bytes": 12800443424,
+   "supply": 1309243179.1702335,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2008453.431590361,
+    "fefundsadmin.sputnik-dao.near": 1910300.8176301685
+   }
+  },
+  "2026-10-18": {
+   "block": 220581909,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 155.71699239,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23822379.713063,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8231259.72274,
+    "nbtc.bridge.near": 134.06655558,
+    "wrap.near": 16630363.960917132,
+    "zec.omft.near": 33919.1103431
+   },
+   "state_bytes": 12819623456,
+   "supply": 1309322552.8540375,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2014526.467298358,
+    "fefundsadmin.sputnik-dao.near": 1913463.4506616497
+   }
+  },
+  "2026-10-19": {
+   "block": 220726942,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 155.89539065,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23751275.67989,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8246827.099711,
+    "nbtc.bridge.near": 147.225872,
+    "wrap.near": 16613439.720384067,
+    "zec.omft.near": 31825.86387397
+   },
+   "state_bytes": 12842849843,
+   "supply": 1309428647.0553458,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2022180.0879153663,
+    "fefundsadmin.sputnik-dao.near": 1916643.242806074
+   }
+  },
+  "2026-10-20": {
+   "block": 220871258,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 155.623287,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22940491.461812,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9494569.936687,
+    "nbtc.bridge.near": 163.86842271,
+    "wrap.near": 16824195.12430233,
+    "zec.omft.near": 30888.22694507
+   },
+   "state_bytes": 12862650001,
+   "supply": 1309508415.4874482,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2033718.0301594695,
+    "fefundsadmin.sputnik-dao.near": 1920982.8869119203
+   }
+  },
+  "2026-10-21": {
+   "block": 221015564,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 154.31132316,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22734972.367162,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10611322.751841,
+    "nbtc.bridge.near": 131.92601447,
+    "wrap.near": 16918049.7266844,
+    "zec.omft.near": 29154.06702293
+   },
+   "state_bytes": 12890330173,
+   "supply": 1309588192.3765283,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2041715.5491728573,
+    "fefundsadmin.sputnik-dao.near": 1925109.6567534336
+   }
+  },
+  "2026-10-22": {
+   "block": 221162112,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 153.29879163,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23637807.935921,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10118328.809254,
+    "nbtc.bridge.near": 144.81492852,
+    "wrap.near": 16323634.309512148,
+    "zec.omft.near": 29339.67108639
+   },
+   "state_bytes": 12915017201,
+   "supply": 1309693262.3975585,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2049936.9751508224,
+    "fefundsadmin.sputnik-dao.near": 1928945.6108496839
+   }
+  },
+  "2026-10-23": {
+   "block": 221310107,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.24124176,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22550814.63521,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 11276153.566242,
+    "nbtc.bridge.near": 149.80697726,
+    "wrap.near": 16310868.357536672,
+    "zec.omft.near": 28948.01196827
+   },
+   "state_bytes": 12939785650,
+   "supply": 1309771144.6435118,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2056444.8534107096,
+    "fefundsadmin.sputnik-dao.near": 1930683.8096912536
+   }
+  },
+  "2026-10-24": {
+   "block": 221460763,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 154.23663812,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23270388.946503,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 11553393.905933,
+    "nbtc.bridge.near": 138.60290324,
+    "wrap.near": 16215960.16060727,
+    "zec.omft.near": 28961.23945902
+   },
+   "state_bytes": 12964666804,
+   "supply": 1309873315.5818264,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2063654.814829639,
+    "fefundsadmin.sputnik-dao.near": 1933985.5498948991
+   }
+  },
+  "2026-10-25": {
+   "block": 221609946,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 154.3600095,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22859323.913997,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9759130.036049,
+    "nbtc.bridge.near": 142.26289174,
+    "wrap.near": 16169649.146509103,
+    "zec.omft.near": 28983.8755587
+   },
+   "state_bytes": 12987375497,
+   "supply": 1309950498.245407,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2073656.6089096754,
+    "fefundsadmin.sputnik-dao.near": 1937438.668383017
+   }
+  },
+  "2026-10-26": {
+   "block": 221760246,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.47308765,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22908748.460892,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12574368.594878,
+    "nbtc.bridge.near": 152.91672575,
+    "wrap.near": 16221417.386339018,
+    "zec.omft.near": 28877.12105587
+   },
+   "state_bytes": 13014016707,
+   "supply": 1310053077.8166268,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2086721.8968297876,
+    "fefundsadmin.sputnik-dao.near": 1941978.7120682152
+   }
+  },
+  "2026-10-27": {
+   "block": 221897843,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.35349782,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22733429.468836,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10305274.522015,
+    "nbtc.bridge.near": 152.44568912,
+    "wrap.near": 16399740.295776082,
+    "zec.omft.near": 29497.46562434
+   },
+   "state_bytes": 13040729036,
+   "supply": 1310136605.1802747,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2098423.2809607517,
+    "fefundsadmin.sputnik-dao.near": 1946694.130759502
+   }
+  },
+  "2026-10-28": {
+   "block": 222047171,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.03728022,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 22697153.137752,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 9506451.020309,
+    "nbtc.bridge.near": 153.10638292,
+    "wrap.near": 16397836.587651962,
+    "zec.omft.near": 30302.83826466
+   },
+   "state_bytes": 13065408467,
+   "supply": 1310213849.7913525,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2108156.4281896586,
+    "fefundsadmin.sputnik-dao.near": 1949087.8858074069
+   }
+  },
+  "2026-10-29": {
+   "block": 222194964,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.84267516,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23102316.29351,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8714662.364812,
+    "nbtc.bridge.near": 150.21225169,
+    "wrap.near": 16274055.380656041,
+    "zec.omft.near": 32613.88190152
+   },
+   "state_bytes": 13093808628,
+   "supply": 1310317689.3538477,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2124102.2107601473,
+    "fefundsadmin.sputnik-dao.near": 1956588.0398973294
+   }
+  },
+  "2026-10-30": {
+   "block": 222343147,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.52429024,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26976757.289358,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 8608680.417786,
+    "nbtc.bridge.near": 138.00980767,
+    "wrap.near": 16332387.58586683,
+    "zec.omft.near": 32344.06741394
+   },
+   "state_bytes": 13135471001,
+   "supply": 1310395405.4681542,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2137099.537156297,
+    "fefundsadmin.sputnik-dao.near": 1961221.3321391547
+   }
+  },
+  "2026-10-31": {
+   "block": 222491357,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.44773711,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26365315.155938,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 6344122.479254,
+    "nbtc.bridge.near": 186.09062693,
+    "wrap.near": 16285825.493606733,
+    "zec.omft.near": 31527.91839962
+   },
+   "state_bytes": 13162884969,
+   "supply": 1310472976.198228,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2144976.6498354874,
+    "fefundsadmin.sputnik-dao.near": 1963841.8635934955
+   }
+  },
+  "2026-11-01": {
+   "block": 222641213,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.06281196,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26497519.885078,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10088137.426729,
+    "nbtc.bridge.near": 135.92952982,
+    "wrap.near": 16326392.101515902,
+    "zec.omft.near": 30568.67951197
+   },
+   "state_bytes": 13193693507,
+   "supply": 1310576026.3482394,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2150197.476174271,
+    "fefundsadmin.sputnik-dao.near": 1965356.6830930486
+   }
+  },
+  "2026-11-02": {
+   "block": 222791216,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 148.67975781,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24840397.151929,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12190151.569804,
+    "nbtc.bridge.near": 149.37886019,
+    "wrap.near": 16444931.989236463,
+    "zec.omft.near": 30023.10199694
+   },
+   "state_bytes": 13220289047,
+   "supply": 1310653085.3115923,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2157345.743517658,
+    "fefundsadmin.sputnik-dao.near": 1966875.2400507766
+   }
+  },
+  "2026-11-03": {
+   "block": 222942364,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 147.16829194,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26810108.747406,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 13584890.765684,
+    "nbtc.bridge.near": 148.08582378,
+    "wrap.near": 16595831.527095886,
+    "zec.omft.near": 29827.72301628
+   },
+   "state_bytes": 13257344602,
+   "supply": 1310754900.1915636,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2164886.363376982,
+    "fefundsadmin.sputnik-dao.near": 1970547.586311362
+   }
+  },
+  "2026-11-04": {
+   "block": 223087969,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 145.26499984,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24721979.972171,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12268796.281706,
+    "nbtc.bridge.near": 181.39869649,
+    "wrap.near": 16566224.293134963,
+    "zec.omft.near": 30592.24150647
+   },
+   "state_bytes": 13308316961,
+   "supply": 1310833180.5818188,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2174118.7048661225,
+    "fefundsadmin.sputnik-dao.near": 1973571.0377222071
+   }
+  },
+  "2026-11-05": {
+   "block": 223237984,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 145.24146207,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 23940930.493762,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 11333164.484711,
+    "nbtc.bridge.near": 161.39363421,
+    "wrap.near": 16761794.41672437,
+    "zec.omft.near": 28235.46029691
+   },
+   "state_bytes": 13390621989,
+   "supply": 1310935481.5643392,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2186643.4907266754,
+    "fefundsadmin.sputnik-dao.near": 1977538.1111825863
+   }
+  },
+  "2026-11-06": {
+   "block": 223387822,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.78956553,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24225140.683412,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 10820350.63904,
+    "nbtc.bridge.near": 153.17023563,
+    "wrap.near": 16896525.187324822,
+    "zec.omft.near": 24300.56596643
+   },
+   "state_bytes": 13426745954,
+   "supply": 1311012087.7287152,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2202267.809503736,
+    "fefundsadmin.sputnik-dao.near": 1985550.223967982
+   }
+  },
+  "2026-11-07": {
+   "block": 223537271,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.71370674,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 25100673.26876,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 11491063.606758,
+    "nbtc.bridge.near": 153.22720973,
+    "wrap.near": 17099257.122133605,
+    "zec.omft.near": 26419.76801729
+   },
+   "state_bytes": 13458786792,
+   "supply": 1311114816.6782203,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2210368.537479003,
+    "fefundsadmin.sputnik-dao.near": 1989046.134668475
+   }
+  },
+  "2026-11-08": {
+   "block": 223688381,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.41657186,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24125702.040763,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 13202564.58703,
+    "nbtc.bridge.near": 155.80112152,
+    "wrap.near": 17077243.72854142,
+    "zec.omft.near": 27601.7577998
+   },
+   "state_bytes": 13486201623,
+   "supply": 1311190871.4386666,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2217648.474133855,
+    "fefundsadmin.sputnik-dao.near": 1990457.6382204643
+   }
+  },
+  "2026-11-09": {
+   "block": 223838231,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.32555203,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 24863119.157544,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12549225.436185,
+    "nbtc.bridge.near": 150.36406257,
+    "wrap.near": 17798924.863859855,
+    "zec.omft.near": 28279.11170268
+   },
+   "state_bytes": 13522161483,
+   "supply": 1311293172.408342,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2229439.344194882,
+    "fefundsadmin.sputnik-dao.near": 1994812.2528772636
+   }
+  },
+  "2026-11-10": {
+   "block": 223988383,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 150.29775801,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26345666.944035,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12631228.30067,
+    "nbtc.bridge.near": 165.53600092,
+    "wrap.near": 17107178.828905888,
+    "zec.omft.near": 27131.45793317
+   },
+   "state_bytes": 13559975742,
+   "supply": 1311369614.4648197,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2240388.9445999055,
+    "fefundsadmin.sputnik-dao.near": 1999998.5195670251
+   }
+  },
+  "2026-11-11": {
+   "block": 224135606,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 151.13307457,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 25878017.707622,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 13176625.692216,
+    "nbtc.bridge.near": 141.85344906,
+    "wrap.near": 17082428.18863064,
+    "zec.omft.near": 26725.28419879
+   },
+   "state_bytes": 13596641481,
+   "supply": 1311473431.7881856,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2249868.714909367,
+    "fefundsadmin.sputnik-dao.near": 2003856.0322079526
+   }
+  },
+  "2026-11-12": {
+   "block": 224285158,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 152.80908859,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26405590.95251,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12420276.962976,
+    "nbtc.bridge.near": 153.15373159,
+    "wrap.near": 17661052.115944054,
+    "zec.omft.near": 25030.60531184
+   },
+   "state_bytes": 13637799724,
+   "supply": 1311549122.7405562,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2269999.4490051433,
+    "fefundsadmin.sputnik-dao.near": 2011735.4459389995
+   }
+  },
+  "2026-11-13": {
+   "block": 224435861,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 145.4116006,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 26112173.448657,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 12764793.166498,
+    "nbtc.bridge.near": 134.58521715,
+    "wrap.near": 17662641.529328257,
+    "zec.omft.near": 27093.56465515
+   },
+   "state_bytes": 13683480087,
+   "supply": 1311625144.3196762,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2279854.45985747,
+    "fefundsadmin.sputnik-dao.near": 2015642.727285725
+   }
+  }
+ },
+ "tokens": [
+  [
+   "wrap.near",
+   "wNEAR (near)",
+   24,
+   3.35
+  ],
+  [
+   "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+   "USDC (eth)",
+   6,
+   0.999552
+  ],
+  [
+   "zec.omft.near",
+   "ZEC (zec)",
+   8,
+   908.87
+  ],
+  [
+   "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near",
+   "USDT (eth)",
+   6,
+   0.999172
+  ],
+  [
+   "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near",
+   "WBTC (eth)",
+   8,
+   67093
+  ],
+  [
+   "nbtc.bridge.near",
+   "BTC (near)",
+   8,
+   67131
+  ]
+ ]
+}

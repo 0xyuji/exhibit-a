@@ -1,0 +1,350 @@
+{
+ "asset": {
+  "ARB": {
+   "fees": 0.038793299999999996,
+   "swaps": 4,
+   "volume": 26.391299999999998
+  },
+  "AURORA": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 7.9957
+  },
+  "AVAX": {
+   "fees": 131.00715684999997,
+   "swaps": 68,
+   "volume": 18717.7158
+  },
+  "BERA": {
+   "fees": 0.17706000000000002,
+   "swaps": 1,
+   "volume": 118.04
+  },
+  "BNB": {
+   "fees": 1254.1206982000008,
+   "swaps": 1688,
+   "volume": 179458.24520000012
+  },
+  "BTC": {
+   "fees": 10899.301074750016,
+   "swaps": 602,
+   "volume": 1711368.7685000026
+  },
+  "DAI": {
+   "fees": 213.24680210000002,
+   "swaps": 4,
+   "volume": 38579.9948
+  },
+  "DOGE": {
+   "fees": 2642.8892907,
+   "swaps": 250,
+   "volume": 379859.9556
+  },
+  "ETH": {
+   "fees": 8441.470766399996,
+   "swaps": 2311,
+   "volume": 1256104.7345999999
+  },
+  "FMS": {
+   "fees": 0.00015060000000000003,
+   "swaps": 1,
+   "volume": 0.1506
+  },
+  "GRAM": {
+   "fees": 32.422,
+   "swaps": 1,
+   "volume": 6484.4
+  },
+  "KAITO": {
+   "fees": 6.131888200000001,
+   "swaps": 14,
+   "volume": 6131.8882
+  },
+  "OP": {
+   "fees": 0.0326389,
+   "swaps": 3,
+   "volume": 409.7241
+  },
+  "POL": {
+   "fees": 58.56871720000003,
+   "swaps": 167,
+   "volume": 8366.959599999995
+  },
+  "PUBLIC": {
+   "fees": 0.0,
+   "swaps": 1,
+   "volume": 8.5442
+  },
+  "SOL": {
+   "fees": 4703.978235300004,
+   "swaps": 1654,
+   "volume": 686651.8436
+  },
+  "SUI": {
+   "fees": 0.2489,
+   "swaps": 1,
+   "volume": 49.78
+  },
+  "SWEAT": {
+   "fees": 0.0,
+   "swaps": 56,
+   "volume": 246.1467
+  },
+  "TRUMP": {
+   "fees": 0.9520658,
+   "swaps": 1,
+   "volume": 136.0094
+  },
+  "TRX": {
+   "fees": 224.13192009999986,
+   "swaps": 486,
+   "volume": 32066.488399999987
+  },
+  "TURBO": {
+   "fees": 0.000226,
+   "swaps": 3,
+   "volume": 0.0311
+  },
+  "UNI": {
+   "fees": 0.0,
+   "swaps": 2,
+   "volume": 203.388
+  },
+  "USD1": {
+   "fees": 0.025981900000000002,
+   "swaps": 1,
+   "volume": 3.7117
+  },
+  "USDC": {
+   "fees": 2191.9430723999994,
+   "swaps": 387,
+   "volume": 493609.3937999998
+  },
+  "USDT": {
+   "fees": 18882.014893350028,
+   "swaps": 927,
+   "volume": 2855376.035100003
+  },
+  "USDT0": {
+   "fees": 11.128219300000001,
+   "swaps": 17,
+   "volume": 11184.260800000002
+  },
+  "USDf": {
+   "fees": 0.0,
+   "swaps": 2,
+   "volume": 0.022600000000000002
+  },
+  "XRP": {
+   "fees": 6600.038836150004,
+   "swaps": 566,
+   "volume": 942873.3622999995
+  },
+  "ZEC": {
+   "fees": 119.2268255,
+   "swaps": 30,
+   "volume": 23845.365100000003
+  },
+  "cbBTC": {
+   "fees": 0.0804898,
+   "swaps": 2,
+   "volume": 80.4898
+  },
+  "wNEAR": {
+   "fees": 0.0028470000000000006,
+   "swaps": 51,
+   "volume": 5828.9102
+  }
+ },
+ "fees": 28664.879063950004,
+ "fees_to_near": 0.0,
+ "front_ends": {
+  "(none)": {
+   "fees": 119.23604770000001,
+   "fees_to_near": 0.0,
+   "swaps": 124,
+   "volume": 26742.271800000013
+  },
+  "bread": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 6,
+   "volume": 1296.7013
+  },
+  "consumerfi": {
+   "fees": 43.51369129999999,
+   "fees_to_near": 0.0,
+   "swaps": 110,
+   "volume": 43513.69129999999
+  },
+  "dzap": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 9,
+   "volume": 57390.4449
+  },
+  "hyperdep": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 3,
+   "volume": 20.0503
+  },
+  "kyberswap": {
+   "fees": 33.52469515000001,
+   "fees_to_near": 0.0,
+   "swaps": 35,
+   "volume": 59119.230299999996
+  },
+  "meteor": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 20,
+   "volume": 10453.641399999997
+  },
+  "mosaic-vint.near": {
+   "fees": 0.0024630000000000003,
+   "fees_to_near": 0.0,
+   "swaps": 4,
+   "volume": 0.24630000000000002
+  },
+  "referral": {
+   "fees": 0.03033675,
+   "fees_to_near": 0.0,
+   "swaps": 9,
+   "volume": 7.2615
+  },
+  "rhea": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 15,
+   "volume": 43461.725199999986
+  },
+  "swapkit": {
+   "fees": 28419.086721050004,
+   "fees_to_near": 0.0,
+   "swaps": 4489,
+   "volume": 4224402.791200008
+  },
+  "sweat-app": {
+   "fees": 0.0,
+   "fees_to_near": 0.0,
+   "swaps": 59,
+   "volume": 249.6082
+  },
+  "unity_wallet": {
+   "fees": 49.480153,
+   "fees_to_near": 0.0,
+   "swaps": 2,
+   "volume": 4948.0153
+  },
+  "web_starlight.near": {
+   "fees": 0.004956,
+   "fees_to_near": 0.0,
+   "swaps": 4,
+   "volume": 0.4956
+  }
+ },
+ "kind": {
+  "Bitcoin": {
+   "fees": 10899.301074750016,
+   "swaps": 602,
+   "volume": 1711368.7685000026
+  },
+  "Everything else": {
+   "fees": 14795.828551000015,
+   "swaps": 3877,
+   "volume": 2182090.6499000033
+  },
+  "Other UTXO coin": {
+   "fees": 2576.1112444,
+   "swaps": 238,
+   "volume": 370320.2347000001
+  },
+  "Stablecoin pair": {
+   "fees": 277.18941830000006,
+   "swaps": 143,
+   "volume": 184536.76639999993
+  },
+  "Zcash": {
+   "fees": 116.44877550000001,
+   "swaps": 29,
+   "volume": 23289.755100000002
+  }
+ },
+ "no_fee_volume": 115760.37580000008,
+ "paid_in": 4471606.171100011,
+ "paid_out": 4438600.477800005,
+ "recipients": {
+  "(others)": 0.0,
+  "0x0891617fe27647731d6f1e764092b2f9f06130a0": 33.52469515000001,
+  "0xe5e53b486a3ec8da828215be10a80b5f764c4d46": 0.0045911,
+  "640b22cc1f9ad8e566bde5415ea2570aca50437ab81d8f1a0f16e84321eccc85": 49.480153,
+  "a74a1b91cdab26d474fa77f1532655e5fddd1d95f44181085527396617997386": 43.51369129999999,
+  "crosspay.near": 0.02015,
+  "electriccoinco.near": 119.2066755,
+  "leodex.near": 0.03033675,
+  "mosaic-vint.near": 0.0024630000000000003,
+  "myrandomname.near": 0.0226525,
+  "skarbi.near": 1.1234135,
+  "soonsalt3099.near": 0.004631100000000001,
+  "swapkit.near": 383.60225015000003,
+  "thorswap.near": 3829.1690655,
+  "trustswapkit.near": 24205.169339400014,
+  "web_starlight.near": 0.004956
+ },
+ "refund_reasons": {},
+ "route": {
+  "cross asset": {
+   "fees": 27572.75520640001,
+   "swaps": 4395,
+   "volume": 4148944.111500007
+  },
+  "same asset": {
+   "fees": 814.9344392499996,
+   "swaps": 351,
+   "volume": 138125.29669999992
+  },
+  "stable pair": {
+   "fees": 277.18941830000006,
+   "swaps": 143,
+   "volume": 184536.76639999993
+  }
+ },
+ "sizes": [
+  [
+   390,
+   198.5621999999999
+  ],
+  [
+   1349,
+   6166.766900000009
+  ],
+  [
+   1748,
+   62848.99269999988
+  ],
+  [
+   942,
+   318679.95340000064
+  ],
+  [
+   374,
+   1122652.4051999997
+  ],
+  [
+   81,
+   2024005.6733999997
+  ],
+  [
+   5,
+   937053.8208
+  ]
+ ],
+ "status": {
+  "REFUNDED": 15,
+  "SUCCESS": 4889
+ },
+ "swaps": 4904,
+ "top_1pct_volume": 2411350.5307,
+ "volume": 4471606.174600011
+}

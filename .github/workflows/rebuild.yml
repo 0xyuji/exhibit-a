@@ -1,0 +1,30 @@
+# Rebuilds the numbers every day and commits them, so the page stays current.
+# Needs one repository secret: EXPLORER_API_KEY (and, optionally, DUNE_API_KEY).
+name: rebuild
+on:
+  schedule:
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m unittest discover tests
+      - run: python3 build.py
+        env:
+          EXPLORER_API_KEY: ${{ secrets.EXPLORER_API_KEY }}
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+      - name: Commit the new numbers
+        run: |
+          git config user.name "exhibit-a-rebuild"
+          git config user.email "actions@users.noreply.github.com"
+          git add data docs/data.json docs/thesis.html docs/figures THESIS.md
+          git diff --cached --quiet || git commit -m "Daily rebuild"
+          git push
