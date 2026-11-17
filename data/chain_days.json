@@ -1097,6 +1097,24 @@
     "buybacks.multisignature.near": 2305660.589790114,
     "fefundsadmin.sputnik-dao.near": 2022793.7359223086
    }
+  },
+  "2026-11-16": {
+   "block": 224886572,
+   "holdings": {
+    "eth-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.omft.near": 146.4743208,
+    "eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near": 25402549.19637,
+    "eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near": 13568872.649124,
+    "nbtc.bridge.near": 138.59147283,
+    "wrap.near": 16415599.789985394,
+    "zec.omft.near": 26825.25222692
+   },
+   "state_bytes": 13811901028,
+   "supply": 1311905755.1646621,
+   "wallets": {
+    "1csfundsadmin.sputnik-dao.near": 270.87589141242086,
+    "buybacks.multisignature.near": 2314166.79190823,
+    "fefundsadmin.sputnik-dao.near": 2025969.5466976995
+   }
   }
  },
  "tokens": [
