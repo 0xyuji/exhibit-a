@@ -5,17 +5,17 @@
 <text x="24.0" y="55.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">THORChain</text>
 <rect x="144.0" y="47.0" width="478.0" height="9" rx="4.5" fill="#ece7de" fill-opacity="0.07"/>
 <rect x="144.0" y="47.0" width="478.0" height="9" rx="4.5" fill="#b9b4ab"/>
-<text x="812.0" y="55.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$3.89B  as reported</text>
+<text x="812.0" y="55.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$4.02B  as reported</text>
 <text x="24.0" y="81.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">NEAR Intents</text>
 <rect x="144.0" y="73.0" width="478.0" height="9" rx="4.5" fill="#ece7de" fill-opacity="0.07"/>
-<rect x="144.0" y="73.0" width="249.1" height="9" rx="4.5" fill="#00ec97"/>
-<text x="812.0" y="81.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$2.03B  halved to one side</text>
+<rect x="144.0" y="73.0" width="243.5" height="9" rx="4.5" fill="#00ec97"/>
+<text x="812.0" y="81.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$2.05B  halved to one side</text>
 <text x="24.0" y="107.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">Chainflip</text>
 <rect x="144.0" y="99.0" width="478.0" height="9" rx="4.5" fill="#ece7de" fill-opacity="0.07"/>
-<rect x="144.0" y="99.0" width="138.7" height="9" rx="4.5" fill="#b9b4ab"/>
-<text x="812.0" y="107.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$1.13B  as reported</text>
+<rect x="144.0" y="99.0" width="130.7" height="9" rx="4.5" fill="#b9b4ab"/>
+<text x="812.0" y="107.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$1.10B  as reported</text>
 <text x="24.0" y="133.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">Maya</text>
 <rect x="144.0" y="125.0" width="478.0" height="9" rx="4.5" fill="#ece7de" fill-opacity="0.07"/>
-<rect x="144.0" y="125.0" width="37.5" height="9" rx="4.5" fill="#b9b4ab"/>
-<text x="812.0" y="133.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$305.4M  as reported</text>
+<rect x="144.0" y="125.0" width="33.0" height="9" rx="4.5" fill="#b9b4ab"/>
+<text x="812.0" y="133.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="end">$277.9M  as reported</text>
 </svg>
