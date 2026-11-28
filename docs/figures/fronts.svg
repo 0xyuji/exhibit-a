@@ -3,19 +3,19 @@
 <rect x="0.5" y="0.5" width="835" height="179" rx="14" fill="none" stroke="#2a2a2c"/>
 <text x="24.0" y="26.0" fill="#c8a46a" font-size="9.5" font-weight="500" text-anchor="start">PARTNER FEES, 30 DAYS, BY FRONT-END</text>
 <text x="812.0" y="26.0" fill="#00ec97" font-size="9.5" font-weight="400" text-anchor="end">green: the part named to a NEAR wallet</text>
-<rect x="24.0" y="44.0" width="631.3" height="44.0" fill="#ece7de"/>
+<rect x="24.0" y="44.0" width="632.5" height="44.0" fill="#ece7de"/>
 <text x="36.0" y="63.0" fill="#0b0c0e" font-size="11.5" font-weight="500" text-anchor="start">SwapKit</text>
 <text x="36.0" y="78.0" fill="#0b0c0e" font-size="9.5" font-weight="400" text-anchor="start">80% of partner fees</text>
-<rect x="656.8" y="44.0" width="39.8" height="44.0" fill="#b9b4ab"/>
-<rect x="698.0" y="44.0" width="25.7" height="44.0" fill="#8f8b84"/>
-<rect x="698.0" y="76.0" width="12.0" height="12" fill="#00ec97"/>
-<rect x="725.2" y="44.0" width="21.0" height="44.0" fill="#6c6963"/>
-<rect x="725.2" y="76.0" width="1.8" height="12" fill="#00ec97"/>
-<rect x="747.7" y="44.0" width="13.1" height="44.0" fill="#55534e"/>
-<rect x="762.3" y="44.0" width="6.5" height="44.0" fill="#44423e"/>
-<rect x="762.3" y="76.0" width="3.3" height="12" fill="#00ec97"/>
-<rect x="770.3" y="44.0" width="8.8" height="44.0" fill="#383734"/>
-<rect x="770.3" y="76.0" width="1.8" height="12" fill="#00ec97"/>
+<rect x="658.0" y="44.0" width="39.6" height="44.0" fill="#b9b4ab"/>
+<rect x="699.1" y="44.0" width="24.8" height="44.0" fill="#8f8b84"/>
+<rect x="699.1" y="76.0" width="11.2" height="12" fill="#00ec97"/>
+<rect x="725.4" y="44.0" width="22.1" height="44.0" fill="#6c6963"/>
+<rect x="725.4" y="76.0" width="1.8" height="12" fill="#00ec97"/>
+<rect x="749.1" y="44.0" width="13.2" height="44.0" fill="#55534e"/>
+<rect x="763.7" y="44.0" width="6.4" height="44.0" fill="#44423e"/>
+<rect x="763.7" y="76.0" width="3.1" height="12" fill="#00ec97"/>
+<rect x="771.6" y="44.0" width="6.4" height="44.0" fill="#383734"/>
+<rect x="771.6" y="76.0" width="2.2" height="12" fill="#00ec97"/>
 <rect x="24.0" y="107.0" width="9" height="9" fill="#ece7de"/>
 <text x="39.0" y="115.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">SwapKit  80%</text>
 <text x="39.0" y="128.0" fill="#9a968e" font-size="9" font-weight="400" text-anchor="start">NEAR named on 0%</text>
@@ -24,17 +24,17 @@
 <text x="236.0" y="128.0" fill="#9a968e" font-size="9" font-weight="400" text-anchor="start">NEAR named on 0%</text>
 <rect x="418.0" y="107.0" width="9" height="9" fill="#8f8b84"/>
 <text x="433.0" y="115.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">No label  3%</text>
-<text x="433.0" y="128.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 44%</text>
+<text x="433.0" y="128.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 43%</text>
 <rect x="615.0" y="107.0" width="9" height="9" fill="#6c6963"/>
 <text x="630.0" y="115.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">Rango  3%</text>
-<text x="630.0" y="128.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 8%</text>
+<text x="630.0" y="128.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 7%</text>
 <rect x="24.0" y="137.0" width="9" height="9" fill="#55534e"/>
 <text x="39.0" y="145.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">vizor  2%</text>
 <text x="39.0" y="158.0" fill="#9a968e" font-size="9" font-weight="400" text-anchor="start">NEAR named on 0%</text>
 <rect x="221.0" y="137.0" width="9" height="9" fill="#44423e"/>
 <text x="236.0" y="145.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">LI.FI  1%</text>
-<text x="236.0" y="158.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 41%</text>
+<text x="236.0" y="158.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 39%</text>
 <rect x="418.0" y="137.0" width="9" height="9" fill="#383734"/>
 <text x="433.0" y="145.0" fill="#ece7de" font-size="10.5" font-weight="400" text-anchor="start">6 others  1%</text>
-<text x="433.0" y="158.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 18%</text>
+<text x="433.0" y="158.0" fill="#00ec97" font-size="9" font-weight="400" text-anchor="start">NEAR named on 28%</text>
 </svg>
